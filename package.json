@@ -13,6 +13,7 @@
     "@types/three": "^0.173.0",
     "animejs": "^3.2.2",
     "lottie-react": "^2.4.1",
+    "motion": "^12.4.7",
     "next": "15.1.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
