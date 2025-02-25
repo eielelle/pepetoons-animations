@@ -4,37 +4,20 @@ import SmallCluster from "./small-cluster";
 import { useEffect, useState } from "react";
 import anime from "animejs";
 
-export default function FeatureCarousel() {
-  const [scrollPos, setScrollPos] = useState(0);
-
-  // Update scroll position on scroll event
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollPos(window.scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll); // Cleanup listener
-    };
-  }, []);
+export default function FeatureCarousel({ parentHeight, scrollTop }) {
 
   useEffect(() => {
-    const scrollLimit =
-      document.documentElement.scrollHeight - window.innerHeight;
-    const scrollPercentage = scrollPos / scrollLimit;
-    const carousel = document.querySelector(".carousel-custom");
-    const maxScroll = carousel.scrollWidth - window.innerWidth;
+    const linearPercent = 100 - ((scrollTop + (parentHeight / 2)) / (parentHeight / 2)) * 100;
+    const val = Math.min(Math.max(linearPercent, 0), 80)
+    const carousel = document.querySelector(".carousel-custom")
 
-    // Animate carousel to move horizontally based on scroll position
     anime({
       targets: carousel,
-      translateX: -scrollPercentage * maxScroll,
+      translateX: `-${val}%`,
       easing: "easeOutQuad",
-      duration: 0, // Instant transition to keep it smooth
+      duration: 0,
     });
-  }, [scrollPos]);
+  }, [scrollTop]);
 
   return (
     <div className="w-full h-[50%] overflow-x-hidden">
@@ -71,7 +54,7 @@ export default function FeatureCarousel() {
         {/* 5 */}
         <div className="w-[calc((100%/5)/2)] h-full border-r-2"></div>
         <div className="w-[calc((100%/5)/7)] h-full border-r-2"></div>
-        <div className="w-[calc((100%/5)/4)] h-full border-r-2"></div>
+        <div className="w-[calc((100%/5)/4)] h-full border-r-2 bg-red-500"></div>
         <SmallCluster />
       </div>
     </div>

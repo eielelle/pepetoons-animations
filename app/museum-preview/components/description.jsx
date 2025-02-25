@@ -1,41 +1,22 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import anime from "animejs";
+import { useEffect, useRef, useState } from "react";
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 export default function Description() {
-  const [scrollPos, setScrollPos] = useState(0);
+  const targetRef = useRef(null);
 
-  // Update scroll position on scroll event
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollPos(window.scrollY);
-    };
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+  });
+  
+  // Use scroll position to interpolate the width
+  const width = useTransform(scrollYProgress, [0, 1], ['20%', '60%']);
 
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll); // Cleanup listener
-    };
-  }, []);
-
-  useEffect(() => {
-    const scrollLimit =
-      document.documentElement.scrollHeight - window.innerHeight;
-    const scrollPercentage = scrollPos / scrollLimit;
-    const square = document.querySelector(".black-square");
-
-    anime({
-      targets: square,
-      width: `${Math.max(20, 1 * scrollPercentage * 60)}%`,
-      easing: "easeOutQuad",
-      duration: 0, // Instant transition to keep it smooth
-    });
-  }, [scrollPos]);
 
   return (
     <div className="h-[30%] w-full mt-5 flex gap-5 justify-between">
-      <div className="aspect-square w-[20%] bg-black black-square"></div>
+      <motion.div ref={targetRef} style={{ width }} className="aspect-square w-[20%] bg-black black-square"></motion.div>
       <div className="text-right w-[30%]">
         <h1 className="font-bold text-6xl mb-4">
           Life and Works of Rizal: Virtual Museum

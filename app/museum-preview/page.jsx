@@ -1,11 +1,15 @@
+import CTA from "./components/pages/cta";
+import Gallery from "./components/pages/gallery";
 import Home from "./components/pages/home";
 
 export default function MuseumPreview() {
   return (
-    <main className="bg-white h-screen text-black container mx-auto">
-      <div className="h-[300%]">
-        <Home />
+    <main className="bg-white h-screen">
+      <Home />
+      <div className="h-[500%] mt-[-100%]">
+        <Gallery />
       </div>
+      <CTA />
     </main>
   );
 }
