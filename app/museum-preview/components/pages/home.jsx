@@ -43,7 +43,7 @@ export default function Home() {
     <div ref={ref} className="h-[300%]">
       <section
         id="home"
-        className="h-screen sticky text-black top-0 z-10 bg-white"
+        className="h-screen sticky text-white top-0 z-10 bg-gradient-to-br from-cyan-300 via-blue-700 to-blue-900"
       >
         <div className="container h-full mx-auto">
           <Header />

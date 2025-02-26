@@ -19,7 +19,7 @@ export default function Description({ parentHeight, scrollTop }) {
 
   return (
     <div className="h-[30%] w-full mt-5 flex gap-5 justify-between">
-      <div className="aspect-square w-[20%] bg-black black-square"></div>
+      <div className="aspect-square w-[20%] bg-blue-900 black-square"></div>
       <div className="text-right w-[30%]">
         <h1 className="font-bold text-6xl mb-4">
           Life and Works of Rizal: Virtual Museum
