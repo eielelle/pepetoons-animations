@@ -48,7 +48,7 @@ export default function Home() {
         <div className="container h-full mx-auto">
           <Header />
           <FeatureCarousel parentHeight={parentHeight} scrollTop={scrollTop} />
-          <Description />
+          <Description parentHeight={parentHeight} scrollTop={scrollTop} />
         </div>
       </section>
     </div>
