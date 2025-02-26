@@ -10,8 +10,6 @@ export default function Description({ parentHeight, scrollTop }) {
       const square = document.querySelector(".black-square")
       val = Math.max(20, val)
 
-      console.log(val)
-
       anime({
         targets: square,
         width: `${val}%`,
