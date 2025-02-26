@@ -3,21 +3,20 @@
 import SmallCluster from "./small-cluster";
 import { useEffect, useState } from "react";
 import anime from "animejs";
+import useAnimateScroll from "../../hooks/useAnimateScroll";
 
 export default function FeatureCarousel({ parentHeight, scrollTop }) {
 
-  useEffect(() => {
-    const linearPercent = 100 - ((scrollTop + (parentHeight / 2)) / (parentHeight / 2)) * 100;
-    const val = Math.min(Math.max(linearPercent, 0), 80)
-    const carousel = document.querySelector(".carousel-custom")
+  useAnimateScroll(parentHeight, scrollTop, 80, (val) => {
+      const carousel = document.querySelector(".carousel-custom")
 
-    anime({
-      targets: carousel,
-      translateX: `-${val}%`,
-      easing: "easeOutQuad",
-      duration: 0,
-    });
-  }, [scrollTop]);
+      anime({
+        targets: carousel,
+        translateX: `-${val}%`,
+        easing: "easeOutQuad",
+        duration: 0,
+      });
+  })
 
   return (
     <div className="w-full h-[50%] overflow-x-hidden">
