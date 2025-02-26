@@ -1,18 +1,12 @@
+import Header from "../header";
+
 export default function CTA() {
   return (
-    <section id="home" className="h-screen grid grid-cols-12 gap-4 pt-24">
-      <div className="border border-black"></div>
-      <div className="border border-black"></div>
-      <div className="border border-black"></div>
-      <div className="border border-black"></div>
-      <div className="border border-black"></div>
-      <div className="border border-black"></div>
-      <div className="border border-black"></div>
-      <div className="border border-black"></div>
-      <div className="border border-black"></div>
-      <div className="border border-black"></div>
-      <div className="border border-black"></div>
-      <div className="border border-black"></div>
+    <section id="cta" className="h-screen bg-black text-white sticky top-0">
+      <div className="container mx-auto">
+        <Header color="white" />
+        <div className="border-t-2 border-white"></div>
+      </div>
     </section>
   );
 }

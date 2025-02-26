@@ -7,9 +7,8 @@ export default function MuseumPreview() {
     <main className="bg-white h-screen">
       <Home />
       <div className="h-[500%] mt-[-100%]">
-        <Gallery />
+        <CTA />
       </div>
-      <CTA />
     </main>
   );
 }

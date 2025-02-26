@@ -5,18 +5,17 @@ import anime from "animejs";
 import { useEffect, useRef, useState } from "react";
 
 export default function Description({ parentHeight, scrollTop }) {
-
   useAnimateScroll(parentHeight, scrollTop, 60, (val) => {
-      const square = document.querySelector(".black-square")
-      val = Math.max(20, val)
+    const square = document.querySelector(".black-square");
+    val = Math.max(20, val);
 
-      anime({
-        targets: square,
-        width: `${val}%`,
-        easing: "easeOutQuad",
-        duration: 0,
-      });
-  })
+    anime({
+      targets: square,
+      width: `${val}%`,
+      easing: "easeOutQuad",
+      duration: 0,
+    });
+  });
 
   return (
     <div className="h-[30%] w-full mt-5 flex gap-5 justify-between">
@@ -26,10 +25,12 @@ export default function Description({ parentHeight, scrollTop }) {
           Life and Works of Rizal: Virtual Museum
         </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore
-          numquam sed aliquid, nobis nam consequatur dolorum quod impedit cum
-          modi reprehenderit, animi fugit excepturi voluptate repellat facere
-          fugiat delectus error!
+          Explore the life of José Rizal, a Filipino nationalist, intellectual,
+          and martyr. Through his writings and sacrifices, Rizal inspired a
+          nation and became a symbol of hope and independence. This virtual
+          museum highlights his journey, from education to his ultimate
+          sacrifice, showcasing his enduring legacy in the fight for justice and
+          freedom.
         </p>
       </div>
     </div>
