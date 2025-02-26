@@ -1,6 +1,6 @@
 export default function dashboardnav(){
     return (
-        <nav className="bg-yellow-900 p-4 shadow-lg">
+        <nav className="bg-blue-400 p-4 shadow-lg">
             <div className="container mx-auto flex justify-between items-center">
                 <div className="flex justify-between text-white">Pepetoons</div>
                 <ul className="flex flex-1 gap-4 justify-center items-center">
