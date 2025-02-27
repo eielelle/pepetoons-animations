@@ -5,8 +5,9 @@ import Dashboardcontent from "./dashboard/dashboard-content";
 export default function Home() {
   return (
     <div>
-      <Dashboardnav/>
-      <Dashboardcontent/>
+      {/*UNCOMMENT THIS IF YOU WANT TO SHOW THE DASHBOARD*/}
+      {/*<Dashboardnav*/}
+      {/*<Dashboardcontent/>*/}
     </div>
   );
 }
