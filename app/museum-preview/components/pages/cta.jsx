@@ -5,7 +5,7 @@ import Header from "../header";
 export default function CTA() {
   return (
     <section id="cta" className="h-screen bg-black text-white sticky top-0">
-      <div className="container mx-auto flex flex-col h-full">
+      <div className="container mx-auto flex flex-col h-full px-6">
         <Header color="white" />
         <div className="border-t-2 text-center h-full border-white flex-1 flex justify-center items-center">
           <div>
