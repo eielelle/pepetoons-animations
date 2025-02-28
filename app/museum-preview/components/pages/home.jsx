@@ -45,7 +45,7 @@ export default function Home() {
         id="home"
         className="h-screen sticky text-white top-0 z-10 bg-gradient-to-br from-cyan-300 via-blue-700 to-blue-900"
       >
-        <div className="container h-full mx-auto">
+        <div className="container h-full mx-auto px-6">
           <Header />
           <FeatureCarousel parentHeight={parentHeight} scrollTop={scrollTop} />
           <Description parentHeight={parentHeight} scrollTop={scrollTop} />
