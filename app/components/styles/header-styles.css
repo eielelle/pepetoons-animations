@@ -1,8 +1,6 @@
-@import "tailwindcss";
-@plugin "daisyui";
 
 * {
-    font-family: "Passion One Regular", serif;
+    font-family: 'Passion One Regular', serif;
 }
 
 @font-face {
@@ -14,19 +12,18 @@
 
 @font-face {
     font-family: 'Passion One Bold';
-    src: url('/fonts/fonts/PassionOne-Bold.ttf') format('truetype');
+    src: url('/assets/fonts/PassionOne-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Passion One Black';
-    src: url('/fonts/PassionOne-Black.ttf') format('truetype');
-    font-weight: 700;
+    src: url('/assets/fonts/PassionOne-Black.ttf') format('truetype');
+    font-weight: 900;
     font-style: normal;
 }
 
 #logos {
-    height: 35px;
     image-rendering: auto;
 }

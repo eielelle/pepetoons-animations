@@ -1,6 +1,13 @@
 'use client';
 import React, { useEffect } from 'react';
-import '../../assets/css/header-styles.css';
+import './styles/header-styles.css';
+import Image from "next/image";
+import iconsHome from '../../assets/icons/icons8-home-64.png';
+import iconsBlog from '../../assets/icons/icons8-blog-64.png';
+import iconsContact from '../../assets/icons/icons8-blog-64.png';
+import iconsAbout from '../../assets/icons/icons8-about-64.png';
+import iconsClose from '../../assets/icons/icons8-close-64.png';
+import Logos from '../../assets/logo/Logo.png';
 
 export default function header() {
 
@@ -27,19 +34,18 @@ export default function header() {
                         <div className="dropdown">
                             <div className="flex items-center gap-2">
                                 {/* logo */}
-                                <img src="/logo/Logo.png" className='mx-auto' alt="Logo" id='logos' />
-                                <h3 className="cursor-default text-2xl text-[#F0DFDF]" id="Title">PepeToons</h3>
+                                <Image src={Logos} className='mx-auto' alt="Logo" id='logos' height={35} width={30} />
+                                <h3 className="cursor-default text-3xl text-white" id="Title">PepeToons</h3>
                             </div>
                         </div>
                     </div>
                     {/* Large screen menu */}
                     <div className="navbar-center max-md:hidden absolute left-1/2 -translate-x-1/2">
-                        {/* Large screen navbar menu */}
-                        <ul className="menu menu-horizontal px-1 flex font-bold text-base">
-                            <li><a className="hover:text-gray-900"> <img width="15" height="10" src="icons/icons8-home-64.png" alt="icons-home" /> {"Home"}</a></li>
-                            <li><a className="hover:text-gray-900"> <img width="15" height="10" src="icons/icons8-blog-64.png" alt="icons-explore" />Explore </a></li>
-                            <li><a className="hover:text-gray-900"> <img width="15" height="15" src="icons/icons8-contact-64.png" alt="icons-contact" /> Contact </a></li>
-                            <li><a className="hover:text-gray-900"> <img width="15" height="10" src="icons/icons8-about-64.png" alt="icons-about" /> About </a></li>
+                        <ul className="menu menu-horizontal px-1 flex font-bold text-lg text-white">
+                            <li><a className="hover:text-black"> <Image width={15} height={10} src={iconsHome} alt="icons-home" /> Home</a></li>
+                            <li><a className="hover:text-black"> <Image width={15} height={10} src={iconsBlog} alt="icons-explore" />Explore </a></li>
+                            <li><a className="hover:text-black"> <Image width={15} height={15} src={iconsContact} alt="icons-contact" /> Contact </a></li>
+                            <li><a className="hover:text-black"> <Image width={15} height={10} src={iconsAbout} alt="icons-about" /> About </a></li>
                         </ul>
                     </div>
 
@@ -60,19 +66,19 @@ export default function header() {
                 <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-side">
                     <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
-                    <ul className="menu min-h-full w-80 p-4 bg-[#398FCF] font-bold text-base max-w-md md:max-w-2xl">
+                    <ul className="menu min-h-full w-80 p-4 bg-[#398FCF] text-white font-bold text-lg max-w-md md:max-w-2xl">
                         {/* Sidebar content*/}
-                        <li className='inline absolute top-2 right-4 m-auto z-50'>
+                        <li className='inline absolute top-2 right-4 m-auto z-50 hover:text-gray-900 '>
                             <button aria-label="Close Menu" className="drawer-close" onClick={() => {
                                 document.getElementById("my-drawer-4").checked = false;
                             }}>
-                                <img width="15" height="15" src={"/icons/icons8-close-64.png"} alt="Close Icon" />
+                                <Image width="15" height="15" src={iconsClose} alt="icons-close" />
                             </button>
                         </li>
-                        <li><a className="hover:text-gray-900"> <img width="15" height="10" src="icons/icons8-home-64.png" alt="icons-home" /> {"Home"}</a></li>
-                        <li><a className="hover:text-gray-900"> <img width="15" height="10" src="icons/icons8-blog-64.png" alt="icons-explore" />Explore </a></li>
-                        <li><a className="hover:text-gray-900"> <img width="15" height="15" src="icons/icons8-contact-64.png" alt="icons-contact" /> Contact </a></li>
-                        <li><a className="hover:text-gray-900"> <img width="15" height="10" src="icons/icons8-about-64.png" alt="icons-about" /> About </a></li>
+                        <li><a className="hover:text-gray-900"> <Image width={15} height={10} src={iconsHome} alt="icons-home" /> Home</a></li>
+                        <li><a className="hover:text-gray-900"> <Image width={15} height={10} src={iconsBlog} alt="icons-explore" />Explore </a></li>
+                        <li><a className="hover:text-gray-900"> <Image width={15} height={15} src={iconsContact} alt="icons-contact" /> Contact </a></li>
+                        <li><a className="hover:text-gray-900"> <Image width={15} height={10} src={iconsAbout} alt="icons-about" /> About </a></li>
                     </ul>
                 </div>
             </div>
