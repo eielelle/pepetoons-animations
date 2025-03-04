@@ -13,6 +13,7 @@ export default function Home() {
       {/*UNCOMMENT THIS IF YOU WANT TO SHOW THE LEGACY*/}
       {/*<Dashboardnav*/}
       {/*<Legacycontent />*/}
+      <Legacycontent />
     </div>
   );
 }
