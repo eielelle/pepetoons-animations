@@ -5,7 +5,7 @@ export default function LegacyContent() {
     <div
       className="relative min-h-screen w-full flex items-center justify-center"
       style={{
-        backgroundImage: "url('/legacy-assets/legacy.webp')",
+        backgroundImage: "url('../../../assets/legacy.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -28,7 +28,7 @@ export default function LegacyContent() {
           >
             <div className="card-body flex flex-col items-center">
               <img
-                src="/legacy-assets/monument.jpg"
+                src="/assets/monument.jpg"
                 alt="Rizal Monument"
                 className="object-cover rounded-sm"
               />
@@ -44,7 +44,7 @@ export default function LegacyContent() {
           >
             <div className="card-body flex flex-col items-center">
               <img
-                src="/legacy-assets/Philippine_independence.jpg"
+                src="/assets/Philippine_independence.jpg"
                 alt="Philippine Independence"
                 className="object-cover rounded-sm"
               />
@@ -60,7 +60,7 @@ export default function LegacyContent() {
           >
             <div className="card-body flex flex-col items-center">
               <img
-                src="/legacy-assets/rizal_commoratives.jpg"
+                src="/assets/rizal_commoratives.jpg"
                 alt="Modern Day Commoratives"
                 className="object-cover rounded-sm"
               />
