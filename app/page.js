@@ -2,7 +2,7 @@ import Image from "next/image";
 import Dashboardnav from "./dashboard/dashboard-navbar";
 import Dashboardcontent from "./dashboard/dashboard-content";
 import Legacycontent from "./legacy/legacy-content";
-import Headers from "./components/header";
+import Headers from "./components/Header";
 
 export default function Home() {
   return (

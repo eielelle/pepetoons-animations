@@ -9,7 +9,7 @@ import iconsAbout from '../../assets/icons/icons8-about-64.png';
 import iconsClose from '../../assets/icons/icons8-close-64.png';
 import Logos from '../../assets/logo/Logo.png';
 
-export default function header() {
+export default function Header() {
 
     function toggleDrawer() {
         let drawerCheckbox = document.getElementById("my-drawer-4");
