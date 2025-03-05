@@ -15,6 +15,7 @@ export default function Home() {
     //Uncomment this in case the header won't needed
     <>
       <Headers />
+      <Legacycontent />
     </>
   );
 }

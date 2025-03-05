@@ -1,23 +1,22 @@
 import React from "react";
+import Image from "next/image";
+import Legacy from '../../assets/legacyassets/legacy.webp';
+import Monument from '../../assets/legacyassets/monument.jpg';
+import PhilippineIndependence from '../../assets/legacyassets/Philippine_independence.jpg';
+import RizalCommoratives from '../../assets/legacyassets/rizal_commoratives.jpg';
 
 export default function LegacyContent() {
   return (
     <div
       className="relative min-h-screen w-full flex items-center justify-center"
-      style={{
-        backgroundImage: "url('../../../assets/legacy.webp')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
+    ><Image src={Legacy} alt="Legacy" layout="fill" objectFit="cover" />
       <div className="absolute inset-0 bg-black opacity-40"></div>
 
       {/* card container */}
       <div className="z-10 p-6 rounded-lg w-full max-w-6xl items-center">
         <h6
           className="text-8xl text-center mb-25"
-          style={{ fontFamily: "'Tahoma', Sans-serif" }}
+          style={{ fontFamily: "'Tahoma', Sans-serif", color: "#F0DFDF" }}
         >
           LEGACY & INFLUENCE
         </h6>
@@ -27,12 +26,8 @@ export default function LegacyContent() {
             style={{ backgroundColor: "rgba(255, 255, 255, 0.1)" }}
           >
             <div className="card-body flex flex-col items-center">
-              <img
-                src="/assets/monument.jpg"
-                alt="Rizal Monument"
-                className="object-cover rounded-sm"
-              />
-              <h2 className="card-title text-xl font-bold text-center mt-4">
+            <Image src={Monument} alt="Monument" className="object-cover rounded-sm" />
+              <h2 className="card-title text-xl font-bold text-center mt-4 text-white">
                 National Hero Statue
               </h2>
             </div>
@@ -43,12 +38,8 @@ export default function LegacyContent() {
             style={{ backgroundColor: "rgba(255, 255, 255, 0.1)" }}
           >
             <div className="card-body flex flex-col items-center">
-              <img
-                src="/assets/Philippine_independence.jpg"
-                alt="Philippine Independence"
-                className="object-cover rounded-sm"
-              />
-              <h2 className="card-title text-xl font-bold text-center mt-4">
+            <Image src={PhilippineIndependence} alt="Philippine Independence" className="object-cover rounded-sm" />
+              <h2 className="card-title text-xl font-bold text-center mt-4 text-white">
                 Philippine Independence
               </h2>
             </div>
@@ -59,12 +50,8 @@ export default function LegacyContent() {
             style={{ backgroundColor: "rgba(255, 255, 255, 0.1)" }}
           >
             <div className="card-body flex flex-col items-center">
-              <img
-                src="/assets/rizal_commoratives.jpg"
-                alt="Modern Day Commoratives"
-                className="object-cover rounded-sm"
-              />
-              <h2 className="card-title text-md font-bold text-center mt-4">
+            <Image src={RizalCommoratives} alt="Rizal Commoratives" className="object-cover rounded-sm"/>
+              <h2 className="card-title text-md font-bold text-center mt-4 text-white">
                 Modern Day Commoratives
               </h2>
             </div>
