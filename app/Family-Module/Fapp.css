@@ -1,0 +1,136 @@
+.family-tree-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    padding: 10px;
+    padding-top: 200px;
+    
+
+}
+
+.family-tree-container {
+    color: #333;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(226, 103, 103, 0.2);
+    text-align: center;
+    width: 90%;   /* You can change this */
+    height: flex; /* Adjust height dynamically */
+    min-height: 400px;
+}
+
+.family-tree-title {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #333;
+    padding-bottom: 40px;
+    
+}
+
+/* Parents Row */
+.parents-row {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.parent-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.parent-node img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+/* Horizontal line connecting parents */
+.parent-connector {
+    position: relative;
+    height: 30px;
+    margin-bottom: 90px;
+}
+
+.parent-connector::before {
+    content: '';
+    position: absolute;
+    top: -60;
+    left: 44.4%;
+    width: 10.6%;
+    height: 3px;
+    background-color: black;
+}
+
+/* Vertical lines from parents to children row */
+.parent-connector::after {
+    content: '';
+    position: absolute;
+    top: -60px;
+    left: 49.4%;
+    width: 3px;
+    height: 160px;
+    background-color: black;
+}
+
+/* Children Row */
+.children-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    position: relative;
+}
+
+/* Each Child */
+.child-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(199, 6, 6, 0.1);
+    position: relative;
+}
+
+.child-node img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+/* Horizontal line across all children */
+.children-row::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 41.9;
+    width: 91.7%;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+}
+
+/* Vertical lines from horizontal line to each child */
+.child-node::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    width: 2px;
+    height: 20px;
+    background-color: rgb(0, 0, 0);
+}
