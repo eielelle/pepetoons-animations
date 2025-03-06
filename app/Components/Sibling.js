@@ -1,7 +1,7 @@
 "use client";
 import './Sibling.css';
 import React, { useState } from 'react';
-import Header from './Header';
+
 
 export default function Sibling() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -30,10 +30,8 @@ export default function Sibling() {
         backgroundPosition: 'center',
         height: '100vh',
         width: '100%',
-      }}
-    > 
+      }}> 
         
-
       <h1
         style={{
           color: 'white',
