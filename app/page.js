@@ -1,13 +1,23 @@
-"use client";
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import Header from './Components/Header';
-import Sibling from './Components/Sibling';
-import Fapp from './Family-Module/Fapp';
+import Image from "next/image";
+import Dashboardnav from "./dashboard/dashboard-navbar";
+import Dashboardcontent from "./dashboard/dashboard-content";
+import Legacycontent from "./legacy/legacy-content";
 
 
 export default function App() {
   return (
     <>
+     <div>
+      {/*UNCOMMENT THIS IF YOU WANT TO SHOW THE DASHBOARD*/}
+      {/*<Dashboardnav*/}
+     {/*<Dashboardcontent/>*/}
+     </div>
+
+    {/* Uncomment this in case the header won't needed */}
+    
+      <Header />
+      <Legacycontent />
+  
     <BrowserRouter>
       <Header/>
       <Routes>
@@ -18,14 +28,5 @@ export default function App() {
     
     
     </>
-    // <>
-    //   <Header />
-     
-    //   {/* <Sibling/>
-    //   <Fapp/> */}
-
-        
-       
-    // </>
   );
 }
