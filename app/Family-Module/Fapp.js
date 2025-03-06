@@ -11,7 +11,7 @@ export default function Fapp() {
         { name: 'Olympia Rizal', image: '/Resources/Olympia_Rizal.png' },
         { name: 'Lucia Rizal', image: '/Resources/Lucia_Rizal.png' },
         { name: 'Maria Rizal', image: '/Resources/Maria_Rizal.png' },
-        { name: 'Jose Rizal', image: '/Resources/José_Rizal.png' },
+        { name: 'Jose Rizal', image: '/Resources/rizal.png' },
         { name: 'Concepcion Rizal', image: '/Resources/Concepcion_Rizal.png' },
         { name: 'Josefa Rizal', image: '/Resources/Josefa_Rizal.png' },
         { name: 'Trinidad Rizal', image: '/Resources/Trinidad_Rizal.png' },
