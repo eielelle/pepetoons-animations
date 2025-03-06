@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography, Paper } from '@mui/material';
 import './Fapp.css';
-import Header from '../Components/Header'
+
 
 export default function Fapp() {
     const siblings = [
@@ -44,8 +44,6 @@ export default function Fapp() {
                         height: '100vh',
                         width: '100%',
                         padding: '20px'
-
-                        
                     }}>
 
                         {/* Parents Row */}

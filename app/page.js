@@ -2,7 +2,7 @@ import Image from "next/image";
 import Dashboardnav from "./dashboard/dashboard-navbar";
 import Dashboardcontent from "./dashboard/dashboard-content";
 import Legacycontent from "./legacy/legacy-content";
-
+import './Component/styles/header-styles.css';
 
 export default function App() {
   return (
@@ -15,11 +15,11 @@ export default function App() {
 
     {/* Uncomment this in case the header won't needed */}
     
-      <Header />
+   
       <Legacycontent />
   
     <BrowserRouter>
-      <Header/>
+   
       <Routes>
         <Route path="/sibling" element={<Sibling />} />
         <Route path="/fapp" element={<Fapp />} />
