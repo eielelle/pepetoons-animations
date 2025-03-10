@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <main className="grid grid-cols-3 h-screen bg-[#101230] p-12">
+    <main className="grid grid-cols-3 h-screen p-12 gap-6">
       <div className="col-span-3 relative">
         <div className="absolute left-0 top-0 w-3/4">
           <h1 className="text-9xl font-black" style={{fontFamily: "Anton"}}>
