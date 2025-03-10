@@ -2,7 +2,8 @@ import Image from "next/image";
 import Dashboardnav from "./dashboard/dashboard-navbar";
 import Dashboardcontent from "./dashboard/dashboard-content";
 import Legacycontent from "./legacy/legacy-content";
-import Header from "./components/Header";
+import FModule from "./FModuleV2/FModule";
+
 
 export default function Home() {
   return (
@@ -14,8 +15,11 @@ export default function Home() {
 
     //Uncomment this in case the header won't needed
     <>
-      <Header />
-      <Legacycontent />
+      {/* <Header /> */}
+      {/* <Legacycontent /> */}
+      <FModule/>
+
+
     </>
   );
 }
