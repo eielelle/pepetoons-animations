@@ -13,7 +13,7 @@ const Sidebar = ({ isDarkMode, toggleDarkMode }) => {
   const pathName = usePathname();
 
   function isActive(pathName, urlPath) {
-    const parsedPath = "/" + urlPath; 
+    const parsedPath = urlPath.startsWith("/") ? urlPath : "/" + urlPath;
     return pathName == parsedPath && "border-l-4 border-white bg-[#101230]" 
   }
 
@@ -22,7 +22,7 @@ const Sidebar = ({ isDarkMode, toggleDarkMode }) => {
       id: "home",
       label: "Home",
       iconPath: HomeIcon,
-      urlPath: "home"
+      urlPath: "/"
     },
     {
       id: "explore",
