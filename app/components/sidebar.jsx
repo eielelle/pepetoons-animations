@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import HomeIcon from "../../assets/icons/home.svg";
@@ -8,35 +7,46 @@ import ExploreIcon from "../../assets/icons/explore.svg";
 import LocationIcon from "../../assets/icons/location.svg";
 import InfoIcon from "../../assets/icons/about.svg";
 import TeamIcon from "../../assets/icons/team.svg";
+import { usePathname } from "next/navigation";
 
 const Sidebar = ({ isDarkMode, toggleDarkMode }) => {
-  const [activeItem, setActiveItem] = useState("home");
+  const pathName = usePathname();
+
+  function isActive(pathName, urlPath) {
+    const parsedPath = "/" + urlPath; 
+    return pathName == parsedPath && "border-l-4 border-white bg-[#101230]" 
+  }
 
   const menuItems = [
     {
       id: "home",
       label: "Home",
       iconPath: HomeIcon,
+      urlPath: "home"
     },
     {
       id: "explore",
       label: "Explore",
       iconPath: ExploreIcon,
+      urlPath: "explore"
     },
     {
       id: "geolocation",
       label: "Geolocation",
       iconPath: LocationIcon,
+      urlPath: "location"
     },
     {
       id: "about",
       label: "About",
       iconPath: InfoIcon,
+      urlPath: "about"
     },
     {
       id: "team",
       label: "Team",
       iconPath: TeamIcon,
+      urlPath: "team"
     },
   ];
 
@@ -53,14 +63,11 @@ const Sidebar = ({ isDarkMode, toggleDarkMode }) => {
           {menuItems.map((item) => (
             <li key={item.id} className="mb-2">
               {/* IF THERE IS PAGE COMPONENT JUST REPLACE THE "#" */}
-              <Link href={`/${item.id === "home" ? "" : "#"}`}>
+              <Link href={item.urlPath}>
                 <div
                   className={`flex items-center px-4 py-3 ${
-                    activeItem === item.id
-                      ? "border-l-4 border-white"
-                      : "border-l-4 border-transparent"
+                    isActive(pathName, item.urlPath)
                   }`}
-                  onClick={() => setActiveItem(item.id)}
                 >
                   <div className="text-gray-300 w-5 h-5 flex items-center justify-center">
                     <Image
