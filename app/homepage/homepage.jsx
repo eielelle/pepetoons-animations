@@ -1,22 +1,7 @@
-"use client";
-
-import { useState, useEffect } from "react";
-import Sidebar from "../components/sidebar";
-
 export default function Homepage() {
 
-    const [isDarkMode, setIsDarkMode] = useState(true);
+    {/* Gradient Color, Note that the gradient color is not the final one and will change based on the UI or requirements design.*/ }
 
-    useEffect(() => {
-        // SETTING THE DARK AND LIGHT THEME
-        document.documentElement.classList.toggle("dark", isDarkMode);
-    }, [isDarkMode]);
-
-    const toggleDarkMode = () => {
-        setIsDarkMode(!isDarkMode);
-    };
-
-    {/* Gradient color*/ }
     const gradientStyle1 = {
         background: "-webkit-linear-gradient(90deg, hsla(276, 91%, 79%, 1) 0%, hsla(254, 74%, 65%, 1) 100%)",
     };
@@ -53,76 +38,77 @@ export default function Homepage() {
         background: "-webkit-linear-gradient(90deg, hsla(282, 36%, 25%, 1) 0%, hsla(310, 22%, 37%, 1) 100%)",
     }
 
-
     const gradientStyle10 = {
         background: "-webkit-linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%)",
     }
 
     return (
         <>
-            <div className={`flex min-h-screen ${isDarkMode ? "bg-gray-900 text-white" : "bg-white text-black"
-                }`} >
-                <Sidebar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
+            {/* Homepage Start */}
+            <div className="drawer-content flex flex-col content-center h-screen gap-3 bg-[#111230] w-full overflow-y-auto relative">
 
-                {/* I adjust to relative to automatically adjust the homepage inside content and make scrollable y and x asis in case needed just like the homepage */}
-                <div className="flex-1 relative h-screen overflow-y-auto flex items-start">
-                    <div className="drawer-content flex flex-col content-center justify-center gap-3 bg-[#111230] w-full h-full">
-                        <div className="inline h-auto w-full m-auto" id="carousel1">
-                            <div className="carousel rectangle-box absolute top-25 left-0 right-0 h-full gap-5">
-                                {/* bg-[url(https://placehold.co/300x300)] bg-cover bg-center bg-no-repeat */}
-                                <div className="carousel-item w-70 h-45" style={gradientStyle1}>
-                                    <h3 className="flex m-auto justify-center">Legacy Module</h3>
-                                </div>
-
-                                <div className="carousel-item w-70 h-45" style={gradientStyle2}>
-                                    <h3 className="flex m-auto justify-center">Rizal Birth Module</h3>
-                                </div>
-
-                                <div className="carousel-item w-70 h-45" style={gradientStyle3}>
-                                    <h3 className="flex m-auto justify-center">Family Module</h3>
-                                </div>
-
-                                <div className="carousel-item w-70 h-45" style={gradientStyle4}>
-                                    <h3 className="flex m-auto justify-center">Romantic Module</h3>
-                                </div>
-
-                                <div className="carousel-item w-70 h-45" style={gradientStyle5}>
-                                    <h3 className="flex m-auto justify-center">Others Modules</h3>
-                                </div>
-                            </div>
+                {/* Carousel top */}
+                <div className="inline h-auto w-full m-auto">
+                    <div className="carousel rectangle-box absolute top-22 left-0 right-0 h-full gap-5">
+                        <div className="carousel-item w-70 h-45" style={gradientStyle1}>
+                            {/* Change me according the required content*/}
+                            <h3 className="flex m-auto justify-center">Legacy Module</h3>
                         </div>
 
-                        <div className="inline h-auto w-full" id="carousel2">
-                            <div className="carousel rectangle-box h-full gap-5 absolute top-100 left-0 bot-0 right-0">
-                                {/* bg-[url(https://placehold.co/300x300)] bg-cover bg-center bg-no-repeat */}
-                                <div className="carousel-item w-70 h-45" style={gradientStyle6}>
-                                    <h3 className="flex m-auto justify-center">Others Content</h3>
-                                </div>
-
-                                <div className="carousel-item w-70 h-45" style={gradientStyle7}>
-                                    <h3 className="flex m-auto justify-center">Others Content</h3>
-                                </div>
-
-                                <div className="carousel-item w-70 h-45" style={gradientStyle8}>
-                                    <h3 className="flex m-auto justify-center">Others Content</h3>
-                                </div>
-
-                                <div className="carousel-item w-70 h-45" style={gradientStyle9}>
-                                    <h3 className="flex m-auto justify-center">Others Content</h3>
-                                </div>
-
-                                <div className="carousel-item w-70 h-45" style={gradientStyle10}>
-                                    <h3 className="flex m-auto justify-center">Others Content</h3>
-                                </div>
-                            </div>
+                        <div className="carousel-item w-70 h-45" style={gradientStyle2}>
+                            {/* Change me according the required content*/}
+                            <h3 className="flex m-auto justify-center">Rizal Birth Module</h3>
                         </div>
 
+                        <div className="carousel-item w-70 h-45" style={gradientStyle3}>
+                            {/* Change me according the required content*/}
+                            <h3 className="flex m-auto justify-center">Family Module</h3>
+                        </div>
+
+                        <div className="carousel-item w-70 h-45" style={gradientStyle4}>
+                            {/* Change me according the required content*/}
+                            <h3 className="flex m-auto justify-center">Romantic Module</h3>
+                        </div>
+
+                        <div className="carousel-item w-70 h-45" style={gradientStyle5}>
+                            {/* Change me according the required content*/}
+                            <h3 className="flex m-auto justify-center">Others Modules</h3>
+                        </div>
                     </div>
                 </div>
+
+                {/* Carousel bottom */}
+                <div className="inline h-auto w-full" id="carousel2">
+                    <div className="carousel rectangle-box h-full gap-5 absolute top-100 left-0 bot-0 right-0">
+                        <div className="carousel-item w-70 h-45" style={gradientStyle6}>
+                            {/* Change me according the required content*/}
+                            <h3 className="flex m-auto justify-center">Others Content</h3>
+                        </div>
+
+                        <div className="carousel-item w-70 h-45" style={gradientStyle7}>
+                            {/* Change me according the required content*/}
+                            <h3 className="flex m-auto justify-center">Others Content</h3>
+                        </div>
+
+                        <div className="carousel-item w-70 h-45" style={gradientStyle8}>
+                            {/* Change me according the required content*/}
+                            <h3 className="flex m-auto justify-center">Others Content</h3>
+                        </div>
+
+                        <div className="carousel-item w-70 h-45" style={gradientStyle9}>
+                            {/* Change me according the required content*/}
+                            <h3 className="flex m-auto justify-center">Others Content</h3>
+                        </div>
+
+                        <div className="carousel-item w-70 h-45" style={gradientStyle10}>
+                            {/* Change me according the required content*/}
+                            <h3 className="flex m-auto justify-center">Others Content</h3>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-
-
-
+            {/* Homepage End */}
         </>
     );
 }
