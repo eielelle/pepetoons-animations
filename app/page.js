@@ -9,17 +9,6 @@ import Legacycontent from "./legacy/legacy-content";
 import Homepage from "./homepage/homepage";
 
 export default function Home() {
-  const [isDarkMode, setIsDarkMode] = useState(true);
-
-  useEffect(() => {
-    // SETTING THE DARK AND LIGHT THEME
-    document.documentElement.classList.toggle("dark", isDarkMode);
-  }, [isDarkMode]);
-
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-  };
-
   return (
     // <div
     //   className={`flex min-h-screen ${isDarkMode ? "bg-gray-900 text-white" : "bg-white text-black"
