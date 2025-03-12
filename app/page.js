@@ -11,7 +11,7 @@ export default function Home() {
         </p> */}
 
       {/* Comment/Uncomment this, in case the Homepage won't needed */}
-      {/*<Homepage />*/}
+      <Homepage />
 
       {/* UNCOMMENT THIS IF YOU WANT TO SHOW THE DASHBOARD */}
       {/* <Dashboardnav /> */}
@@ -19,7 +19,7 @@ export default function Home() {
 
       {/* Uncomment this in case the header won't needed */}
       {/* <Header /> */}
-      <Legacycontent /> 
+      {/*<Legacycontent />*/}
     </div>
   );
 }
