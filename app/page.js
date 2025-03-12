@@ -1,5 +1,5 @@
 import Homepage from "./homepage/homepage";
-import Legacycontent from "./legacy/legacy";
+import Legacypage from "./legacy/legacy";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
 
       {/* Uncomment this in case the header won't needed */}
       {/* <Header /> */}
-      {/*<Legacycontent />*/}
+      {/*<Legacypage />*/}
     </div>
   );
 }
