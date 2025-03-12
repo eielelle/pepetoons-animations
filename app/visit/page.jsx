@@ -14,7 +14,7 @@ export default function Visit() {
           textAlign: "center",
         }}
       >
-        LEGACY & INFLUENCE
+        PLACES HE VISITED
       </h6>
 
       <div className="h-screen bg-red-400 flex justify-center items-end">
@@ -38,10 +38,6 @@ export default function Visit() {
         <button className="btn btn-xl sm:btn-sm md:btn-md lg:btn-lg absolute mb-10">
           Asia
         </button>
-      </div>
-
-      <div>
-        <h1>Places He Visited</h1>
       </div>
     </main>
   );
