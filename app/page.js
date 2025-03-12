@@ -1,25 +1,24 @@
-import Image from "next/image";
-import Dashboardnav from "./dashboard/dashboard-navbar";
-import Dashboardcontent from "./dashboard/dashboard-content";
-import Legacycontent from "./legacy/legacy-content";
-import FModule from "./FModuleV2/FModule";
-
+import Homepage from "./homepage/homepage";
 
 export default function Home() {
   return (
-    // <div>
-    //   {/*UNCOMMENT THIS IF YOU WANT TO SHOW THE DASHBOARD*/}
-    //   {/*<Dashboardnav*/}
-    //   {/*<Dashboardcontent/>*/}
-    // </div>
+    // I remove the padding to make the homepage content full height/width
+    <div className="flex-1">
+      {/*<h1 className="text-2xl font-bold mb-4">Welcome to PepeToons</h1>
+        <p className="mb-4">
+          Select an option from the sidebar to get started.
+        </p> */}
 
-    //Uncomment this in case the header won't needed
-    <>
+      {/* Comment/Uncomment this, in case the Homepage won't needed */}
+      <Homepage />
+
+      {/* UNCOMMENT THIS IF YOU WANT TO SHOW THE DASHBOARD */}
+      {/* <Dashboardnav /> */}
+      {/* <Dashboardcontent /> */}
+
+      {/* Uncomment this in case the header won't needed */}
       {/* <Header /> */}
-      {/* <Legacycontent /> */}
-      <FModule/>
-
-
-    </>
+      {/*<Legacypage />*/}
+    </div>
   );
 }
