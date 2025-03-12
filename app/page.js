@@ -1,4 +1,5 @@
 import Homepage from "./homepage/homepage";
+import Arrest from "./arrest/arrest";
 
 export default function Home() {
   return (
@@ -10,7 +11,9 @@ export default function Home() {
         </p> */}
 
       {/* Comment/Uncomment this, in case the Homepage won't needed */}
-      <Homepage />
+      {/* <Homepage /> */}
+      <Arrest />
+
 
       {/* UNCOMMENT THIS IF YOU WANT TO SHOW THE DASHBOARD */}
       {/* <Dashboardnav /> */}
