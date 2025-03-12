@@ -22,7 +22,7 @@ export default function SidebarLayout({ children }) {
       }`}
     >
       <Sidebar toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
-      <div className="flex-1">{children}</div>
+      <div className="flex-1 max-h-screen overflow-y-scroll">{children}</div>
     </div>
   );
 }
