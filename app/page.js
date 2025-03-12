@@ -1,5 +1,4 @@
 import Homepage from "./homepage/homepage";
-import Legacypage from "./legacy/legacy";
 
 export default function Home() {
   return (
