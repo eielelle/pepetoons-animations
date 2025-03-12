@@ -8,6 +8,7 @@ const config = {
           fontFamily: {
             'protest': ["Protest Revolution", 'sans-serif'],
             'anton': ['Anton', 'sans-serif'],
+            'montserrat': ['Montserrat', 'sans-serif']
           },
         },
       },
