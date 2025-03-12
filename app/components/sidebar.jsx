@@ -97,6 +97,7 @@ const Sidebar = ({ isDarkMode, toggleDarkMode }) => {
           {isDarkMode ? "Light Mode" : "Dark Mode"}
         </button>
       </div>
+
     </div>
   );
 };
