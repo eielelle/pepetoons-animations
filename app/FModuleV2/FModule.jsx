@@ -81,7 +81,47 @@ const FamilySection = () => {
           </div>
 
           {/* Icon 8: Maria */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-9/16">
+          <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bottom-4/9">
+            <FontAwesomeIcon
+              icon={faExclamationCircle}
+              className="text-white-500 w-8 h-8"
+            />
+          </div>
+
+          {/* Icon 9: Jose */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bottom-11/30">
+            <FontAwesomeIcon
+              icon={faExclamationCircle}
+              className="text-white-500 w-8 h-8"
+            />
+          </div>
+
+          {/* Icon 10: Concepcion */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bottom-11/38">
+            <FontAwesomeIcon
+              icon={faExclamationCircle}
+              className="text-white-500 w-8 h-8"
+            />
+          </div>
+
+          {/* Icon 11: Josefa */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bottom-11/52">
+            <FontAwesomeIcon
+              icon={faExclamationCircle}
+              className="text-white-500 w-8 h-8"
+            />
+          </div>
+
+          {/* Icon 12: Trinidad */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bottom-11/82">
+            <FontAwesomeIcon
+              icon={faExclamationCircle}
+              className="text-white-500 w-8 h-8"
+            />
+          </div>
+
+          {/* Icon 13: Soledad */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 bottom-11/190">
             <FontAwesomeIcon
               icon={faExclamationCircle}
               className="text-white-500 w-8 h-8"
