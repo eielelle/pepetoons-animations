@@ -1,10 +1,11 @@
 import Homepage from "./homepage/homepage";
+import Legacypage from "./legacy/legacy";
 
 export default function Home() {
   return (
     // I remove the padding to make the homepage content full height/width
     <div className="flex-1">
-      {/* <h1 className="text-2xl font-bold mb-4">Welcome to PepeToons</h1>
+      {/*<h1 className="text-2xl font-bold mb-4">Welcome to PepeToons</h1>
         <p className="mb-4">
           Select an option from the sidebar to get started.
         </p> */}
@@ -18,7 +19,7 @@ export default function Home() {
 
       {/* Uncomment this in case the header won't needed */}
       {/* <Header /> */}
-      {/* <Legacycontent /> */}
+      {/*<Legacypage />*/}
     </div>
   );
 }
