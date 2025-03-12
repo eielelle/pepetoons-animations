@@ -1,214 +1,355 @@
-import TimelineItem from "../components/TimelineItem";
-import bg from "../../assets/images/rizal-education-bg.png";
+import Image from "next/image";
+import teodoraImg from "../../assets/educ/teodora.png";
+import ateneoImg from "../../assets/educ/ateneo.png";
+import ustImg from "../../assets/educ/ust.png";
+import madridImg from "../../assets/educ/madrid.png";
+import doctorImg from "../../assets/educ/doctor.png";
+import parisImg from "../../assets/educ/paris.png";
 
 export default function Education() {
   return (
-    <main
-      className="text-black h-screen p-6 flex flex-col justify-center items-center"
-      style={{
-        backgroundImage: `url(${bg.src})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        boxShadow: "inset 0 0 0 2000px rgba(0, 0, 0, 0.5)",
-      }}
-    >
-      <h1 className="text-8xl font-black text-center text-white">Education</h1>
-      <div className="w-full overflow-x-scroll">
-        <ul className="timeline timeline-vertical lg:timeline-horizontal">
-          <TimelineItem caption={"Beginning"}>
-            <div>
-              Rizal's mother, Doña Teodora was his first teacher. Doña Teodora
-              was patient, conscientious, and understanding. She also discovered
-              that Rizal had a talent for poetry, and encouraged him to write
-              poems.
-            </div>
-            <br />
-            <ul>
-              <p>Private Tutors:</p>
-              <li>Maestro Celestino</li>
-              <li>Maestro Lucas</li>
-              <li>Leon Monroy</li>
-            </ul>
-          </TimelineItem>
+    <main className="relative">
+      <header className="fixed top-0 p-5 bg-[#101230] w-full border-b-2 border-white z-20">
+        <h1 className="text-4xl font-black">Education</h1>
+      </header>
 
-          <TimelineItem caption={"June 1869"}>
-            <h1 className="text-lg font-black">Biñan</h1>
-            <div>
-              Rizal's mother, Doña Teodora was his first teacher. Doña Teodora
-              was patient, conscientious, and understanding. She also discovered
-              that Rizal had a talent for poetry, and encouraged him to write
-              poems.
-            </div>
-          </TimelineItem>
+      <section className="grid grid-cols-3 gap-8 mt-24 p-5">
+        <div>
+          <h2 className="text-blue-400 text-xl font-bold">
+            Early Education of Jose Rizal (1869 - 1877)
+          </h2>
+          <div className="divider before:bg-white before:h-1 after:h-1 after:bg-white"></div>
+          <p>Rizal's mother, Doña Teodora was his first teacher.</p>
+          <div className="divider before:bg-white before:h-0.5 after:h-0.5 after:bg-white"></div>
+          <p>Doña Teodora was patient, conscientious, and understanding.</p>
+          <div className="divider before:bg-white before:h-0.5 after:h-0.5 after:bg-white"></div>
+          <p>
+            She also discovered that Rizal had a talent for poetry, and
+            encouraged him to write poems.
+          </p>
+        </div>
 
-          <TimelineItem caption={"1872"}>
-            <h1 className="text-lg font-black">Ateneo</h1>
-            <div>
-              Rizal entered Ateneo, where he joined a class consisting of
-              Spaniards, mestizos, and Filipinos. Initially, he was considered
-              inferior and placed at the bottom of the class. However, by the
-              end of the month, he rose to the top, earning the title of emperor
-              and receiving a religious picture as a prize.
-            </div>
-          </TimelineItem>
+        <div className="px-4 border-x-4 border-white">
+          <h2 className="text-blue-400 text-xl font-bold mb-4">
+            Who was Rizals first teacher?
+          </h2>
+          <p>
+            Jose Rizal's first teacher was his mother, who taught him to read,
+            pray, and write poetry. He later learned Spanish and Latin from
+            private tutors before attending a school in Biñan. At 11, he
+            enrolled in the Ateneo Municipal de Manila.
+          </p>
+          <div className="divider before:bg-white before:h-1 after:h-1 after:bg-white"></div>
+          <h2 className="text-blue-400 text-xl font-bold mb-4">
+            Priavate Tutors of Jose Rizal
+          </h2>
+          <p>
+            José Rizal's early education was guided by private tutors, including
+            Maestro Celestino and Maestro Lucas, who taught him basic subjects,
+            and Leon Monroy, a Spanish tutor who helped him master the language,
+            crucial for his intellectual and literary work. These tutors laid
+            the foundation for his academic success.
+          </p>
+        </div>
 
-          <TimelineItem caption={"March 1877"}>
-            <h1 className="text-lg font-black">Ateneo</h1>
-            <div>
-              Rizal graduated with the degree of Bachelor of Arts, attaining
-              sobresaliente (excellent) and receiving five medals.
-            </div>
-          </TimelineItem>
+        <div className="flex flex-col items-center gap-4">
+          <div className="bg-[linear-gradient(to_bottom,#F59D9D,#F1B67E,#E7D151,#747626)] p-4">
+            <Image src={teodoraImg} alt="teodora" />
+          </div>
+          <h2 className="text-blue-400 text-xl font-bold">
+            Teodora Alonso Realonda
+          </h2>
+        </div>
 
-          <TimelineItem top>
-            <h1 className="text-lg font-black">
-              Medical Studies in University in Sto. Thomas
-            </h1>
-          </TimelineItem>
+        <div className="divider before:bg-white before:h-1 after:h-1 after:bg-white col-span-3"></div>
 
-          <TimelineItem caption={"1877 - 1882"}>
-            <div>
-              Rizal continued his education at the University of Santo Tomas
-              (UST), initially taking up Philosophy and Letters before shifting
-              to a medical course. He made this decision to become a physician
-              and treat his mother's failing eyesight. Fr. Pablo Ramon, the
-              Father Rector of Ateneo, whom he consulted, recommended that he
-              pursue medicine. During his studies, Rizal took courses in
-              Cosmology, Metaphysics, Theodicy, and the History of Philosophy.
-              Despite UST being under the Dominicans, the rivals of the Jesuits
-              who founded Ateneo, he remained loyal to his alma mater.
-            </div>
-          </TimelineItem>
+        <div>
+          <h2 className="text-blue-400 text-xl font-bold mb-4">
+            Ateneo Municipal de Manila (1877-1882)
+          </h2>
+          <h3 className="text-lg font-bold mb-4">1877: A New Beginning</h3>
+          <p>
+            In June 1877, José Rizal enrolled in the Ateneo Municipal de Manila,
+            initially studying Law to fulfill his family's wishes, before
+            switching to Philosophy and Letters due to his passion for
+            literature and history.
+          </p>
+        </div>
 
-          <TimelineItem caption={"Pre-Med Course"}>
-            <div>
-              Out of the 28 young men enrolled in Ampliación, only four,
-              including Rizal, were granted the privilege of taking both the
-              preparatory course and the first year of medicine simultaneously.
-              Rizal also completed four years of practical medical training at
-              the Hospital de San Juan de Dios in Intramuros. During his final
-              year at the university, he achieved a global grade of Notable
-              (Very Good) in all his subjects. He ranked second in a reduced
-              class of seven students who successfully passed the medicine
-              course. Afterward, Rizal decided to continue his studies in Spain.
-            </div>
-          </TimelineItem>
+        <div className="px-4 border-x-4 border-white">
+          <Image className="w-full" src={ateneoImg} alt="ateneo" />
+        </div>
 
-          <TimelineItem top>
-            <h1 className="text-lg font-black">Academic Journey in Spain</h1>
-          </TimelineItem>
+        <div>
+          <ul className="list">
+            <li>
+              <h2 className="text-blue-400 text-xl font-bold mb-4 pl-4">
+                Rizal's Life at Ateneo
+              </h2>
+            </li>
+            <li className="list-row">
+              Ateneo was run by the Jesuits, known for their rigorous academic
+              training.
+            </li>
+            <li className="list-row">
+              Rizal was one of the few "internos" (boarding students), granting
+              him better access to resources.
+            </li>
+            <li className="list-row">
+              His professors recognized his intelligence and diligence,
+              encouraging his literary talents.
+            </li>
+          </ul>
+        </div>
 
-          <TimelineItem caption={"May 1882"}>
-            <div>
-              Rizal's departure for Spain was kept secret from Spanish
-              authorities, friars, and even his own parents—especially his
-              mother, who would not have allowed him to leave. To avoid
-              detection, he traveled under the name Jose Mercado.
-            </div>
+        <div className="divider before:bg-white before:h-1 after:h-1 after:bg-white col-span-3"></div>
 
-            <div>
-              On May 3, 1882, he boarded the Salvadora bound for Singapore,
-              where he was the only Filipino passenger. Upon reaching Spain, he
-              enrolled at the Universidad Central de Madrid on November 3, 1882,
-              taking up two courses: Philosophy and Letters, and Medicine.
-            </div>
-          </TimelineItem>
+        <div>
+          <h2 className="text-blue-400 text-xl font-bold mb-4">
+            University of Santo Tomas (UST)
+          </h2>
+          <h3 className="text-lg font-bold mb-4">
+            1877 - 1882 : Medical Studies at University of Sto. Tomas
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            consequat nunc vel suscipit euismod.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            consequat nunc vel suscipit euismod.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            consequat nunc vel suscipit euismod.
+          </p>
+        </div>
 
-          <TimelineItem caption={"June 1884"}>
-            <div>
-              He earned the degree of Licentiate in Medicine. The following
-              academic year, he completed and passed all subjects required for a
-              Doctor of Medicine degree. However, he was unable to submit his
-              thesis or pay the necessary fees, so he was not awarded his
-              Doctor’s Diploma.
-            </div>
-          </TimelineItem>
+        <div className="px-4 border-x-4 border-white">
+          <Image className="w-full" src={ustImg} alt="ust" />
+        </div>
 
-          <TimelineItem caption={"June 1885"}>
-            <div>
-              Despite this, Rizal excelled in Philosophy and Letters, graduating
-              with the degree of Licentiate in Philosophy and Letters on June
-              19, 1885, with a rating of excellent.
-            </div>
-          </TimelineItem>
+        <div className="text-justify">
+          <h2 className="text-blue-400 text-xl text-center font-bold mb-4">
+            Pre-Med Course
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            consequat nunc vel suscipit euismod.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            consequat nunc vel suscipit euismod.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            consequat nunc vel suscipit euismod.
+          </p>
+        </div>
 
-          <TimelineItem caption={"Opthalmology studies and travels in Europe"}>
-            <div>
-              Jose Rizal traveled to Paris and Germany to specialize in
-              ophthalmology, choosing this field to help treat his mother's
-              worsening eyesight.
-            </div>
-          </TimelineItem>
+        <div className="divider before:bg-white before:h-1 after:h-1 after:bg-white col-span-3"></div>
 
-          <TimelineItem caption={"1885"}>
-            <div>
-              At the age of 24, after completing his studies at the Universidad
-              Central de Madrid, he went to Paris to further his knowledge in
-              ophthalmology. There, he formed friendships with notable
-              individuals, including:
-            </div>
-            <br />
-            <ul>
-              <li>Máximo Viola</li>
-              <li>Señor Eusebio Corominas</li>
-              <li>Don Miguel Morayta</li>
-              <li>Dr. Louis de Weckert</li>
-            </ul>
-          </TimelineItem>
+        <div>
+          <h2 className="text-blue-400 text-xl font-bold mb-4">
+            José Rizal's Education in Spain (1882 - 1885)
+          </h2>
+          <h3 className="text-lg font-bold mb-4">A Secret Departure</h3>
+          <p>
+            José Rizal secretly traveled to Spain under the alias Jose Mercado,
+            hiding his departure from Spanish authorities, friars, and even his
+            parents, especially his disapproving mother.
+          </p>
+        </div>
 
-          <TimelineItem caption={"February 1886"}>
-            <div>
-              After gaining experience in ophthalmology, Rizal left Paris for
-              Heidelberg, Germany. He trained at the University Eye Hospital
-              under the guidance of Dr. Otto Becker, a renowned German
-              ophthalmologist.
-            </div>
-          </TimelineItem>
+        <div className="px-4 border-x-4 border-white">
+          <Image className="w-full" src={madridImg} alt="madrid" />
+        </div>
 
-          <TimelineItem caption={"April 1886"}>
-            <div>
-              Inspired by the beauty of the blooming forget-me-not flowers along
-              the Neckar River, he wrote the poem{" "}
-              <i>A Las Flores de Heidelberg</i>
-            </div>
-          </TimelineItem>
+        <div>
+          <h2 className="text-blue-400 text-xl text-center font-bold mb-4">
+            Academic Pursuits in Madrid
+          </h2>
 
-          <TimelineItem caption={"August 1886"}>
-            <div>
-              Rizal had arrived in Leipzig, where he attended lectures on
-              history and psychology at the University of Leipzig. He decided to
-              stay in Germany longer for several reasons:
-            </div>
+          <ul className="timeline timeline-vertical">
+            <li>
+              <div className="timeline-start font-semibold text-blue-400">
+                November 3, 1882
+              </div>
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="h-5 w-5"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div className="timeline-end timeline-box text-black bg-blue-400">
+                Rizal enrolled at Universidad Central de Madrid, studying
+                Philosophy and Letters and Medicine.
+              </div>
+              <hr className="bg-white" />
+            </li>
 
-            <br />
+            <li>
+              <hr className="bg-white" />
+              <div className="timeline-start font-semibold text-blue-400">
+                June 21, 1884
+              </div>
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="h-5 w-5"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div className="timeline-end timeline-box text-black bg-blue-400">
+                Earned his Licentiate in Medicine.
+              </div>
+              <hr className="bg-white" />
+            </li>
 
-            <ul>
-              <li>To advance his studies in science and languages.</li>
-              <li>To observe Germany's economic and political conditions.</li>
-              <li>To connect with prominent scientists and scholars.</li>
-              <li>To publish his novel Noli Me Tangere.</li>
-            </ul>
+            <li>
+              <hr className="bg-white" />
+              <div className="timeline-start font-semibold text-blue-400">
+                1884 - 1885
+              </div>
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="h-5 w-5"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div className="timeline-end timeline-box text-black bg-blue-400">
+                Completed Doctor of Medicine coursework but lacked a thesis and
+                fees for a diploma.
+              </div>
+              <hr className="bg-white" />
+            </li>
 
-            <br />
+            <li>
+              <hr className="bg-white" />
+              <div className="timeline-start font-semibold text-blue-400">
+                June 19, 1885
+              </div>
+              <div className="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="h-5 w-5"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div className="timeline-end timeline-box text-black bg-blue-400">
+                Graduated excellent with a Licentiate in Philosophy and Letters.
+              </div>
+            </li>
+          </ul>
+        </div>
 
-            <div>
-              Rizal earned a Licentiate in Medicine from the Universidad Central
-              de Madrid, where he also studied philosophy and literature. He
-              began writing Noli Me Tangere while in Madrid and continued his
-              education at the University of Paris.
-            </div>
-          </TimelineItem>
+        <div className="divider before:bg-white before:h-1 after:h-1 after:bg-white col-span-3"></div>
 
-          <TimelineItem caption={"1887"}>
-            <div>
-              He completed his ophthalmology specialization at the University of
-              Heidelberg. That same year, his first novel, Noli Me Tangere, was
-              published in Berlin. It was also in that year that Rizal's first
-              novel was published in Berlin.
-            </div>
-          </TimelineItem>
-        </ul>
-      </div>
+        <div>
+          <h2 className="text-blue-400 text-xl font-bold mb-4">
+            José Rizal's Ophthalmology Studies & European Travels
+          </h2>
+          <h3 className="text-lg font-bold mb-4">Studies in Paris (1885)</h3>
+          <p>
+            At the age of 24, Rizal went to Paris to enhance his knowledge in
+            ophthalmology. He trained under Dr. Louis de Weckert, a renowned
+            ophthalmologist. During this time, he also built strong friendships
+            with individuals who influenced his career and advocacy.
+          </p>
+
+          <br />
+          <h3 className="text-lg font-bold mb-4">
+            Specializing in Ophthalmology
+          </h3>
+          <p>
+            Rizal specialized in ophthalmology to cure his mother's eyesight,
+            furthering his studies in Paris and Germany after Madrid.
+          </p>
+        </div>
+
+        <div className="px-4 border-x-4 border-white">
+          <Image className="w-full" src={doctorImg} alt="doctor" />
+          <Image className="w-full" src={parisImg} alt="paris" />
+        </div>
+
+        <div>
+          <ul className="list">
+            <li>
+              <h2 className="text-blue-400 text-xl font-bold mb-4 pl-4">
+                Why Rizal Stayed Longer in Germany?
+              </h2>
+            </li>
+            <li className="list-row">
+              To further his studies in science and languages.
+            </li>
+            <li className="list-row">
+              To observe Germany's economic and political conditions.
+            </li>
+            <li className="list-row">
+              To associate with renowned scientists and scholars.
+            </li>
+            <li className="list-row">
+              To publish his novel "Noli Me Tangere".
+            </li>
+          </ul>
+
+          <br />
+
+          <ul className="list">
+            <li>
+              <h2 className="text-blue-400 text-xl font-bold mb-4 pl-4">
+                Legacy of His European Studies
+              </h2>
+            </li>
+            <li className="list-row">
+              Rizal earned a Licentiate in Medicine at Universidad Central de
+              Madrid.
+            </li>
+            <li className="list-row">
+              In 1887, he completed his eye specialization at the University of
+              Heidelberg.
+            </li>
+            <li className="list-row">
+              That same year, he published his first novel, "Noli Me Tangere,"
+              in Berlin.
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
   );
 }
