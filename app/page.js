@@ -1,5 +1,4 @@
 import Homepage from "./homepage/homepage";
-import Arrest from "./arrest/arrest";
 
 export default function Home() {
   return (
@@ -11,10 +10,7 @@ export default function Home() {
         </p> */}
 
       {/* Comment/Uncomment this, in case the Homepage won't needed */}
-      {/* <Homepage /> */}
-
-      {/* Comment/Uncomment this, in case the Arrest module won't needed */}
-      <Arrest />
+      <Homepage />
 
       {/* UNCOMMENT THIS IF YOU WANT TO SHOW THE DASHBOARD */}
       {/* <Dashboardnav /> */}
