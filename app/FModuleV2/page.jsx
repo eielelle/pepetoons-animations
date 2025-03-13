@@ -18,7 +18,7 @@ import Soledad from "../../assets/Resources/Soledad_Rizal.png";
 
 const FamilySection = () => {
   return (
-    <div className="bg-[#0F1020] min-h-screen text-white p-8 font-sans">
+    <div className="min-h-screen p-8 font-sans">
       <h1 className="text-center text-3xl font-bold mb-8">Family</h1>
 
       <div className="grid grid-cols-2 gap-6 items-start relative">
@@ -317,7 +317,9 @@ const FamilySection = () => {
 
         {/* Left Side - Jose Rizal with name*/}
         <div className="pr-4 relative h-auto">
-          <h2 className="text-right text-lg font-bold mb-2">Jose Rizal</h2>
+          <h2 className="text-right text-lg font-bold mb-2">
+            Jose Rizal (1861-1896)
+          </h2>
           <Image
             src={Jose}
             alt="Jose"
@@ -330,12 +332,13 @@ const FamilySection = () => {
         {/* Right Side - Jose Rizal  description*/}
         <div className="pl-4 relative">
           <p className="text-sm leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            lacinia, purus non bibendum malesuada, orci tortor elementum erat.
-          </p>
-          <p className="text-sm leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            lacinia, purus non bibendum malesuada, orci tortor elementum erat.
+            José Rizal was the seventh of eleven children born to Doña Teodora
+            Alonso Realonda and Don Francisco Mercado Rizal. Growing up in a
+            well-educated and affluent family in Calamba, Laguna, he displayed
+            exceptional intelligence and a deep love for learning from an early
+            age. His parents instilled in him strong values of education,
+            patriotism, and perseverance, which later shaped his role as a
+            national hero of the Philippines.
           </p>
         </div>
 
