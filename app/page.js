@@ -12,8 +12,9 @@ export default function Home() {
 
       {/* Comment/Uncomment this, in case the Homepage won't needed */}
       {/* <Homepage /> */}
-      <Arrest />
 
+      {/* Comment/Uncomment this, in case the Arrest module won't needed */}
+      <Arrest />
 
       {/* UNCOMMENT THIS IF YOU WANT TO SHOW THE DASHBOARD */}
       {/* <Dashboardnav /> */}
