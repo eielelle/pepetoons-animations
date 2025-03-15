@@ -44,71 +44,134 @@ export default function Homepage() {
 
     return (
         <>
-            {/* Homepage Start */}
-            <div className="drawer-content flex flex-col content-center h-screen gap-3 bg-[#111230] w-full overflow-y-auto relative">
+            {/*Start of Homepage*/}
+            <div className="drawer-content flex flex-col content-center h-screen w-full overflow-y-auto relative">
 
-                {/* Carousel top */}
+                {/* Start of Carousel top */}
                 <div className="inline h-auto w-full m-auto">
-                    <div className="carousel rectangle-box absolute top-22 left-0 right-0 h-full gap-5">
-                        <div className="carousel-item w-70 h-45" style={gradientStyle1}>
+                    <div className="carousel rectangle-box absolute top-22 left-0 right-0 bot-0 h-full gap-5">
+                        <div className="carousel-item w-70 h-50 transition delay-20 duration-210 ease-in-out hover:scale-105 cursor-pointer" style={gradientStyle1}>
                             {/* Change me according the required content*/}
                             <h3 className="flex m-auto justify-center">Legacy Module</h3>
                         </div>
 
-                        <div className="carousel-item w-70 h-45" style={gradientStyle2}>
+                        <div className="carousel-item w-70 h-50 transition delay-20 duration-210 ease-in-out hover:scale-105 cursor-pointer" style={gradientStyle2}>
                             {/* Change me according the required content*/}
                             <h3 className="flex m-auto justify-center">Rizal Birth Module</h3>
                         </div>
 
-                        <div className="carousel-item w-70 h-45" style={gradientStyle3}>
+                        <div className="carousel-item w-70 h-50 transition delay-20 duration-210 ease-in-out hover:scale-105 cursor-pointer" style={gradientStyle3}>
                             {/* Change me according the required content*/}
                             <h3 className="flex m-auto justify-center">Family Module</h3>
                         </div>
 
-                        <div className="carousel-item w-70 h-45" style={gradientStyle4}>
+                        <div className="carousel-item w-70 h-50 transition delay-20 duration-210 ease-in-out hover:scale-105 cursor-pointer" style={gradientStyle4}>
                             {/* Change me according the required content*/}
                             <h3 className="flex m-auto justify-center">Romantic Module</h3>
                         </div>
 
-                        <div className="carousel-item w-70 h-45" style={gradientStyle5}>
+                        <div className="carousel-item w-70 h-50 transition delay-20 duration-210 ease-in-out hover:scale-105 cursor-pointer" style={gradientStyle5}>
                             {/* Change me according the required content*/}
                             <h3 className="flex m-auto justify-center">Others Modules</h3>
                         </div>
                     </div>
                 </div>
+                {/* End of Carousel top */}
 
-                {/* Carousel bottom */}
-                <div className="inline h-auto w-full" id="carousel2">
-                    <div className="carousel rectangle-box h-full gap-5 absolute top-100 left-0 bot-0 right-0">
-                        <div className="carousel-item w-70 h-45" style={gradientStyle6}>
-                            {/* Change me according the required content*/}
-                            <h3 className="flex m-auto justify-center">Others Content</h3>
+                {/* Start of Carousel bottom */}
+                <div className="inline-block h-auto w-full" id="carousel2">
+                    <div className="carousel inline carousel-vertical rectangle-box h-full gap-5 w-auto absolute top-100 left-10 bot-0 right-10">
+
+                        {/* Carousel inner 1 */}
+                        <div className="carousel-item h-full w-full gap-5">
+                            <div className="carousel-item w-55 h-60 transition delay-20 duration-210 ease-in-out hover:scale-105 hover:-translate-y-0 cursor-pointer" style={gradientStyle10}>
+                                {/* Change me according the required content*/}
+                                <h3 className="flex m-auto justify-center">Others Content</h3>
+                            </div>
+
+                            <div className="carousel-item w-55 h-60 transition delay-20 duration-210 ease-in-out hover:scale-105 hover:-translate-y-0 cursor-pointer" style={gradientStyle7}>
+                                {/* Change me according the required content*/}
+                                <h3 className="flex m-auto justify-center">Others Content</h3>
+                            </div>
+
+                            <div className="carousel-item w-55 h-60 transition delay-20 duration-210 ease-in-out hover:scale-105 hover:-translate-y-0 cursor-pointer" style={gradientStyle8}>
+                                {/* Change me according the required content*/}
+                                <h3 className="flex m-auto justify-center">Others Content</h3>
+                            </div>
+
+                            <div className="carousel-item w-55 h-60 transition delay-20 duration-210 ease-in-out hover:scale-105 hover:-translate-y-0 cursor-pointer" style={gradientStyle9}>
+                                {/* Change me according the required content*/}
+                                <h3 className="flex m-auto justify-center">Others Content</h3>
+                            </div>
+
+                            <div className="carousel-item w-55 h-60 transition delay-20 duration-210 ease-in-out hover:scale-105 hover:-translate-y-0 cursor-pointer" style={gradientStyle10}>
+                                {/* Change me according the required content*/}
+                                <h3 className="flex m-auto justify-center">Others Content</h3>
+                            </div>
                         </div>
 
-                        <div className="carousel-item w-70 h-45" style={gradientStyle7}>
-                            {/* Change me according the required content*/}
-                            <h3 className="flex m-auto justify-center">Others Content</h3>
+                        {/* Carousel inner 2  */}
+                        <div className="carousel-item h-full w-full gap-5">
+                            <div className="carousel-item w-55 h-60 transition delay-20 duration-210 ease-in-out hover:scale-105 hover:-translate-y-0 cursor-pointer" style={gradientStyle6}>
+                                {/* Change me according the required content*/}
+                                <h3 className="flex m-auto justify-center">Others Content</h3>
+                            </div>
+
+                            <div className="carousel-item w-55 h-60 transition delay-20 duration-210 ease-in-out hover:scale-105 hover:-translate-y-0 cursor-pointer" style={gradientStyle7}>
+                                {/* Change me according the required content*/}
+                                <h3 className="flex m-auto justify-center">Others Content</h3>
+                            </div>
+
+                            <div className="carousel-item w-55 h-60 transition delay-20 duration-210 ease-in-out hover:scale-105 hover:-translate-y-0 cursor-pointer" style={gradientStyle8}>
+                                {/* Change me according the required content*/}
+                                <h3 className="flex m-auto justify-center">Others Content</h3>
+                            </div>
+
+                            <div className="carousel-item w-55 h-60 transition delay-20 duration-210 ease-in-out hover:scale-105 hover:-translate-y-0 cursor-pointer" style={gradientStyle9}>
+                                {/* Change me according the required content*/}
+                                <h3 className="flex m-auto justify-center">Others Content</h3>
+                            </div>
+
+                            <div className="carousel-item w-55 h-60 transition delay-20 duration-210 ease-in-out hover:scale-105 hover:-translate-y-0 cursor-pointer" style={gradientStyle10}>
+                                {/* Change me according the required content*/}
+                                <h3 className="flex m-auto justify-center">Others Content</h3>
+                            </div>
                         </div>
 
-                        <div className="carousel-item w-70 h-45" style={gradientStyle8}>
-                            {/* Change me according the required content*/}
-                            <h3 className="flex m-auto justify-center">Others Content</h3>
+                        {/* Carousel inner 3  */}
+                        <div className="carousel-item h-full w-full gap-5">
+                            <div className="carousel-item w-55 h-60 transition delay-20 duration-210 ease-in-out hover:scale-105 hover:-translate-y-0 cursor-pointer" style={gradientStyle6}>
+                                {/* Change me according the required content*/}
+                                <h3 className="flex m-auto justify-center">Others Content</h3>
+                            </div>
+
+                            <div className="carousel-item w-55 h-60 transition delay-20 duration-210 ease-in-out hover:scale-105 hover:-translate-y-0 cursor-pointer" style={gradientStyle7}>
+                                {/* Change me according the required content*/}
+                                <h3 className="flex m-auto justify-center">Others Content</h3>
+                            </div>
+
+                            <div className="carousel-item w-55 h-60 transition delay-20 duration-210 ease-in-out hover:scale-105 hover:-translate-y-0 cursor-pointer" style={gradientStyle8}>
+                                {/* Change me according the required content*/}
+                                <h3 className="flex m-auto justify-center">Others Content</h3>
+                            </div>
+
+                            <div className="carousel-item w-55 h-60 transition delay-20 duration-210 ease-in-out hover:scale-105 hover:-translate-y-0 cursor-pointer" style={gradientStyle9}>
+                                {/* Change me according the required content*/}
+                                <h3 className="flex m-auto justify-center">Others Content</h3>
+                            </div>
+
+                            <div className="carousel-item w-55 h-60 transition delay-20 duration-210 ease-in-out hover:scale-105 hover:-translate-y-0 cursor-pointer" style={gradientStyle10}>
+                                {/* Change me according the required content*/}
+                                <h3 className="flex m-auto justify-center">Others Content</h3>
+                            </div>
                         </div>
 
-                        <div className="carousel-item w-70 h-45" style={gradientStyle9}>
-                            {/* Change me according the required content*/}
-                            <h3 className="flex m-auto justify-center">Others Content</h3>
-                        </div>
-
-                        <div className="carousel-item w-70 h-45" style={gradientStyle10}>
-                            {/* Change me according the required content*/}
-                            <h3 className="flex m-auto justify-center">Others Content</h3>
-                        </div>
                     </div>
                 </div>
+                {/* End of Carousel Bottom */}
 
             </div>
-            {/* Homepage End */}
+            {/* End of Homepage */}
         </>
     );
 }
