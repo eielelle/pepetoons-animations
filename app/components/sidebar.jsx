@@ -22,7 +22,7 @@ const Sidebar = ({ isDarkMode, toggleDarkMode }) => {
       id: "home",
       label: "Home",
       iconPath: HomeIcon,
-      urlPath: "/"
+      urlPath: "home"
     },
     {
       id: "explore",
