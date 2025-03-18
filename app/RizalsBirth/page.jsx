@@ -7,7 +7,7 @@ import Pic1 from "../../assets/Resources/Picture1.png";
 const items = [
   {
     id: 1,
-    Image: Pic1,
+    image: Pic1,
     text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
            Vivamus lacinia, purus non bibendum malesuada, orci tortor elementum erat.
            Bibendum Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
