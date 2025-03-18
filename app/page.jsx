@@ -24,10 +24,10 @@ export default function Home() {
             DISCOVER THE LIFE, IDEALS, AND LEGACY OF DR. JOSE RIZAL ...
           </h1>
           <div className="flex justify-center items-center gap-4 flex-wrap">
-            <Link className="btn btn-white btn-outline md:btn-lg grow-0" href={""}>
+            <Link className="btn btn-white btn-outline md:btn-lg grow-0" href={"/museum-preview"}>
               Visit Museum
             </Link>
-            <Link className="btn btn-primary md:btn-lg grow-0" href={""}>
+            <Link className="btn btn-primary md:btn-lg grow-0" href={"/home"}>
               Explore Site
             </Link>
           </div>
