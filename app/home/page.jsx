@@ -23,13 +23,13 @@ export default function Homepage() {
 
         <div className="w-full overflow-x-scroll my-4">
           <div className="carousel carousel-center gap-4">
-            <CarouselSlide href={""} src={arrestImg} alt={"arrest"}>Arrest</CarouselSlide>
-            <CarouselSlide href={""} src={educationImg} alt={"education"}>Education</CarouselSlide>
-            <CarouselSlide href={""} src={monumentImg} alt={"monuments-and-his-exile"}>Monuments and his Exile</CarouselSlide>
-            <CarouselSlide href={""} src={familyImg} alt={"family"}>Family</CarouselSlide>
-            <CarouselSlide href={""} src={legacyImg} alt={"legacy"}>Legacy</CarouselSlide>
-            <CarouselSlide href={""} src={romanticLifeImg} alt={"romantic-life"}>Romantic Life</CarouselSlide>
-            <CarouselSlide href={""} src={travelsImg} alt={"travels"}>Travels</CarouselSlide>
+            <CarouselSlide href={"/arrest"} src={arrestImg} alt={"arrest"}>Arrest</CarouselSlide>
+            <CarouselSlide href={"/education"} src={educationImg} alt={"education"}>Education</CarouselSlide>
+            <CarouselSlide href={"/exile"} src={monumentImg} alt={"monuments-and-his-exile"}>Monuments and his Exile</CarouselSlide>
+            <CarouselSlide href={"/family"} src={familyImg} alt={"family"}>Family</CarouselSlide>
+            <CarouselSlide href={"/legacy"} src={legacyImg} alt={"legacy"}>Legacy</CarouselSlide>
+            <CarouselSlide href={"/romantic-life"} src={romanticLifeImg} alt={"romantic-life"}>Romantic Life</CarouselSlide>
+            <CarouselSlide href={"/travels"} src={travelsImg} alt={"travels"}>Travels</CarouselSlide>
           </div>
         </div>
 
