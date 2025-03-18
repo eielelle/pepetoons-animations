@@ -12,27 +12,27 @@ export default function Home() {
       />
 
       {/* overlay */}
-      <div className="absolute top-0 left-0 h-full w-full bg-black opacity-60"></div>
+      <div className="fixed top-0 left-0 h-full w-full bg-black opacity-60"></div>
 
       {/* content */}
-      <div className="absolute top-0 left-0 h-full w-full flex flex-col justify-center items-center">
+      <div className="fixed top-0 left-0 h-full w-full flex flex-col justify-center items-center">
         <div className="flex flex-col w-1/2 text-center gap-4 mt-auto">
-          <h1 className="text-4xl">
+          <h1 className="text-lg md:text-4xl">
             PREPARE TO EMBARK ON A JOURNEY THROUGH HISTORY
           </h1>
-          <h1 className="text-5xl font-bold bg-white text-black p-4 inline-block">
+          <h1 className="text-xl md:text-5xl font-bold bg-white text-black p-4 inline-block">
             DISCOVER THE LIFE, IDEALS, AND LEGACY OF DR. JOSE RIZAL ...
           </h1>
-          <div className="flex justify-center items-center gap-4">
-            <Link className="btn btn-white btn-outline btn-lg grow-0" href={""}>
+          <div className="flex justify-center items-center gap-4 flex-wrap">
+            <Link className="btn btn-white btn-outline md:btn-lg grow-0" href={""}>
               Visit Museum
             </Link>
-            <Link className="btn btn-primary btn-lg grow-0" href={""}>
+            <Link className="btn btn-primary md:btn-lg grow-0" href={""}>
               Explore Site
             </Link>
           </div>
         </div>
-        <span className="mt-auto p-4 text-sm">
+        <span className="mt-auto p-4 text-sm text-center">
           <Link
             className="underline"
             href={"https://www.youtube.com/watch?v=l46P8R-Vt-g"}
