@@ -1,12 +1,14 @@
-"use client";
+'use client';
 
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import dynamic from "next/dynamic";
+
+const MapLeaflet = dynamic(() => import("./Map"), { ssr:false });
+
 import "leaflet/dist/leaflet.css";
 import { Map, MapPin, ArrowLeftCircle, ArrowRightCircle } from "react-feather";
 import LocationCarousel from "./LocationCarousel";
 
 export default function Exile() {
-  const icon = L.icon({ iconUrl: "/marker-icon.png" });
 
   return (
     <main className="w-full h-full p-4 grid grid-cols-3 gap-4">
@@ -39,24 +41,7 @@ export default function Exile() {
         </div>
       </div>
       <div className="col-span-2 rounded-2xl flex-1 h-full overflow-hidden">
-        <MapContainer
-          className="h-full"
-          center={[14.5826, 120.9787]}
-          zoom={100}
-          zoomControl={false}
-          scrollWheelZoom={false}
-          dragging={false}
-        >
-          <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-          <Marker position={[14.5826, 120.9787]} icon={icon}>
-            <Popup>
-              A pretty CSS3 popup. <br /> Easily customizable.
-            </Popup>
-          </Marker>
-        </MapContainer>
+        <MapLeaflet />
       </div>
     </main>
   );
