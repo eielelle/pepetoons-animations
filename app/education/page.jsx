@@ -112,18 +112,9 @@ export default function Education() {
             1877 - 1882 : Medical Studies at University of Sto. Tomas
           </h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            consequat nunc vel suscipit euismod.
-          </p>
-          <br />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            consequat nunc vel suscipit euismod.
-          </p>
-          <br />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            consequat nunc vel suscipit euismod.
+            Jose Rizal first studied philosophy and letters at the University of
+            Santo Tomas (UST) then moved to the Faculty of Medicine and Surgery
+            to study medicine in 1877
           </p>
         </div>
 
@@ -136,18 +127,19 @@ export default function Education() {
             Pre-Med Course
           </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            consequat nunc vel suscipit euismod.
+            Jose Rizal changed his major from pre-law to medicine at the
+            University of Santo Tomas (UST) in order to pursue a career in
+            medicine and focus in opthalmology.
           </p>
           <br />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            consequat nunc vel suscipit euismod.
+            the reason why rizal pursue medicine because To help his mother who
+            was blinded by cataracts
           </p>
           <br />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            consequat nunc vel suscipit euismod.
+            Rizal was dissatisfied while his studying because of the
+            discrimination by the Dominicans.
           </p>
         </div>
 
