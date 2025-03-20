@@ -8,6 +8,10 @@ import Food from "../../assets/Resources/Rizal breakfast or merienda.png";
 import Church from "../../assets/Resources/church.png";
 import Antipolo from "../../assets/Resources/Image of the Virgin of Antipolo.png";
 import Baptist from "../../assets/Resources/baptist.png";
+import Orchard from "../../assets/Resources/orchardinCalamba.png";
+import Clothe from "../../assets/Resources/Rizal's childhood clothes.png";
+import Book from "../../assets/Resources/Book.png";
+import Pañuelito from "../../assets/Resources/pañuelito.png";
 
 const items = [
   {
@@ -18,7 +22,9 @@ const items = [
     He was a man of the land, his hands familiar with the soil, his mind versed in the wisdom of books. 
     His days were structured, a rhythm of work and rest, punctuated by the simple pleasures of batsoy
     and salabat, a short siesta, and the lingering aroma of lojua at merienda.`,
-    textStyle: "text-justify",
+    style: "flex-col",
+    imagePosition: "self-center",
+    textStyle: "text-center",
   },
   {
     id: 2,
@@ -26,7 +32,7 @@ const items = [
     text: `His mother, Doña Teodora, was a force of nature, 
     a woman of deep faith and unyielding spirit. 
     Her devotion led her to church, even as her time drew near.`,
-    textStyle: "tracking-wide",
+    textStyle: "text-center",
   },
   {
     id: 3,
@@ -58,11 +64,46 @@ const items = [
   },
   {
     id: 6,
-    image: Calamba,
-    text: `Lorem iy7loc
-    0 0psum dolor sit amet, consectetur adipiscing elit. 
-           Vivamus lacinia, purus non bibendum malesuada, orci tortor elementum erat.
-           Bibendum Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
+    image: Orchard,
+    text: `Doña Teodora, though known for her uncompromising nature, was also a woman of thrift 
+    and intellect. She turned old clothes into new treasures, rehashed leftovers into delicious meals, 
+    and even found uses for fruit peelings. She encouraged her children to think, to question, to argue,
+    filling their minds with stories, poetry, and the wisdom of mathematics.
+    The Rizal household was a place of discipline and order. There were rules to be followed, 
+    manners to be observed, and respect to be shown. Noise was taboo, and grandparents were to be 
+    undisturbed. Yet, it was also a place of learning and faith. Prayers filled the air, the Angelus 
+    chimed at twilight, and the Bible held a place of honor. Jose, though a good child, 
+    was not without his moments of mischief. His brother Paciano recalled his "childish outbursts." 
+    But the combined influence of nine sisters, a disciplinarian mother, and a patient 
+    father shaped his character. He learned to control his passions, even when tempted by 
+    the allure of a silk camisa.`,
+    textStyle: "text-center",
+  },
+
+  {
+    id: 7,
+    image: Clothe,
+    text: `His devotion to faith was evident. He loved to pray, to assist at novenas, 
+    and to join processions. His face, serious and earnest, 
+    earned him the affectionate nickname "Hermano José.`,
+    textStyle: "text-center",
+  },
+  {
+    id: 8,
+    image: Book,
+    text: `The sisters, Narcisa, Maria, and Soledad, remembered the strict rules of ladylike behavior, 
+    the graceful walks, the modest attire, and the limited freedom. Yet, they also recalled the 
+    intellectual stimulation, the encouragement to speak up, and the quiet beauty of evenings spent 
+    watching the stars. Saturnina, the eldest, kept her embroidered pañuelito with her initials, 
+    and the family treasured Jose's prayer book, the Ancora de Salvación, and his childhood clothes.`,
+    textStyle: "text-center",
+  },
+  {
+    id: 9,
+    image: Pañuelito,
+    text: `And so, within the walls of the Rizal ancestral home, amidst the blend of discipline 
+    and love, faith and intellect, the seeds of greatness were sown. This was the heritage to which 
+    Jose Rizal grew up, a heritage that would shape him into the national hero of the Philippines.`,
     textStyle: "text-center",
   },
 ];
@@ -88,17 +129,39 @@ const Birth = () => {
           {items.map((item) => (
             <div
               key={item.id}
-              className="relative w-full bg-gray-200 shadow-lg rounded-lg p-4 flex flex-col items-center transition-transform duration-300 hover:scale-105 focus-within:scale-105"
+              className={`relative w-full bg-gray-200 shadow-lg rounded-lg p-4 flex 
+                ${
+                  item.id === 4 || item.id === 9
+                    ? "flex-row items-start"
+                    : "flex-col items-center"
+                } 
+                ${
+                  item.id === 7 || item.id === 8
+                    ? "flex-row items-start"
+                    : "flex-col items-center"
+                } 
+                transition-transform duration-300 hover:scale-105 focus-within:scale-105`}
             >
               {/* Image Header */}
               <Image
                 src={item.image}
                 alt="Thumbnials"
-                className="w-full h-full object-cover rounded-t-lg"
+                className={`w-flex h-flex object-cover rounded-lg 
+                  ${item.id === 4 ? "w-40 h-90 mr-4 float-left" : "w-60 h-60"}
+                  ${item.id === 7 ? "w-40 h-90 mr-4 float-left" : "w-60 h-60"}
+                  ${item.id === 8 ? "w-40 h-90 mr-4 float-left" : "w-60 h-60"}
+                  ${item.id === 9 ? "w-40 h-90 mr-4 float-left" : "w-60 h-60"}
+                  
+
+                  `}
               />
 
               {/* Text */}
-              <div className="p-4 w-full text-black font-bold text-sm uppercase leading-5 text-center transition-colors duration-300 hover:text-blue-600 focus:text-blue-600">
+              <div
+                className="p-4 w-full text-black font-bold text-sm uppercase leading-5 
+        transition-colors duration-300 hover:text-blue-600 focus:text-blue-600 
+        text-justify"
+              >
                 <p className="mb-2">{item.text}</p>
               </div>
             </div>
