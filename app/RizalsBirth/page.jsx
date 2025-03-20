@@ -130,6 +130,9 @@ const Birth = () => {
           showArrows={true}
           showThumbs={false}
           infiniteLoop={true}
+          autoPlay={true}
+          swipeable={true}
+          stopOnHover={true}
           centerMode={true}
           centerSlidePercentage={50} // Adjusted slide size
           emulateTouch={true}
