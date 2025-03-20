@@ -16,7 +16,7 @@ export default function Asia() {
 
   return (
     <>
-      <main className="grid grid-cols-3 grid-rows-2">
+      <main className="grid grid-cols-3 grid-rows-2 max-sm:grid-cols-1 max-[950px]:grid-cols-2 lg:grid-cols-3">
         <div className="relative h-124 bg-amber-200 flex flex-col justify-end items-center hover:shadow-lg transition-shadow">
           <h3 className="font-semibold text-4xl italic text-white relative z-20 mb-2 py-60">
             Japan

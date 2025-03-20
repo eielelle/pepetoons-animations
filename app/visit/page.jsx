@@ -10,7 +10,7 @@ export default function Visit() {
   return (
     <main className="grid grid-cols-2">
       <h6
-        className="text-5xl absolute top-0 left-1/2 transform -translate-x-1/2 text-center mt-9 pl-60"
+        className="text-5xl absolute top-0 left-1/3 transform-translate-x-1/2 text-center mt-9 mx-auto"
         style={{
           fontFamily: "'Monserat', Sans-serif",
           color: "#F0DFDF",

@@ -16,7 +16,7 @@ export default function Europe() {
         {/* Start of grid */}
         <div className="grid grid-cols-3 max-sm:grid-cols-1 max-[950px]:grid-cols-2 lg:grid-cols-3 gap-0 min-h-full">
 
-          <div className="relative grid size-full max-sm:h-100 max-[850px]:h-100">
+          <div className="relative grid size-full max-sm:h-100 max-[850px]:h-100 hover:scale-110 transition duration-300">
             <Image
               src={Madrid}
               layout="fill"
