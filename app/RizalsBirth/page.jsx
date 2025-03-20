@@ -12,11 +12,13 @@ import Orchard from "../../assets/Resources/orchardinCalamba.png";
 import Clothe from "../../assets/Resources/Rizal's childhood clothes.png";
 import Book from "../../assets/Resources/Book.png";
 import Pañuelito from "../../assets/Resources/pañuelito.png";
+import { title } from "process";
 
 const items = [
   {
     id: 1,
     image: Calamba,
+    title: "Rizal Ancestral House in Calamba",
     text: `His father, Don Francisco, a man of quiet strength and unwavering discipline, 
     began each day before the sun, his prayers a gentle hum against the morning stillness. 
     He was a man of the land, his hands familiar with the soil, his mind versed in the wisdom of books. 
@@ -28,6 +30,7 @@ const items = [
   },
   {
     id: 2,
+    title: "Depicting a 19th-Century Filipino Breakfast or Merienda",
     image: Food,
     text: `His mother, Doña Teodora, was a force of nature, 
     a woman of deep faith and unyielding spirit. 
@@ -36,6 +39,7 @@ const items = [
   },
   {
     id: 3,
+    title: "Calamba Church",
     image: Church,
     text: `It was there, amidst the hushed whispers of confession, 
     that a strange thing occurred. A baby's cry, a mournful wail, echoed through the church, 
@@ -47,6 +51,7 @@ const items = [
   },
   {
     id: 4,
+    title: "Virgin of Antipolo",
     image: Antipolo,
     text: `Three days later, on June 22nd, little Jose was baptized, 
     his godfather Don Pedro Casañas witnessing the ceremony. 
@@ -55,6 +60,7 @@ const items = [
   },
   {
     id: 5,
+    title: "Calamba Church Baptistry",
     image: Baptist,
     text: `Jose was a delicate child, "tiny, even puny," 
     needing the tender care of a yaya. Yet, even as a toddler, his mind was sharp, his eyes alert. 
@@ -64,6 +70,7 @@ const items = [
   },
   {
     id: 6,
+    title: "Orchard in Calamba",
     image: Orchard,
     text: `Doña Teodora, though known for her uncompromising nature, was also a woman of thrift 
     and intellect. She turned old clothes into new treasures, rehashed leftovers into delicious meals, 
@@ -82,6 +89,7 @@ const items = [
 
   {
     id: 7,
+    title: "Rizal`s Childhood Clothes",
     image: Clothe,
     text: `His devotion to faith was evident. He loved to pray, to assist at novenas, 
     and to join processions. His face, serious and earnest, 
@@ -90,6 +98,7 @@ const items = [
   },
   {
     id: 8,
+    title: "Ancora de Salvación",
     image: Book,
     text: `The sisters, Narcisa, Maria, and Soledad, remembered the strict rules of ladylike behavior, 
     the graceful walks, the modest attire, and the limited freedom. Yet, they also recalled the 
@@ -100,6 +109,7 @@ const items = [
   },
   {
     id: 9,
+    title: "Embroidered Pañuelito",
     image: Pañuelito,
     text: `And so, within the walls of the Rizal ancestral home, amidst the blend of discipline 
     and love, faith and intellect, the seeds of greatness were sown. This was the heritage to which 
@@ -129,41 +139,47 @@ const Birth = () => {
           {items.map((item) => (
             <div
               key={item.id}
-              className={`relative w-full bg-gray-200 shadow-lg rounded-lg p-4 flex 
-                ${
-                  item.id === 4 || item.id === 9
-                    ? "flex-row items-start"
-                    : "flex-col items-center"
-                } 
-                ${
-                  item.id === 7 || item.id === 8
-                    ? "flex-row items-start"
-                    : "flex-col items-center"
-                } 
-                transition-transform duration-300 hover:scale-105 focus-within:scale-105`}
+              className={`relative w-full bg-gray-200 shadow-lg rounded-lg p-4 flex
+      ${
+        item.id === 4 || item.id === 9
+          ? "flex-row items-start"
+          : "flex-col items-center"
+      }
+      ${
+        item.id === 7 || item.id === 8
+          ? "flex-row items-start"
+          : "flex-col items-center"
+      }
+      transition-transform duration-300 hover:scale-105 focus-within:scale-105`}
             >
-              {/* Image Header */}
+              {/* Wrap Title & Description in a div */}
+              <div
+                className={`w-full ${
+                  item.id === 9 ? "order-first" : "order-last"
+                }`}
+              >
+                <h2 className="text-xl font-bold text-black mb-2 text-center">
+                  {item.title}
+                </h2>
+                <p
+                  className="p-4 w-full text-black font-bold text-sm leading-5 
+                  transition-colors duration-300 hover:text-blue-600 focus:text-blue-600 
+                  text-justify"
+                >
+                  {item.text}
+                </p>
+              </div>
+
+              {/* Image Section */}
               <Image
                 src={item.image}
-                alt="Thumbnials"
-                className={`w-flex h-flex object-cover rounded-lg 
-                  ${item.id === 4 ? "w-40 h-90 mr-4 float-left" : "w-60 h-60"}
-                  ${item.id === 7 ? "w-40 h-90 mr-4 float-left" : "w-60 h-60"}
-                  ${item.id === 8 ? "w-40 h-90 mr-4 float-left" : "w-60 h-60"}
-                  ${item.id === 9 ? "w-40 h-90 mr-4 float-left" : "w-60 h-60"}
-                  
-
-                  `}
+                alt="Thumbnails"
+                className={`w-flex h-flex object-cover rounded-lg  
+        ${item.id === 4 ? "w-40 h-90 mr-4 float-left" : "w-60 h-60"}
+        ${item.id === 7 ? "w-40 h-90 mr-4 float-left" : "w-60 h-60"}
+        ${item.id === 8 ? "w-40 h-90 mr-4 float-left" : "w-60 h-60"}
+        ${item.id === 9 ? "w-40 h-90 mr-4 float-left" : "w-60 h-60"}`}
               />
-
-              {/* Text */}
-              <div
-                className="p-4 w-full text-black font-bold text-sm uppercase leading-5 
-        transition-colors duration-300 hover:text-blue-600 focus:text-blue-600 
-        text-justify"
-              >
-                <p className="mb-2">{item.text}</p>
-              </div>
             </div>
           ))}
         </Carousel>
