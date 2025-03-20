@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import img from "next/image";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Pic1 from "../../assets/Resources/Picture1.png";
@@ -7,7 +8,7 @@ import Pic1 from "../../assets/Resources/Picture1.png";
 const items = [
   {
     id: 1,
-    image: Pic1,
+    img: "../../assets/Resources/Picture1.png",
     text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
            Vivamus lacinia, purus non bibendum malesuada, orci tortor elementum erat.
            Bibendum Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
@@ -17,7 +18,7 @@ const items = [
   },
   {
     id: 2,
-    image: "/Picture2.png",
+    image: Pic1,
     text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
            Vivamus lacinia, purus non bibendum malesuada, orci tortor elementum erat.
            Bibendum Lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
@@ -37,7 +38,7 @@ const items = [
   },
 
   {
-    id: 3,
+    id: 4,
     image: "/image3.jpg",
     text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
            Vivamus lacinia, purus non bibendum malesuada, orci tortor elementum erat.
@@ -107,13 +108,13 @@ const Birth = () => {
         {/* Custom Navigation Buttons */}
         <div className="flex justify-center mt-3">
           <button
-            className="bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-800 transition-all mx-2"
+            className=" px-4 py-2 rounded-full shadow-lg hover:bg-blue-800 transition-all mx-2"
             onClick={() => document.querySelector(".control-prev").click()}
           >
             ◀
           </button>
           <button
-            className="bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-800 transition-all mx-2"
+            className=" px-4 py-2 rounded-full shadow-lg hover:bg-blue-800 transition-all mx-2"
             onClick={() => document.querySelector(".control-next").click()}
           >
             ▶
