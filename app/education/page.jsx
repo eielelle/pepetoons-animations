@@ -52,11 +52,11 @@ export default function Education() {
           </p>
         </div>
 
-        <div className="flex flex-col items-center gap-4 col-span-3 md:col-span-1">
+        <div className="flex flex-col justify-center items-center gap-4 col-span-3 md:col-span-1">
           <div className="bg-[linear-gradient(to_bottom,#F59D9D,#F1B67E,#E7D151,#747626)] p-4">
             <Image src={teodoraImg} alt="teodora" />
           </div>
-          <h2 className="text-blue-400 text-xl font-bold">
+          <h2 className="text-blue-400 text-xl text-center font-bold">
             Teodora Alonso Realonda
           </h2>
         </div>
@@ -76,8 +76,8 @@ export default function Education() {
           </p>
         </div>
 
-        <div className="px-4 border-x-4 border-white col-span-3 md:col-span-1">
-          <Image className="w-full" src={ateneoImg} alt="ateneo" />
+        <div className="flex justify-center items-center px-4 border-x-4 border-white col-span-3 md:col-span-1">
+          <Image className="w-full h-full object-cover" src={ateneoImg} alt="ateneo" />
         </div>
 
         <div className="md:col-span-3 lg:col-span-1 col-span-3">
@@ -118,8 +118,8 @@ export default function Education() {
           </p>
         </div>
 
-        <div className="px-4 border-x-4 border-white col-span-3 md:col-span-1">
-          <Image className="w-full" src={ustImg} alt="ust" />
+        <div className="flex justify-center items-center px-4 border-x-4 border-white col-span-3 md:col-span-1">
+          <Image className="w-full h-full object-cover" src={ustImg} alt="ust" />
         </div>
 
         <div className="text-justify col-span-3 md:col-span-2 lg:col-span-1">
@@ -157,8 +157,8 @@ export default function Education() {
           </p>
         </div>
 
-        <div className="px-4 border-x-4 border-white col-span-3 md:col-span-2 lg:col-span-1">
-          <Image className="w-full" src={madridImg} alt="madrid" />
+        <div className="flex justify-center items-center px-4 border-x-4 border-white col-span-3 md:col-span-2 lg:col-span-1">
+          <Image className="w-full h-full object-cover" src={madridImg} alt="madrid" />
         </div>
 
         <div className="col-span-3 md:col-span-1">
@@ -293,9 +293,9 @@ export default function Education() {
           </p>
         </div>
 
-        <div className="px-4 border-x-4 border-white col-span-3 md:col-span-2 lg:col-span-1">
-          <Image className="w-full" src={doctorImg} alt="doctor" />
-          <Image className="w-full" src={parisImg} alt="paris" />
+        <div className="flex flex-col justify-center items-center px-4 border-x-4 border-white col-span-3 md:col-span-2 lg:col-span-1">
+          <Image className="w-full h-full object-cover" src={doctorImg} alt="doctor" />
+          <Image className="w-full h-full object-cover" src={parisImg} alt="paris" />
         </div>
 
         <div className="col-span-3 md:col-span-1">
