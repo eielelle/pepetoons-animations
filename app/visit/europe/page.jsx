@@ -3,18 +3,18 @@ import { useState, useRef } from 'react';
 import Image from 'next/image';
 
 // Import images
-import MadridSpainImg from "../../../assets/visit/europe/Madrid Spain.jpg";
-import ParisFranceImg from "../../../assets/visit/europe/Paris France.jpg";
-import HeidelbergGermanyImg from "../../../assets/visit/europe/Heidelberg Germany.jpg";
-import BerlinGermanyImg from "../../../assets/visit/europe/Berlin Germany.jpg";
+import MadridSpainImg from "../../../assets/visit/europe/Madrid Spain.png";
+import ParisFranceImg from "../../../assets/visit/europe/Paris France.png";
+import HeidelbergGermanyImg from "../../../assets/visit/europe/Heidelberg Germany.png";
+import BerlinGermanyImg from "../../../assets/visit/europe/Berlin Germany.png";
 import LondonEnglandImg from "../../../assets/visit/europe/London England.jpg";
-import BrusselsBelgiumImg from "../../../assets/visit/europe/Brussels Belgium.jpg";
+import BrusselsBelgiumImg from "../../../assets/visit/europe/Brussels Belgium.png";
 
 //Reusable grid components
 const CityCard = ({ image, name, country, date, activity1, description1, activity2, description2, activity3, description3, onOpen }) => {
   return (
     <div className="relative grid size-full max-sm:h-100 max-[850px]:h-100">
-      <Image src={image} fill className="relative object-cover size-full hover:scale-110 transition duration-300" alt={`${name}, ${country}`} 
+      <Image src={image} fill className="relative object-cover size-full hover:scale-110 transition duration-300" alt={`${name}, ${country}`}
       />
       <h3 className="relative content-center text-center font-semibold text-4xl italic text-white w-full">
         {name}, <br /> {country}
@@ -137,6 +137,9 @@ export default function Europe() {
       {/* Modals */}
       <dialog ref={modalRef} className="modal p-4">
         <div className="modal-box w-11/12 max-w-5xl text-center flex flex-col gap-3 overflow-auto">
+          <form method="dialog">
+            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+          </form>
           {selectedCity && (
             <>
               <h5 className='text-2xl font-extrabold'>{selectedCity.name}, {selectedCity.country} {selectedCity.date} </h5>
@@ -154,6 +157,7 @@ export default function Europe() {
             </form>
           </div>
         </div>
+
       </dialog>
     </div>
   );
