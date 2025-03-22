@@ -2,10 +2,12 @@ import Image from "next/image";
 import JoseRizalArrest from "../../assets/arrest/Rizal Arrest.png";
 import JoseRizalTrial from "../../assets/arrest/Rizal Trial.jpg";
 import JoseRizalExecution from "../../assets/arrest/Rizal Execution.jpg";
+import ParticleBg from "./ParticleBg";
 
 export default function Arrest() {
   return (
-    <main className="bg-[#101230] min-h-screen">
+    <main className="min-h-screen">
+      <ParticleBg />
       <div className="p-4">
         <h1 className="text-2xl md:text-6xl text-center font-bold mb-4">
           ARREST, TRIAL EXECUTION
