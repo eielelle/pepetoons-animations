@@ -9,12 +9,12 @@ export default function Arrest() {
     <main className="min-h-screen">
       <ParticleBg />
       <div className="p-4">
-        <h1 className="text-2xl md:text-6xl text-center font-bold mb-4">
+        <h1 className="text-2xl md:text-4xl lg:text-6xl text-center font-bold my-6">
           ARREST, TRIAL EXECUTION
         </h1>
 
         <div className="grid grid-cols-3 w-2/3 mx-auto gap-y-4">
-          <div className="flex flex-col col-span-3 md:col-span-1 justify-center items-center gap-3">
+          <div className="flex flex-col col-span-3 lg:col-span-1 justify-center items-center gap-3">
             <Image
               src={JoseRizalArrest}
               width={260}
@@ -24,7 +24,7 @@ export default function Arrest() {
             <h3 className="font-bold">Arrest of Jose Rizal</h3>
           </div>
 
-          <div className="col-span-3 md:col-span-2">
+          <div className="col-span-3 lg:col-span-2">
             <div className="chat chat-start">
               <div className="chat-bubble chat-bubble-base">
                 <ul className="list">
@@ -51,7 +51,7 @@ export default function Arrest() {
             </div>
           </div>
 
-          <div className="col-span-3 md:col-span-2">
+          <div className="col-span-3 lg:col-span-2">
             <div className="chat chat-end">
               <div className="chat-bubble chat-bubble-base">
                 <ul className="list">
@@ -81,7 +81,7 @@ export default function Arrest() {
             </div>
           </div>
 
-          <div className="flex flex-col col-span-3 md:col-span-1 justify-center items-center gap-3">
+          <div className="flex flex-col col-span-3 lg:col-span-1 justify-center items-center gap-3">
             <Image
               src={JoseRizalTrial}
               width={200}
@@ -91,7 +91,7 @@ export default function Arrest() {
             <h3 className="font-bold">Trial of Jose Rizal</h3>
           </div>
 
-          <div className="flex flex-col col-span-3 md:col-span-1 justify-center items-center gap-3">
+          <div className="flex flex-col col-span-3 lg:col-span-1 justify-center items-center gap-3">
             <Image
               src={JoseRizalExecution}
               width={260}
@@ -101,7 +101,7 @@ export default function Arrest() {
             <h3 className="font-bold">Execution of Jose Rizal</h3>
           </div>
 
-          <div className="col-span-3 md:col-span-2">
+          <div className="col-span-3 lg:col-span-2">
             <div className="chat chat-start">
               <div className="chat-bubble chat-bubble-base">
                 <li className="list">
