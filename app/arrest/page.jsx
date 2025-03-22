@@ -3,25 +3,20 @@ import JoseRizalArrest from "../../assets/arrest/Rizal Arrest.png";
 import JoseRizalTrial from "../../assets/arrest/Rizal Trial.jpg";
 import JoseRizalExecution from "../../assets/arrest/Rizal Execution.jpg";
 import ParticleBg from "./ParticleBg";
+import Polaroid from "./Polaroid";
 
 export default function Arrest() {
   return (
     <main className="min-h-screen">
       <ParticleBg />
       <div className="p-4">
-        <h1 className="text-2xl md:text-4xl lg:text-6xl text-center font-bold my-6">
+        <h1 className="text-2xl md:text-4xl lg:text-6xl text-center font-bold mb-4">
           ARREST, TRIAL EXECUTION
         </h1>
 
-        <div className="grid grid-cols-3 w-2/3 mx-auto gap-y-4">
+        <div className="grid grid-cols-3 w-2/3 mx-auto gap-x-4 gap-y-20 my-20">
           <div className="flex flex-col col-span-3 lg:col-span-1 justify-center items-center gap-3">
-            <Image
-              src={JoseRizalArrest}
-              width={260}
-              height={200}
-              alt="Jose Rizal Arrest"
-            />
-            <h3 className="font-bold">Arrest of Jose Rizal</h3>
+            <Polaroid img={JoseRizalArrest} caption={"Arrest of Jose Rizal"} rotation={"-rotate-12"} />
           </div>
 
           <div className="col-span-3 lg:col-span-2">
@@ -82,23 +77,11 @@ export default function Arrest() {
           </div>
 
           <div className="flex flex-col col-span-3 lg:col-span-1 justify-center items-center gap-3">
-            <Image
-              src={JoseRizalTrial}
-              width={200}
-              height={180}
-              alt="Jose Rizal Trial"
-            />
-            <h3 className="font-bold">Trial of Jose Rizal</h3>
+            <Polaroid img={JoseRizalTrial} caption={"Trial of Jose Rizal"} rotation={"rotate-12"} />
           </div>
 
           <div className="flex flex-col col-span-3 lg:col-span-1 justify-center items-center gap-3">
-            <Image
-              src={JoseRizalExecution}
-              width={260}
-              height={300}
-              alt="Jose Rizal Execution"
-            />
-            <h3 className="font-bold">Execution of Jose Rizal</h3>
+            <Polaroid img={JoseRizalExecution} caption={"Execution of Jose Rizal"} rotation={"-rotate-12"} />
           </div>
 
           <div className="col-span-3 lg:col-span-2">
