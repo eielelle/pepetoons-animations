@@ -1,4 +1,7 @@
-import Image from "next/image";
+"use client";
+
+import { useEffect, useState } from "react";
+import anime from "animejs";
 import JoseRizalArrest from "../../assets/arrest/Rizal Arrest.png";
 import JoseRizalTrial from "../../assets/arrest/Rizal Trial.jpg";
 import JoseRizalExecution from "../../assets/arrest/Rizal Execution.jpg";
@@ -6,21 +9,62 @@ import ParticleBg from "./ParticleBg";
 import Polaroid from "./Polaroid";
 
 export default function Arrest() {
+  const [visibleElements, setVisibleElements] = useState(new Set());
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisibleElements((prev) => new Set([...prev, entry.target]));
+            observer.unobserve(entry.target); // Stop observing after animation
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    const elements = document.querySelectorAll(".animate-item"); // Select all elements
+    elements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    visibleElements.forEach((element) => {
+      anime({
+        targets: element,
+        opacity: [0, 1],
+        translateY: [50, 0],
+        duration: 1000,
+        easing: "easeOutQuad",
+      });
+    });
+
+    if (visibleElements.size > 0) {
+      setVisibleElements(new Set());
+    }
+  }, [visibleElements]);
+
   return (
     <main className="min-h-screen">
       <ParticleBg />
       <div className="p-4">
-        <h1 className="text-2xl md:text-4xl lg:text-6xl text-center font-bold mb-4">
+        <h1 className="text-2xl md:text-4xl lg:text-6xl text-center font-bold mb-4 animate-item opacity-0">
           ARREST, TRIAL EXECUTION
         </h1>
 
         <div className="grid grid-cols-3 w-2/3 mx-auto gap-x-4 gap-y-20 my-20">
           <div className="flex flex-col col-span-3 lg:col-span-1 justify-center items-center gap-3">
-            <Polaroid img={JoseRizalArrest} caption={"Arrest of Jose Rizal"} rotation={"-rotate-12"} />
+            <Polaroid
+              img={JoseRizalArrest}
+              caption={"Arrest of Jose Rizal"}
+              rotation={"-rotate-12"}
+            />
           </div>
 
           <div className="col-span-3 lg:col-span-2">
-            <div className="chat chat-start">
+            <div className="chat chat-start animate-item opacity-0">
               <div className="chat-bubble chat-bubble-base">
                 <ul className="list">
                   <li className="list-row">
@@ -47,7 +91,7 @@ export default function Arrest() {
           </div>
 
           <div className="col-span-3 lg:col-span-2">
-            <div className="chat chat-end">
+            <div className="chat chat-end animate-item opacity-0">
               <div className="chat-bubble chat-bubble-base">
                 <ul className="list">
                   <li className="list-row">
@@ -77,15 +121,23 @@ export default function Arrest() {
           </div>
 
           <div className="flex flex-col col-span-3 lg:col-span-1 justify-center items-center gap-3">
-            <Polaroid img={JoseRizalTrial} caption={"Trial of Jose Rizal"} rotation={"rotate-12"} />
+            <Polaroid
+              img={JoseRizalTrial}
+              caption={"Trial of Jose Rizal"}
+              rotation={"rotate-12"}
+            />
           </div>
 
           <div className="flex flex-col col-span-3 lg:col-span-1 justify-center items-center gap-3">
-            <Polaroid img={JoseRizalExecution} caption={"Execution of Jose Rizal"} rotation={"-rotate-12"} />
+            <Polaroid
+              img={JoseRizalExecution}
+              caption={"Execution of Jose Rizal"}
+              rotation={"-rotate-12"}
+            />
           </div>
 
           <div className="col-span-3 lg:col-span-2">
-            <div className="chat chat-start">
+            <div className="chat chat-start animate-item opacity-0">
               <div className="chat-bubble chat-bubble-base">
                 <li className="list">
                   <ul className="list-row">
