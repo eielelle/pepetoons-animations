@@ -11,7 +11,7 @@ import LocationCarousel from "./LocationCarousel";
 export default function Exile() {
 
   return (
-    <main className="w-full h-full p-4 grid grid-cols-3 gap-4">
+    <main className="bg-[#101230] w-screen h-screen p-4 grid grid-cols-3 gap-4">
       <div className="rounded-2xl bg-white text-black p-6 flex flex-col gap-4">
         <h1 className="text-4xl font-bold">Luneta Park</h1>
         <p>

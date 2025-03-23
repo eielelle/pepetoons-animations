@@ -3,7 +3,7 @@
 import anime from "animejs";
 import Image from "next/image";
 import { data } from "./db";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { ArrowLeftCircle, ArrowRightCircle } from "react-feather";
 
@@ -15,7 +15,6 @@ export default function RomanticLifePage() {
     if (currentIdx > 0) {
       setCurrentIdx((prev) => {
         const idx = prev - 1;
-        animate(idx);
 
         return idx;
       });
@@ -23,10 +22,9 @@ export default function RomanticLifePage() {
   }
 
   function slideRight() {
-    if (currentIdx < data.length) {
+    if (currentIdx < data.length - 1) {
       setCurrentIdx((prev) => {
         const idx = prev + 1;
-        animate(idx);
 
         return idx;
       });
@@ -42,43 +40,55 @@ export default function RomanticLifePage() {
     });
   }
 
-  return (
-    <main className="grid grid-cols-2 gap-10">
-      <div className="flex flex-col justify-center h-screen p-8">
-        <div>
-          <p className="text-sm">Personal and Romantic Life</p>
-          <h1 className="text-4xl font-black my-4">{data[currentIdx].name}</h1>
-          <ul className="list">
-            {data[currentIdx].content.map((data, key) => (
-                <li className="list-row" key={key}>{data}</li>
-            ))}
-          </ul>
-        </div>
-      </div>
-      <div className="h-screen flex flex-col justify-end pb-32 gap-6 overflow-x-hidden">
-        <div className="flex gap-4" ref={carouselRef}>
-            {data.map((data, key) => (
-                <div key={key} className="w-64 h-96 shrink-0 bg-red-400">
-                    <Image className="object-cover w-full h-full" src={data.img} alt={data.name} />
-                </div>
-            ))}
-        </div>
+  useEffect(() => {
+    animate(currentIdx)
+  }, [currentIdx])
 
-        <div className="flex items-center gap-6">
-          <button
-            onClick={slideLeft}
-            className="transform transition duration-75 hover:scale-110 hover:cursor-pointer"
-          >
-            <ArrowLeftCircle size={32} />
-          </button>
-          <button
-            onClick={slideRight}
-            className="transform transition duration-75 hover:scale-110 hover:cursor-pointer"
-          >
-            <ArrowRightCircle size={32} />
-          </button>
-        </div>
-      </div>
+  return (
+    <main className="h-screen w-screen">
+            <Image className="w-full h-full object-cover blur-md" src={data[currentIdx].img} alt={"img"} />
+            <div className="absolute top-0 left-0 w-full h-full bg-black opacity-70"></div>
+          <div className="absolute top-0 left-0 w-full h-full grid grid-cols-2 gap-10">
+
+            <div className="flex flex-col justify-center h-screen p-8">
+              <div>
+                <p className="text-sm">Personal and Romantic Life</p>
+                <h1 className="text-4xl font-black my-4">{data[currentIdx].name}</h1>
+                <ul className="list">
+                  {data[currentIdx].content.map((data, key) => (
+                      <li className="list-row" key={key}>{data}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <div className="h-screen flex flex-col justify-end pb-32 gap-6 overflow-x-hidden">
+              <div className="flex gap-4" ref={carouselRef}>
+                  {data.map((data, key) => (
+                      <div key={key} className="w-64 h-96 shrink-0 bg-white card rounded-none">
+                          <figure className="h-[90%] p-4">
+                            <Image className={`object-cover w-full h-full transition-all ${key != currentIdx && 'blur-xs'}`} src={data.img} alt={data.name} />
+                          </figure>
+                          <div className="card-body"></div>
+                      </div>
+                  ))}
+              </div>
+
+              <div className="flex items-center gap-6">
+                <button
+                  onClick={slideLeft}
+                  className="transform transition duration-75 hover:scale-110 hover:cursor-pointer"
+                >
+                  <ArrowLeftCircle size={32} />
+                </button>
+                <button
+                  onClick={slideRight}
+                  className="transform transition duration-75 hover:scale-110 hover:cursor-pointer"
+                >
+                  <ArrowRightCircle size={32} />
+                </button>
+              </div>
+            </div>
+          </div>
     </main>
   );
 }
