@@ -2,12 +2,12 @@
 
 import React from "react";
 import Image from "next/image";
-import EuropeCity1 from "../../assets/visit/europe-city.jpg";
-import EuropeCity2 from "../../assets/visit/europe-city2.jpg";
-import EuropeCity3 from "../../assets/visit/europe-city3.jpg";
-import EuropeCity4 from "../../assets/visit/europe-city4.jpg";
-import EuropeCity5 from "../../assets/visit/europe-city5.jpg";
-import EuropeCity6 from "../../assets/visit/europe-city6.jpg";
+import EuropeCity1 from "../../assets/visit/europe/Madrid Spain.png";
+import EuropeCity2 from "../../assets/visit/europe/Paris France.png";
+import EuropeCity3 from "../../assets/visit/europe/Heidelberg Germany.png";
+import EuropeCity4 from "../../assets/visit/europe/Berlin Germany.png";
+import EuropeCity5 from "../../assets/visit/europe/London England.jpg";
+import EuropeCity6 from "../../assets/visit/europe/Brussels Belgium.png";
 import AsiaCity1 from "../../assets/visit/asia-city.jpg";
 import AsiaCity2 from "../../assets/visit/asia-city2.jpg";
 import AsiaCity3 from "../../assets/visit/asia-city3.jpg";
