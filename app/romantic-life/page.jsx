@@ -45,12 +45,12 @@ export default function RomanticLifePage() {
   }, [currentIdx])
 
   return (
-    <main className="h-screen w-screen relative">
+    <main className="h-[200vh] md:h-screen w-screen relative">
             <Image className="w-full h-full object-cover blur-md" src={data[currentIdx].img} alt={"img"} />
             <div className="absolute top-0 left-0 w-full h-full bg-black opacity-70"></div>
           <div className="absolute top-0 left-0 w-full h-full grid grid-cols-2 gap-10">
 
-            <div className="flex flex-col justify-center md:h-screen p-8 col-span-2 md:col-span-1">
+            <div className="flex flex-col justify-center h-a md:h-screen p-8 col-span-2 md:col-span-1">
               <div className="text-center md:text-left">
                 <p className="text-sm">Personal and Romantic Life</p>
                 <h1 className="text-4xl font-black my-4">{data[currentIdx].name}</h1>
