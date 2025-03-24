@@ -28,26 +28,14 @@ const Sidebar = ({ isDarkMode, toggleDarkMode }) => {
       id: "explore",
       label: "Explore",
       iconPath: ExploreIcon,
-      urlPath: "explore"
-    },
-    {
-      id: "geolocation",
-      label: "Geolocation",
-      iconPath: LocationIcon,
-      urlPath: "location"
+      urlPath: "museum-preview"
     },
     {
       id: "about",
       label: "About",
       iconPath: InfoIcon,
       urlPath: "about"
-    },
-    {
-      id: "team",
-      label: "Team",
-      iconPath: TeamIcon,
-      urlPath: "team"
-    },
+    }
   ];
 
   return (
@@ -89,14 +77,14 @@ const Sidebar = ({ isDarkMode, toggleDarkMode }) => {
       </nav>
 
       {/* DARK/LIGHT MODE TOGGLE */}
-      <div className="p-4 flex items-center justify-center">
+      {/* <div className="p-4 flex items-center justify-center">
         <button
           className="bg-gray-700 text-white px-4 py-2 rounded-full"
           onClick={toggleDarkMode}
         >
           {isDarkMode ? "Light Mode" : "Dark Mode"}
         </button>
-      </div>
+      </div> */}
 
     </div>
   );
