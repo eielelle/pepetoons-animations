@@ -27,9 +27,9 @@ export default function Homepage() {
             <CarouselSlide href={"/education"} src={educationImg} alt={"education"}>Education</CarouselSlide>
             <CarouselSlide href={"/exile"} src={monumentImg} alt={"monuments-and-his-exile"}>Monuments and his Exile</CarouselSlide>
             <CarouselSlide href={"/family"} src={familyImg} alt={"family"}>Family</CarouselSlide>
-            <CarouselSlide href={"/legacy"} src={legacyImg} alt={"legacy"}>Legacy</CarouselSlide>
+            <CarouselSlide href={"/legacy"} src={legacyImg} alt={"legacy"}>Writings</CarouselSlide>
             <CarouselSlide href={"/romantic-life"} src={romanticLifeImg} alt={"romantic-life"}>Romantic Life</CarouselSlide>
-            <CarouselSlide href={"/travels"} src={travelsImg} alt={"travels"}>Travels</CarouselSlide>
+            <CarouselSlide href={"/visit"} src={travelsImg} alt={"travels"}>Travels</CarouselSlide>
           </div>
         </div>
 
