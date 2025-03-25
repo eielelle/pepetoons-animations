@@ -200,7 +200,7 @@ export default function Europe() {
           <CityCard key={index} {...city} onOpen={openModal} />
         ))}
       </div>
-      //End of eorupe module
+      {/* //End of eorupe module */}
       {/* Reusable Modals */}
       <dialog ref={modalRef} className="modal">
         <div className="modal-box w-11/12 max-w-5xl text-center p-7 flex flex-col gap-4 overflow-auto">
