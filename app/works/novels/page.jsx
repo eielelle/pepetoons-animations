@@ -29,55 +29,54 @@ export default function NovelsContent() {
       image: Makamisa,
     },
   ];
+
   return (
     <div className="relative min-h-screen w-full flex items-center justify-center">
       <ParticleBg />
-      <div className="max-w-4xl w-full relative">
-        <h1 className="text-5xl font-bold text-white text-center mb-12">
+      <div className="container mx-auto p-6 w-full h-screen relative">
+        <h1 className="text-5xl font-bold text-white mb-12">
           Rizal's Novel's
         </h1>
 
-        <div className="relative">
-          {/* Timeline */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-white h-full"></div>
-
-          {Works.map((member, index) => (
-            <div
-              key={member.name}
-              className={`flex items-center mb-12 ${
-                index % 2 === 0 ? "flex-row-reverse" : ""
-              }`}
-            >
-              {/* Timeline Dot */}
-              <div className="w-8 h-8 bg-white rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
-
-              <div
-                className={`w-1/2 ${
-                  index % 2 === 0 ? "mr-0 pl-6" : "ml-0 pr-6"
-                }`}
-              >
-                <div className="bg-white/20 p-6 rounded-lg backdrop-blur-sm">
-                  <div className="flex items-center mb-4">
-                    <div className="w-44 h-44 rounded-md overflow-hidden mr-6">
-                      <Image
-                        src={member.image}
-                        alt={member.name}
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
-                    <div>
-                      <h2 className="text-2xl font-semibold text-white">
-                        {member.name}
-                      </h2>
-                      <p className="text-white/80">{member.years}</p>
-                    </div>
-                  </div>
-                  <p className="text-white">{member.description}</p>
+        <div className="tabs tabs-border">
+          <input
+            type="radio"
+            name="my_tabs_2"
+            className="tab"
+            aria-label="Literature"
+            defaultChecked
+          />
+          <div className="tab-content p-10">
+            <div className="h-full w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+              {Works.map((value, key) => (
+                <div key={key} className="card card-side bg-base-100 h-[300px] shadow-sm">
+                <figure className="w-52">
+                  <Image
+                  className="w-full h-full object-cover"
+                    src={value.image}
+                    alt="book" />
+                </figure>
+                <div className="card-body flex-1">
+                  <p className="font-light">{value.years}</p>
+                  <h2 className="card-title">{value.name}</h2>
+                  <p className="overflow-y-scroll">{value.description}</p>
                 </div>
               </div>
+              ))}
+
             </div>
-          ))}
-        </div>
+          </div>
+
+          <input
+            type="radio"
+            name="my_tabs_2"
+            className="tab"
+            aria-label="Poems"
+          />
+          <div className="tab-content border-base-300 bg-base-100 p-10">
+            No content yet.
+          </div>
+        </div>        
       </div>
     </div>
   );

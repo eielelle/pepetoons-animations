@@ -53,7 +53,7 @@ export default function RomanticLifePage() {
       />
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-70"></div>
       <div className="absolute top-0 left-0 w-full h-full grid grid-cols-2 gap-10 md:w-auto">
-        <div className="flex flex-col justify-center md:h-screen p-1 col-span-2 md:col-span-1">
+        <div className="flex flex-col justify-center md:h-screen p-1 lg:p-6 col-span-2 md:col-span-1">
           <div className="text-center md:text-left sm:text-sm">
             <p className="text-sm">Personal and Romantic Life</p>
             <h1 className="text-2xl md:text-4xl font-black my-2 md:my-4">
