@@ -1,391 +1,90 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
+import { useEffect, useRef } from "react";
+import anime from "animejs";
 import Image from "next/image";
-import EuropeCity1 from "../../assets/visit/europe/Madrid Spain.png";
-import EuropeCity2 from "../../assets/visit/europe/Paris France.png";
-import EuropeCity3 from "../../assets/visit/europe/Heidelberg Germany.png";
-import EuropeCity4 from "../../assets/visit/europe/Berlin Germany.png";
-import EuropeCity5 from "../../assets/visit/europe/London England.jpg";
-import EuropeCity6 from "../../assets/visit/europe/Brussels Belgium.png";
-import AsiaCity1 from "../../assets/visit/asia-city.jpg";
-import AsiaCity2 from "../../assets/visit/asia-city2.jpg";
-import AsiaCity3 from "../../assets/visit/asia-city3.jpg";
-import AsiaCity4 from "../../assets/visit/asia-city4.jpg";
-import AsiaCity5 from "../../assets/visit/asia-city5.jpg";
-import AsiaCity6 from "../../assets/visit/asia-city6.jpg";
+import Link from "next/link";
+import { ArrowRight } from "react-feather";
+
+import { data } from './data'
 
 export default function Visit() {
+  const [currentIdx, setCurrentIdx] = useState(0)
+
+  const carouselRef = useRef(null);
+  const [pos, setPos] = useState(0);
+  let anim = null;
+
+  function togglePlace() {
+    setCurrentIdx(prev => {
+      if (prev > 0) {
+        return 0
+      } else return 1
+    })
+  }
+
+  useEffect(() => {
+    setInterval(() => {
+      setPos((prev) => prev - 100 / 6);
+    }, 4000);
+  }, []);
+
+  useEffect(() => {
+    anim = anime({
+      targets: carouselRef.current,
+      translateX: `${pos}%`,
+      easing: "easeInOutQuad",
+    });
+
+    if (pos < -100) {
+      anim.pause();
+      carouselRef.current.style.transform = "translateX(0%)";
+      setPos(0);
+    }
+  }, [pos]);
+
   return (
-    <main className="relative h-screen">
-      {/* Title - now centered and made more visible */}
-      <h1
-        className="text-5xl text-center w-full absolute top-0 z-20 py-8"
-        style={{
-          fontFamily: "'Montserrat', sans-serif",
-          color: "#F0DFDF",
-        }}
-      >
-        PLACES HE VISITED
-      </h1>
-
-      <div className="grid grid-cols-2 h-screen">
-        {/* Europe Carousel */}
-        <div className="carousel w-full h-full relative" data-carousel="slide">
-          {/* Europe 1 */}
-          <div id="slide1" className="carousel-item relative w-full h-full">
-            <Image
-              src={EuropeCity1}
-              alt="Europe City 1"
-              layout="fill"
-              objectFit="cover"
-            />
-            <div className="absolute inset-0 flex items-end justify-center pb-16">
-              <button
-                onClick={() => (window.location.href = "/visit/europe")}
-                className="btn btn-xl shadow rounded-sm mb-4 relative z-20 bg-white text-black shadow-black hover:bg-black hover:text-white transition-colors absolute"
-                style={{
-                  backgroundColor: "rgba(0, 0, 0, 0.5)",
-                  color: "white",
-                }}
-              >
-                Europe
-              </button>
-            </div>
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide1" className="btn btn-circle">
-                ❮
-              </a>
-              <a href="#slide2" className="btn btn-circle">
-                ❯
-              </a>
-            </div>
-          </div>
-          {/* Europe 2 */}
-          <div id="slide2" className="carousel-item relative w-full h-full">
-            <Image
-              src={EuropeCity2}
-              alt="Europe City 1"
-              layout="fill"
-              objectFit="cover"
-            />
-            <div className="absolute inset-0 flex items-end justify-center pb-16">
-              <button
-                onClick={() => (window.location.href = "/visit/europe")}
-                className="btn btn-xl shadow rounded-sm mb-4 relative z-20 bg-white text-black shadow-black hover:bg-black hover:text-white transition-colors absolute"
-                style={{
-                  backgroundColor: "rgba(0, 0, 0, 0.5)",
-                  color: "white",
-                }}
-              >
-                Europe
-              </button>
-            </div>
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide1" className="btn btn-circle">
-                ❮
-              </a>
-              <a href="#slide3" className="btn btn-circle">
-                ❯
-              </a>
-            </div>
-          </div>
-          {/* Europe 3 */}
-          <div id="slide3" className="carousel-item relative w-full h-full">
-            <Image
-              src={EuropeCity3}
-              alt="Europe City 1"
-              layout="fill"
-              objectFit="cover"
-            />
-            <div className="absolute inset-0 flex items-end justify-center pb-16">
-              <button
-                onClick={() => (window.location.href = "/visit/europe")}
-                className="btn btn-xl shadow rounded-sm mb-4 relative z-20 bg-white text-black shadow-black hover:bg-black hover:text-white transition-colors absolute"
-                style={{
-                  backgroundColor: "rgba(0, 0, 0, 0.5)",
-                  color: "white",
-                }}
-              >
-                Europe
-              </button>
-            </div>
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide2" className="btn btn-circle">
-                ❮
-              </a>
-              <a href="#slide4" className="btn btn-circle">
-                ❯
-              </a>
-            </div>
-          </div>
-          {/* Europe 4 */}
-          <div id="slide4" className="carousel-item relative w-full h-full">
-            <Image
-              src={EuropeCity4}
-              alt="Europe City 1"
-              layout="fill"
-              objectFit="cover"
-            />
-            <div className="absolute inset-0 flex items-end justify-center pb-16">
-              <button
-                onClick={() => (window.location.href = "/visit/europe")}
-                className="btn btn-xl shadow rounded-sm mb-4 relative z-20 bg-white text-black shadow-black hover:bg-black hover:text-white transition-colors absolute"
-                style={{
-                  backgroundColor: "rgba(0, 0, 0, 0.5)",
-                  color: "white",
-                }}
-              >
-                Europe
-              </button>
-            </div>
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide3" className="btn btn-circle">
-                ❮
-              </a>
-              <a href="#slide5" className="btn btn-circle">
-                ❯
-              </a>
-            </div>
-          </div>
-          {/* Europe 5 */}
-          <div id="slide5" className="carousel-item relative w-full h-full">
-            <Image
-              src={EuropeCity5}
-              alt="Europe City 1"
-              layout="fill"
-              objectFit="cover"
-            />
-            <div className="absolute inset-0 flex items-end justify-center pb-16">
-              <button
-                onClick={() => (window.location.href = "/visit/europe")}
-                className="btn btn-xl shadow rounded-sm mb-4 relative z-20 bg-white text-black shadow-black hover:bg-black hover:text-white transition-colors absolute"
-                style={{
-                  backgroundColor: "rgba(0, 0, 0, 0.5)",
-                  color: "white",
-                }}
-              >
-                Europe
-              </button>
-            </div>
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide4" className="btn btn-circle">
-                ❮
-              </a>
-              <a href="#slide6" className="btn btn-circle">
-                ❯
-              </a>
-            </div>
-          </div>
-          {/* Europe 6 */}
-          <div id="slide6" className="carousel-item relative w-full h-full">
-            <Image
-              src={EuropeCity6}
-              alt="Europe City 1"
-              layout="fill"
-              objectFit="cover"
-            />
-            <div className="absolute inset-0 flex items-end justify-center pb-16">
-              <button
-                onClick={() => (window.location.href = "/visit/europe")}
-                className="btn btn-xl shadow rounded-sm mb-4 relative z-20 bg-white text-black shadow-black hover:bg-black hover:text-white transition-colors absolute"
-                style={{
-                  backgroundColor: "rgba(0, 0, 0, 0.5)",
-                  color: "white",
-                }}
-              >
-                Europe
-              </button>
-            </div>
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide5" className="btn btn-circle">
-                ❮
-              </a>
-              <a href="#slide1" className="btn btn-circle">
-                ❯
-              </a>
-            </div>
+    <main className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
+      <section className="relative">
+        <Image
+          className="w-full h-full object-cover"
+          src={data[currentIdx].cover}
+          alt="img"
+        />
+        <div className="overlay absolute top-0 left-0 w-full h-full bg-black opacity-70"></div>
+        <div className="content absolute top-0 left-0 w-full h-full flex flex-col gap-6 justify-center items-center">
+          <p>Places He Visited</p>
+          <h1 className="text-6xl font-black">{data[currentIdx].title}</h1>
+          <button onClick={togglePlace} className="btn btn-xl btn-primary btn-circle hover:animate-bounce">
+            <ArrowRight />
+          </button>
+        </div>
+      </section>
+      <section className="flex flex-col h-full bg-[#101230]">
+        <div className="flex-1 relative overflow-x-hidden">
+          <div className="w-[600%] h-[600px] flex" ref={carouselRef}>
+            {data[currentIdx].slides.map((value, key) => (
+              <div key={key} className="w-1/6 h-full">
+                <Image
+                  className="w-full h-full object-cover"
+                  src={value}
+                  alt="img"
+                />
+              </div>
+            ))}
           </div>
         </div>
-
-        {/* Asia Carousel */}
-        <div className="carousel w-full h-full relative" data-carousel="slide">
-          {/* Asia 1 */}
-          <div id="asia1" className="carousel-item relative w-full h-full">
-            <Image
-              src={AsiaCity1}
-              alt="Asia City 1"
-              layout="fill"
-              objectFit="cover"
-            />
-            <div className="absolute inset-0 flex items-end justify-center pb-16">
-              <button
-                onClick={() => (window.location.href = "/visit/asia")}
-                className="btn btn-xl shadow rounded-sm mb-4 relative z-20 bg-white text-black shadow-black hover:bg-black hover:text-white transition-colors"
-                style={{
-                  backgroundColor: "rgba(0, 0, 0, 0.5)",
-                  color: "white",
-                }}
-              >
-                Asia
-              </button>
-            </div>
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#asia1" className="btn btn-circle">
-                ❮
-              </a>
-              <a href="#asia2" className="btn btn-circle">
-                ❯
-              </a>
-            </div>
-          </div>
-          {/* Asia 2 */}
-          <div id="asia2" className="carousel-item relative w-full h-full">
-            <Image
-              src={AsiaCity2}
-              alt="Asia City 2"
-              layout="fill"
-              objectFit="cover"
-            />
-            <div className="absolute inset-0 flex items-end justify-center pb-16">
-              <button
-                onClick={() => (window.location.href = "/visit/asia")}
-                className="btn btn-xl shadow rounded-sm mb-4 relative z-20 bg-white text-black shadow-black hover:bg-black hover:text-white transition-colors"
-                style={{
-                  backgroundColor: "rgba(0, 0, 0, 0.5)",
-                  color: "white",
-                }}
-              >
-                Asia
-              </button>
-            </div>
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#asia1" className="btn btn-circle">
-                ❮
-              </a>
-              <a href="#asia3" className="btn btn-circle">
-                ❯
-              </a>
-            </div>
-          </div>
-          {/* Asia 3 */}
-          <div id="asia3" className="carousel-item relative w-full h-full">
-            <Image
-              src={AsiaCity3}
-              alt="Asia City 3"
-              layout="fill"
-              objectFit="cover"
-            />
-            <div className="absolute inset-0 flex items-end justify-center pb-16">
-              <button
-                onClick={() => (window.location.href = "/visit/asia")}
-                className="btn btn-xl shadow rounded-sm mb-4 relative z-20 bg-white text-black shadow-black hover:bg-black hover:text-white transition-colors"
-                style={{
-                  backgroundColor: "rgba(0, 0, 0, 0.5)",
-                  color: "white",
-                }}
-              >
-                Asia
-              </button>
-            </div>
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#asia2" className="btn btn-circle">
-                ❮
-              </a>
-              <a href="#asia4" className="btn btn-circle">
-                ❯
-              </a>
-            </div>
-          </div>
-          {/* Asia 4 */}
-          <div id="asia4" className="carousel-item relative w-full h-full">
-            <Image
-              src={AsiaCity4}
-              alt="Asia City 4"
-              layout="fill"
-              objectFit="cover"
-            />
-            <div className="absolute inset-0 flex items-end justify-center pb-16">
-              <button
-                onClick={() => (window.location.href = "/visit/asia")}
-                className="btn btn-xl shadow rounded-sm mb-4 relative z-20 bg-white text-black shadow-black hover:bg-black hover:text-white transition-colors"
-                style={{
-                  backgroundColor: "rgba(0, 0, 0, 0.5)",
-                  color: "white",
-                }}
-              >
-                Asia
-              </button>
-            </div>
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#asia3" className="btn btn-circle">
-                ❮
-              </a>
-              <a href="#asia5" className="btn btn-circle">
-                ❯
-              </a>
-            </div>
-          </div>
-          {/* Asia 5 */}
-          <div id="asia5" className="carousel-item relative w-full h-full">
-            <Image
-              src={AsiaCity5}
-              alt="Asia City 5"
-              layout="fill"
-              objectFit="cover"
-            />
-            <div className="absolute inset-0 flex items-end justify-center pb-16">
-              <button
-                onClick={() => (window.location.href = "/visit/asia")}
-                className="btn btn-xl shadow rounded-sm mb-4 relative z-20 bg-white text-black shadow-black hover:bg-black hover:text-white transition-colors"
-                style={{
-                  backgroundColor: "rgba(0, 0, 0, 0.5)",
-                  color: "white",
-                }}
-              >
-                Asia
-              </button>
-            </div>
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#asia4" className="btn btn-circle">
-                ❮
-              </a>
-              <a href="#asia6" className="btn btn-circle">
-                ❯
-              </a>
-            </div>
-          </div>
-          {/* Asia 6 */}
-          <div id="asia6" className="carousel-item relative w-full h-full">
-            <Image
-              src={AsiaCity6}
-              alt="Asia City 6"
-              layout="fill"
-              objectFit="cover"
-            />
-            <div className="absolute inset-0 flex items-end justify-center pb-16">
-              <button
-                onClick={() => (window.location.href = "/visit/asia")}
-                className="btn btn-xl shadow rounded-sm mb-4 relative z-20 bg-white text-black shadow-black hover:bg-black hover:text-white transition-colors"
-                style={{
-                  backgroundColor: "rgba(0, 0, 0, 0.5)",
-                  color: "white",
-                }}
-              >
-                Asia
-              </button>
-            </div>
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#asia5" className="btn btn-circle">
-                ❮
-              </a>
-              <a href="#asia1" className="btn btn-circle">
-                ❯
-              </a>
-            </div>
-          </div>
+        <div className="p-6">
+          <h1 className="text-2xl font-bold">{data[currentIdx].title}</h1>
+          <p className="my-6">
+            {data[currentIdx].description}
+          </p>
+          <Link className="btn btn-outline btn-primary btn-lg w-full" href={`visit/${data[currentIdx].url}`}>
+            See More
+          </Link>
         </div>
-      </div>
+      </section>
     </main>
   );
 }
