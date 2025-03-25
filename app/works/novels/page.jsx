@@ -35,7 +35,7 @@ export default function NovelsContent() {
       <ParticleBg />
       <div className="container mx-auto p-6 w-full h-screen relative">
         <h1 className="text-5xl font-bold text-white mb-12">
-          Rizal's Novel's
+          Rizal's Literature
         </h1>
 
         <div className="tabs tabs-border">
