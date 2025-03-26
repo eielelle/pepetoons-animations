@@ -38,7 +38,7 @@ export default function WorksContent() {
                 height={100}
               />
               <h2 className="card-title text-xl font-bold text-center mt-4 text-white">
-                Novels
+                Literature
               </h2>
             </div>
           </div>
@@ -74,7 +74,7 @@ export default function WorksContent() {
                 height={100}
               />
               <h2 className="card-title text-md font-bold text-center mt-4 text-white">
-                Poems
+                PLAYS
               </h2>
             </div>
           </div>
