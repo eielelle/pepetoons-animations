@@ -25,18 +25,18 @@ const CityCard = ({
   onOpen,
 }) => {
   return (
-    <div className="relative grid size-full max-sm:h-100 max-[850px]:h-100">
+    <div className="relative grid size-full max-sm:h-100 max-[850px]:h-100 bg-black">
       <Image
         src={image}
         fill
-        className="relative object-cover size-full hover:scale-110 transition duration-300"
+        className="relative object-cover size-full hover:scale-110 transition duration-300 opacity-50"
         alt={`${name}, ${country}`}
       />
       <h3 className="relative content-center text-center font-semibold text-4xl italic text-white w-full">
         {name}, <br /> {country}
       </h3>
       <button
-        className="absolute bottom-4 justify-self-center btn btn-sm outline-2 bg-white text-black transition-colors outline-offset-0 outline-black hover:bg-black hover:text-white"
+        className="absolute bottom-4 justify-self-center btn btn-sm outline-2 bg-white text-black outline-offset-0 outline-black hover:bg-black hover:text-white transition-colors delay-150 duration-100 ease-in-out hover:-translate-y-1 hover:scale-110"
         onClick={() =>
           onOpen(
             name,
