@@ -8,13 +8,13 @@ import parisImg from "../../assets/educ/paris.png";
 
 export default function Education() {
   return (
-    <main className="relative">
+    <main className="relative bg-[#101230]">
       <header className="fixed top-0 p-5 bg-[#101230] w-full border-b-2 border-white z-20">
         <h1 className="text-4xl font-black">Education</h1>
       </header>
 
-      <section className="grid grid-cols-3 gap-8 mt-24 p-5">
-        <div>
+      <section className="grid grid-cols-3 gap-8 pt-28 px-5">
+        <div className="col-span-3 md:col-span-3 lg:col-span-1">
           <h2 className="text-blue-400 text-xl font-bold">
             Early Education of Jose Rizal (1869 - 1877)
           </h2>
@@ -29,7 +29,7 @@ export default function Education() {
           </p>
         </div>
 
-        <div className="px-4 border-x-4 border-white">
+        <div className="px-4 border-x-4 border-white col-span-3 md:col-span-2 lg:col-span-1">
           <h2 className="text-blue-400 text-xl font-bold mb-4">
             Who was Rizals first teacher?
           </h2>
@@ -52,18 +52,18 @@ export default function Education() {
           </p>
         </div>
 
-        <div className="flex flex-col items-center gap-4">
+        <div className="flex flex-col justify-center items-center gap-4 col-span-3 md:col-span-1">
           <div className="bg-[linear-gradient(to_bottom,#F59D9D,#F1B67E,#E7D151,#747626)] p-4">
             <Image src={teodoraImg} alt="teodora" />
           </div>
-          <h2 className="text-blue-400 text-xl font-bold">
+          <h2 className="text-blue-400 text-xl text-center font-bold">
             Teodora Alonso Realonda
           </h2>
         </div>
 
         <div className="divider before:bg-white before:h-1 after:h-1 after:bg-white col-span-3"></div>
 
-        <div>
+        <div className="lg:col-span-1 md:col-span-2 col-span-3">
           <h2 className="text-blue-400 text-xl font-bold mb-4">
             Ateneo Municipal de Manila (1877-1882)
           </h2>
@@ -76,11 +76,11 @@ export default function Education() {
           </p>
         </div>
 
-        <div className="px-4 border-x-4 border-white">
-          <Image className="w-full" src={ateneoImg} alt="ateneo" />
+        <div className="flex justify-center items-center px-4 border-x-4 border-white col-span-3 md:col-span-1">
+          <Image className="w-full h-full object-cover" src={ateneoImg} alt="ateneo" />
         </div>
 
-        <div>
+        <div className="md:col-span-3 lg:col-span-1 col-span-3">
           <ul className="list">
             <li>
               <h2 className="text-blue-400 text-xl font-bold mb-4 pl-4">
@@ -104,7 +104,7 @@ export default function Education() {
 
         <div className="divider before:bg-white before:h-1 after:h-1 after:bg-white col-span-3"></div>
 
-        <div>
+        <div className="col-span-3 md:col-span-3 lg:col-span-1">
           <h2 className="text-blue-400 text-xl font-bold mb-4">
             University of Santo Tomas (UST)
           </h2>
@@ -112,48 +112,40 @@ export default function Education() {
             1877 - 1882 : Medical Studies at University of Sto. Tomas
           </h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            consequat nunc vel suscipit euismod.
-          </p>
-          <br />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            consequat nunc vel suscipit euismod.
-          </p>
-          <br />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            consequat nunc vel suscipit euismod.
+            Jose Rizal first studied philosophy and letters at the University of
+            Santo Tomas (UST) then moved to the Faculty of Medicine and Surgery
+            to study medicine in 1877
           </p>
         </div>
 
-        <div className="px-4 border-x-4 border-white">
-          <Image className="w-full" src={ustImg} alt="ust" />
+        <div className="flex justify-center items-center px-4 border-x-4 border-white col-span-3 md:col-span-1">
+          <Image className="w-full h-full object-cover" src={ustImg} alt="ust" />
         </div>
 
-        <div className="text-justify">
+        <div className="text-justify col-span-3 md:col-span-2 lg:col-span-1">
           <h2 className="text-blue-400 text-xl text-center font-bold mb-4">
             Pre-Med Course
           </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            consequat nunc vel suscipit euismod.
+            Jose Rizal changed his major from pre-law to medicine at the
+            University of Santo Tomas (UST) in order to pursue a career in
+            medicine and focus in opthalmology.
           </p>
           <br />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            consequat nunc vel suscipit euismod.
+            the reason why rizal pursue medicine because To help his mother who
+            was blinded by cataracts
           </p>
           <br />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            consequat nunc vel suscipit euismod.
+            Rizal was dissatisfied while his studying because of the
+            discrimination by the Dominicans.
           </p>
         </div>
 
         <div className="divider before:bg-white before:h-1 after:h-1 after:bg-white col-span-3"></div>
 
-        <div>
+        <div className="col-span-3 md:col-span-3 lg:col-span-1">
           <h2 className="text-blue-400 text-xl font-bold mb-4">
             José Rizal's Education in Spain (1882 - 1885)
           </h2>
@@ -165,11 +157,11 @@ export default function Education() {
           </p>
         </div>
 
-        <div className="px-4 border-x-4 border-white">
-          <Image className="w-full" src={madridImg} alt="madrid" />
+        <div className="flex justify-center items-center px-4 border-x-4 border-white col-span-3 md:col-span-2 lg:col-span-1">
+          <Image className="w-full h-full object-cover" src={madridImg} alt="madrid" />
         </div>
 
-        <div>
+        <div className="col-span-3 md:col-span-1">
           <h2 className="text-blue-400 text-xl text-center font-bold mb-4">
             Academic Pursuits in Madrid
           </h2>
@@ -279,7 +271,7 @@ export default function Education() {
 
         <div className="divider before:bg-white before:h-1 after:h-1 after:bg-white col-span-3"></div>
 
-        <div>
+        <div className="col-span-3 lg:col-span-1">
           <h2 className="text-blue-400 text-xl font-bold mb-4">
             José Rizal's Ophthalmology Studies & European Travels
           </h2>
@@ -301,12 +293,12 @@ export default function Education() {
           </p>
         </div>
 
-        <div className="px-4 border-x-4 border-white">
-          <Image className="w-full" src={doctorImg} alt="doctor" />
-          <Image className="w-full" src={parisImg} alt="paris" />
+        <div className="flex flex-col justify-center items-center px-4 border-x-4 border-white col-span-3 md:col-span-2 lg:col-span-1">
+          <Image className="w-full h-full object-cover" src={doctorImg} alt="doctor" />
+          <Image className="w-full h-full object-cover" src={parisImg} alt="paris" />
         </div>
 
-        <div>
+        <div className="col-span-3 md:col-span-1">
           <ul className="list">
             <li>
               <h2 className="text-blue-400 text-xl font-bold mb-4 pl-4">
