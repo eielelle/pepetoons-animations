@@ -36,7 +36,7 @@ export default function Exile() {
 
 
   return (
-    <main className="bg-[#101230] w-screen h-screen p-4 grid grid-cols-3 gap-4">
+    <main className="bg-[#101230] w-screen h-screen p-4 max-h-screen grid grid-cols-3 gap-4">
       <div className="rounded-2xl bg-white text-black p-6 flex flex-col gap-4">
         <h1 className="text-4xl font-bold">{data[currentIdx].title}</h1>
         <p>
@@ -45,7 +45,7 @@ export default function Exile() {
         <p className="flex items-center gap-4">
           <Map /> {data[currentIdx].address}
         </p>
-        <LocationCarousel />
+        <LocationCarousel imgs={data[currentIdx].imgs}/>
 
         <div className="mt-auto flex justify-between items-center">
           <Link href={data[currentIdx].url} className="btn btn-primary">
