@@ -1,15 +1,14 @@
 'use client'
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "leaflet/dist/leaflet.css";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 
 export default function Map({ coor }) {
   const icon = L.icon({ iconUrl: "/marker-icon.png" });
 
   useEffect(() => {
-    alert(coor)
-  }, [])
+  }, [coor])
 
   return (
     <MapContainer
@@ -20,15 +19,22 @@ export default function Map({ coor }) {
       scrollWheelZoom={false}
       dragging={false}
     >
+      <ChangeView center={coor} zoom={100} /> 
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <Marker position={[29.722129441324793, -95.38820501288275]} icon={icon}>
+      <Marker position={coor} icon={icon}>
         <Popup>
           A pretty CSS3 popup. <br /> Easily customizable.
         </Popup>
       </Marker>
     </MapContainer>
   );
+}
+
+function ChangeView({ center, zoom }) {
+  const map = useMap();
+  map.setView(center, zoom);
+  return null;
 }

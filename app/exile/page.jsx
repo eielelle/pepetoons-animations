@@ -9,16 +9,29 @@ import { Map, MapPin, ArrowLeftCircle, ArrowRightCircle } from "react-feather";
 import LocationCarousel from "./LocationCarousel";
 import { useState } from "react";
 import { data } from "./data";
+import Link from "next/link";
 
 export default function Exile() {
   const [currentIdx, setCurrentIdx] = useState(0);
 
   function next() {
-    setCurrentIdx(prev => prev + 1)
+    setCurrentIdx(prev => {
+      if (prev < data.length - 1) {
+        return prev + 1
+      } else {
+        return 0
+      }
+    })
   }
 
   function prev() {
-    setCurrentIdx(prev => prev - 1)
+    setCurrentIdx(prev => {
+      if (prev > 0) {
+        return prev - 1
+      } else {
+        return data.length - 1
+      }
+    })
   }
 
 
@@ -30,14 +43,14 @@ export default function Exile() {
           {data[currentIdx].description}
         </p>
         <p className="flex items-center gap-4">
-          <Map coor={data[currentIdx].coordinates} /> {data[currentIdx].address}
+          <Map /> {data[currentIdx].address}
         </p>
         <LocationCarousel />
 
         <div className="mt-auto flex justify-between items-center">
-          <a className="btn btn-primary">
+          <Link href={data[currentIdx].url} className="btn btn-primary">
             <MapPin /> View in Google Maps
-          </a>
+          </Link>
 
           <div className="flex gap-4">
             <button onClick={prev} className="transform transition duration-75 hover:scale-110 hover:cursor-pointer">
@@ -50,7 +63,7 @@ export default function Exile() {
         </div>
       </div>
       <div className="col-span-2 rounded-2xl flex-1 h-full overflow-hidden">
-        <MapLeaflet />
+        <MapLeaflet coor={data[currentIdx].coordinates} />
       </div>
     </main>
   );
