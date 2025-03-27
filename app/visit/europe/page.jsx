@@ -36,7 +36,7 @@ const CityCard = ({
         {name}, <br /> {country}
       </h3>
       <button
-        className="absolute bottom-4 justify-self-center btn btn-sm outline-2 bg-white text-black outline-offset-0 outline-black hover:bg-black hover:text-white transition-colors delay-150 duration-100 ease-in-out hover:-translate-y-1 hover:scale-110"
+        className="absolute bottom-4 justify-self-center btn btn-sm outline-2 bg-white text-black outline-offset-0 outline-black hover:bg-black hover:text-white transition-colors delay-150 duration-100 ease-in-out hover:scale-110"
         onClick={() =>
           onOpen(
             name,

@@ -25,13 +25,13 @@ const AsiaCard = ({
         src={img}
         alt={name}
         fill
-        className="relative object-cover size-full hover:scale-110 transition opacity-50 duration-300"
+        className="relative object-cover size-full hover:scale-110 transition opacity-25 duration-300"
       />
       <h3 className="relative content-center text-center font-semibold text-4xl italic text-white w-full">
         {name}
       </h3>
       <button
-        className="absolute bottom-4 justify-self-center btn btn-sm outline-2 bg-white text-black outline-offset-0 outline-black hover:bg-black hover:text-white transition-colors delay-150 duration-100 ease-in-out hover:-translate-y-1 hover:scale-110"
+        className="absolute bottom-4 justify-self-center btn btn-sm outline-2 bg-white text-black outline-offset-0 outline-black hover:bg-black hover:text-white transition-colors delay-150 duration-100 ease-in-out  hover:scale-110"
         onClick={() => onOpen(name, img, paragraph1, paragraph2, paragraph3)}
       >
         See more
