@@ -99,7 +99,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="w-full lg:w-1/2 mx-auto pb-28">
+          <div className="w-full lg:w-1/2 mx-auto">
             <h1 className="text-center text-4xl font-bold mb-6">FAQ</h1>
             <div className="collapse collapse-arrow bg-base-100 border border-base-300">
               <input type="radio" name="my-accordion-2" defaultChecked />
@@ -135,6 +135,28 @@ export default function About() {
                 Rizal is a national hero because of his intellectual
                 contributions to the fight for freedom and his martyrdom, which
                 inspired the Philippine Revolution against Spanish rule.
+              </div>
+            </div>
+          </div>
+
+          <div className="w-full lg:w-1/2 mx-auto pb-28 my-12">
+            <div className="p-[2px] flex justify-center items center bg-gradient-to-r from-sky-400 via-blue-500 via-violet-600 to-red-500 rounded-lg">
+              <div className="text-center bg-black rounded-lg p-12">
+                <h1 className="text-6xl mb-6 font-bold bg-gradient-to-r from-sky-400 to-blue-600 bg-clip-text text-transparent">
+                  Our Mission
+                </h1>
+                <p>
+                  At PepeToons, our mission is to make Dr. José Rizal's life and
+                  legacy accessible and engaging for people of all ages and
+                  backgrounds. We strive to educate, inspire, and provide a
+                  platform where visitors can deepen their understanding of
+                  Rizal's pivotal role in Philippine history. Whether you're a
+                  student, a history enthusiast, or simply curious about Rizal's
+                  impact, this website is a resource to help you learn more
+                  about one of the most important figures in Philippine history.
+                  Join us in remembering and celebrating Dr. José Rizal's
+                  contributions to the Filipino people and the world.
+                </p>
               </div>
             </div>
           </div>
