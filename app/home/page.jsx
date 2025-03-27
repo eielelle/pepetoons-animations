@@ -33,8 +33,8 @@ export default function Homepage() {
           </div>
         </div>
 
-        <h1 className="text-2xl font-semibold">Animations</h1>
-        <p>Engaging animations bring José Rizal's story to life.</p>
+        <h1 className="text-2xl font-semibold">Check this out!</h1>
+        <p>Watch PepeToons and explore the various chapters of José Rizal's Life.</p>
 
         <div className="w-full overflow-x-scroll my-4">
           <div className="carousel carousel-center gap-4">
