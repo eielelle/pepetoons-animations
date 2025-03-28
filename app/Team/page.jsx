@@ -2,6 +2,12 @@
 import React from "react";
 import Image from "next/image";
 import TeamPhoto from "../../assets/Resources/TeamPhoto.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHeart,
+  faUser,
+  faHandHoldingHeart,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Team() {
   return (
@@ -29,6 +35,52 @@ export default function Team() {
               height={500}
               className="rounded-lg"
             />
+          </div>
+        </div>
+
+        {/* Rizal Section */}
+
+        <div className="flex flex-col items-center justify-center min-h-screen bg-black text-white text-center px-4">
+          <h1 className="text-2xl md:text-3xl font-semibold mb-10">
+            "Honoring the legacy of Rizal, inspiring generations of change."
+          </h1>
+          <div className="flex gap-8 md:gap-12">
+            <span className="text-4xl md:text-5xl opacity-60">
+              📦 {/* Replace with proper icon */}
+            </span>
+            <span className="text-4xl md:text-5xl opacity-60">
+              💬 {/* Replace with proper icon */}
+            </span>
+            <span className="text-4xl md:text-5xl opacity-60">
+              ☁ {/* Replace with proper icon */}
+            </span>
+            <span className="text-4xl md:text-5xl opacity-60">
+              🎵 {/* Replace with proper icon */}
+            </span>
+            <span className="text-4xl md:text-5xl opacity-60">
+              💎 {/* Replace with proper icon */}
+            </span>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 p-6 bg-white place-items-center">
+          {/* First two cards */}
+          <div className="card w-64 bg-neutral shadow-xl p-6 text-center text-white">
+            <FontAwesomeIcon icon={faHeart} className="text-white text-4xl" />
+            <h2 className="font-bold text-lg mt-4">Honor the Past</h2>
+          </div>
+          <div className="card w-64 bg-neutral shadow-xl p-6 text-center text-white">
+            <FontAwesomeIcon icon={faUser} className="text-white text-4xl" />
+            <h2 className="font-bold text-lg mt-4">Inspire the Future</h2>
+          </div>
+
+          {/* Third card spans full width */}
+          <div className="card w-64 lg:col-span-2 bg-neutral shadow-xl p-6 text-center text-white">
+            <FontAwesomeIcon
+              icon={faHandHoldingHeart}
+              className="text-white text-4xl"
+            />
+            <h2 className="font-bold text-lg mt-4">Empower Change</h2>
           </div>
         </div>
       </div>
