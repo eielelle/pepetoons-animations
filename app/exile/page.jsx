@@ -36,18 +36,20 @@ export default function Exile() {
 
 
   return (
-    <main className="bg-[#101230] w-screen h-screen p-4 max-h-screen grid grid-cols-3 gap-4">
-      <div className="rounded-2xl bg-white text-black p-6 flex flex-col gap-4">
+    <main className="bg-[#101230] w-screen h-screen max-h-screen grid grid-cols-3 gap-4 p-4">
+      <div className="rounded-2xl bg-white text-black p-6 flex flex-col h-full max-h-full gap-4">
         <h1 className="text-4xl font-bold">{data[currentIdx].title}</h1>
-        <p>
-          {data[currentIdx].description}
-        </p>
-        <p className="flex items-center gap-4">
-          <Map /> {data[currentIdx].address}
-        </p>
-        <LocationCarousel imgs={data[currentIdx].imgs}/>
+        <div className="flex-1 overflow-y-scroll">
+          <p>
+            {data[currentIdx].description}
+          </p>
+          <p className="flex items-center gap-4 my-4">
+            <Map /> {data[currentIdx].address}
+          </p>
+          <LocationCarousel imgs={data[currentIdx].imgs}/>
+        </div>
 
-        <div className="mt-auto flex justify-between items-center">
+        <div className="mt-auto flex flex-wrap-reverse lg:flex-nowrap gap-4 justify-center lg:justify-between items-center">
           <Link href={data[currentIdx].url} className="btn btn-primary">
             <MapPin /> View in Google Maps
           </Link>
@@ -62,7 +64,7 @@ export default function Exile() {
           </div>
         </div>
       </div>
-      <div className="col-span-2 rounded-2xl flex-1 h-full overflow-hidden">
+      <div className="col-span-2 rounded-2xl flex-1 overflow-hidden">
         <MapLeaflet coor={data[currentIdx].coordinates} />
       </div>
     </main>
