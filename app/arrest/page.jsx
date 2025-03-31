@@ -157,7 +157,7 @@ export default function Arrest() {
             <div className="col-span-3 lg:col-span-2">
               <div className="chat chat-start animate-item opacity-0">
                 <div className="chat-bubble chat-bubble-base">
-                  <li className="list">
+                  <ul className="list">
                   <li className="list-row flex items-center">
                       <span className="relative flex size-3">
                         <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75"></span>
@@ -166,22 +166,22 @@ export default function Arrest() {
 
                       <h2 className="text-lg font-semibold">Execution</h2>
                     </li>
-                    <ul className="list-row">
+                    <li className="list-row">
                       On December 29, 1896 Rizal was remarkably composed in his
                       last days. He sent love letters and farewell notes to his
                       family and friends. In addition he wrote his well-known
                       poem Mi Último Adiós (or My Last Farewell) which is a
                       tribute to his sacrifice and patriotism.
-                    </ul>
-                    <ul className="list-row">
+                    </li>
+                    <li className="list-row">
                       On the morning of December 30, 1896, From Fort Santiago
                       Rizal was escorted to Bagumbayan which is now Luneta. In
                       the company of priests and guards he strolled calmly. A
                       firing squad was used to put Rizal to death. Consummatum
                       est! [It is finished!] was reportedly his final words as
                       he stood erect before his executioners.
-                    </ul>
-                  </li>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
