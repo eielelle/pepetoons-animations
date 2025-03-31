@@ -43,7 +43,7 @@ export default function Homepage() {
           </div>
         </section>
 
-        <section className="-mt-24 overflow-visible z-10 relative">
+        <section className="-mt-24 pb-24 overflow-visible z-10 relative">
           <div className="container px-4 mx-auto border-l-4 border-l-primary">
             <h1 className="text-2xl font-semibold">Biography of Jose Rizal</h1>
             <p>
@@ -95,7 +95,7 @@ export default function Homepage() {
           </div>
         </section>
 
-        <section>
+        <section className="pb-24">
           <div className="container px-4 mx-auto border-l-4 border-l-primary">
             <h1 className="text-2xl font-semibold">Check this out!</h1>
             <p>

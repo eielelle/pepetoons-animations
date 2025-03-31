@@ -6,6 +6,6 @@
 @plugin "daisyui";
 
 html {
-  @apply bg-white;
+  @apply bg-black;
   @apply font-[montserrat]
 }
