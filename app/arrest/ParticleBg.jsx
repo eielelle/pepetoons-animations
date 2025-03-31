@@ -39,7 +39,7 @@ export default function ParticleBg() {
           options={{
             background: {
               color: {
-                value: "#121F30",
+                value: "#000",
               },
             },
             fpsLimit: 120,
