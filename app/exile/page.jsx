@@ -10,63 +10,66 @@ import LocationCarousel from "./LocationCarousel";
 import { useState } from "react";
 import { data } from "./data";
 import Link from "next/link";
+import travelsImg from "../../assets/homepage/travels.jpg";
+import HeaderLayout from "../layouts/HeaderLayout";
 
 export default function Exile() {
   const [currentIdx, setCurrentIdx] = useState(0);
 
   function next() {
-    setCurrentIdx(prev => {
+    setCurrentIdx((prev) => {
       if (prev < data.length - 1) {
-        return prev + 1
+        return prev + 1;
       } else {
-        return 0
+        return 0;
       }
-    })
+    });
   }
 
   function prev() {
-    setCurrentIdx(prev => {
+    setCurrentIdx((prev) => {
       if (prev > 0) {
-        return prev - 1
+        return prev - 1;
       } else {
-        return data.length - 1
+        return data.length - 1;
       }
-    })
+    });
   }
 
-
   return (
-    <main className="bg-[#101230] w-screen h-screen max-h-screen grid grid-cols-3 gap-4 p-4">
-      <div className="rounded-2xl bg-white text-black p-6 flex flex-col h-full max-h-full gap-4">
-        <h1 className="text-4xl font-bold">{data[currentIdx].title}</h1>
-        <div className="flex-1 overflow-y-scroll">
-          <p>
-            {data[currentIdx].description}
-          </p>
-          <p className="flex items-center gap-4 my-4">
-            <Map /> {data[currentIdx].address}
-          </p>
-          <LocationCarousel imgs={data[currentIdx].imgs}/>
-        </div>
+    <HeaderLayout>
+      <main
+        className="bg-cover min-h-screen relative py-24"
+        style={{ backgroundImage: `url('${travelsImg.src}')` }}
+      >
+        <div
+              className="absolute top-0 left-0 size-full z-10"
+              style={{
+                background: `linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1))`,
+              }}
+            ></div>
+            <div className="relative z-50 h-full container mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
+              <div className="order-2 lg:order-1">
+                <div className="flex justify-start items-center gap-4 mb-4">
+                  <button onClick={prev}><ArrowLeftCircle size={32} /></button>
+                  <button onClick={next}><ArrowRightCircle size={32} /></button>
+                </div>
+                <h1 className="text-4xl font-bold pl-4 border-l-4 border-primary">{data[currentIdx].title}</h1>
+                <p className="py-4">{data[currentIdx].description}</p>
+                <Link href={data[currentIdx].url} className="btn btn-primary btn-lg">View in Google Maps</Link>
+              </div>
 
-        <div className="mt-auto flex flex-wrap-reverse lg:flex-nowrap gap-4 justify-center lg:justify-between items-center">
-          <Link href={data[currentIdx].url} className="btn btn-primary">
-            <MapPin /> View in Google Maps
-          </Link>
-
-          <div className="flex gap-4">
-            <button onClick={prev} className="transform transition duration-75 hover:scale-110 hover:cursor-pointer">
-              <ArrowLeftCircle size={32} />
-            </button>
-            <button onClick={next} className="transform transition duration-75 hover:scale-110 hover:cursor-pointer">
-              <ArrowRightCircle size={32} />
-            </button>
-          </div>
-        </div>
-      </div>
-      <div className="col-span-2 rounded-2xl flex-1 overflow-hidden">
-        <MapLeaflet coor={data[currentIdx].coordinates} />
-      </div>
-    </main>
+              <div className="order-1 lg:order-2">
+                <div className="w-2/3 mx-auto">
+                  <MapLeaflet coor={data[currentIdx].coordinates} />
+                  <LocationCarousel imgs={data[currentIdx].imgs} />
+                </div>
+              </div>
+            </div>
+        {/* <div className="col-span-2 rounded-2xl flex-1 overflow-hidden">
+          <MapLeaflet coor={data[currentIdx].coordinates} />
+        </div> */}
+      </main>
+    </HeaderLayout>
   );
 }

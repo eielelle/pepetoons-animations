@@ -12,7 +12,7 @@ export default function Map({ coor }) {
 
   return (
     <MapContainer
-      className="h-full"
+      className="h-[300px] w-full"
       center={coor}
       zoom={100}
       zoomControl={false}
