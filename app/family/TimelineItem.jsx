@@ -25,7 +25,9 @@ export default function TimelineItem({ img, title, year, description, isEnd }) {
 
           <div className="col-span-2">
             <time className="font-mono italic text-xl">{year}</time>
-            <div className="text-4xl font-black">{title}</div>
+            <div className={`text-4xl my-4 font-black border-primary ${
+          isEnd ? "border-l-4 pl-4" : "border-r-4 pr-4"
+        }`}>{title}</div>
             <p className="font-[montserrat]">{description}</p>
           </div>
 
