@@ -67,9 +67,9 @@ export default function Homepage() {
               <CarouselSlide
                 href={"/exile"}
                 src={monumentImg}
-                alt={"monuments-and-his-exile"}
+                alt={"monuments"}
               >
-                Monuments and his Exile
+                Monuments
               </CarouselSlide>
               <CarouselSlide href={"/family"} src={familyImg} alt={"family"}>
                 Family
