@@ -5,7 +5,7 @@ export default function CarouselSlide({ href, src, alt, children }) {
   return (
     <Link
       href={href}
-      className="carousel-item aspect-video w-lg bg-black relative overflow-hidden group"
+      className="carousel-item aspect-video w-lg bg-black relative overflow-hidden group popup"
     >
       <Image
         className="w-full h-full object-cover group-hover:scale-110 transition duration-300"
