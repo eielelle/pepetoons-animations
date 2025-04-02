@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
@@ -29,8 +30,26 @@ export default function Header() {
     },
   ];
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="navbar fixed top-0 left-0 w-full z-50 flex-col-reverse md:flex-row">
+    <header className={`navbar fixed top-0 left-0 w-full z-50 flex-col-reverse md:flex-row ${isScrolled ? 'bg-black opacity-65 shadow-sm' : ''}`}>
       <div className="flex-1">
         <a className="btn btn-ghost text-xl bg-primary">pepetoons</a>
       </div>
