@@ -49,7 +49,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={`navbar fixed top-0 left-0 w-full z-50 flex-col-reverse md:flex-row ${isScrolled ? 'bg-black opacity-65 shadow-sm' : ''}`}>
+    <header className={`navbar fixed top-0 left-0 w-full z-50 flex-col-reverse md:flex-row ${isScrolled ? 'bg-black opacity-90 shadow-sm' : ''}`}>
       <div className="flex-1">
         <a className="btn btn-ghost text-xl bg-primary" href="/">pepetoons</a>
       </div>
