@@ -5,15 +5,16 @@ import ustImg from "../../assets/educ/ust.png";
 import madridImg from "../../assets/educ/madrid.png";
 import doctorImg from "../../assets/educ/doctor.png";
 import parisImg from "../../assets/educ/paris.png";
+import Footer from "../components/footer";
 
 export default function Education() {
   return (
-    <main className="relative bg-[#101230]">
-      <header className="fixed top-0 p-5 bg-[#101230] w-full border-b-2 border-white z-20">
+    <main className="relative bg-[#111]">
+      <header className="fixed top-0 p-5 bg-black w-full border-b-2 border-primary z-20">
         <h1 className="text-4xl font-black">Education</h1>
       </header>
 
-      <section className="grid grid-cols-3 gap-8 pt-28 px-5">
+      <section className="grid grid-cols-3 gap-8 pt-28 px-5 mb-24">
         <div className="col-span-3 md:col-span-3 lg:col-span-1">
           <h2 className="text-blue-400 text-xl font-bold">
             Early Education of Jose Rizal (1869 - 1877)
@@ -342,6 +343,8 @@ export default function Education() {
           </ul>
         </div>
       </section>
+
+      <Footer />
     </main>
   );
 }

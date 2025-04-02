@@ -8,6 +8,7 @@ import Link from "next/link";
 import { ArrowRight } from "react-feather";
 
 import { data } from './data'
+import HeaderLayout from "../layouts/HeaderLayout";
 
 export default function Visit() {
   const [currentIdx, setCurrentIdx] = useState(0)
@@ -45,6 +46,7 @@ export default function Visit() {
   }, [pos]);
 
   return (
+    <HeaderLayout>
     <main className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
       <section className="relative">
         <Image
@@ -61,7 +63,7 @@ export default function Visit() {
           </button>
         </div>
       </section>
-      <section className="flex flex-col h-full bg-[#101230]">
+      <section className="flex flex-col h-full bg-black">
         <div className="flex-1 relative overflow-x-hidden">
           <div className="w-[600%] h-[600px] flex" ref={carouselRef}>
             {data[currentIdx].slides.map((value, key) => (
@@ -76,7 +78,7 @@ export default function Visit() {
           </div>
         </div>
         <div className="p-6">
-          <h1 className="text-2xl font-bold">{data[currentIdx].title}</h1>
+          <h1 className="text-2xl font-bold border-l-2 border-primary pl-4">{data[currentIdx].title}</h1>
           <p className="my-6">
             {data[currentIdx].description}
           </p>
@@ -86,5 +88,7 @@ export default function Visit() {
         </div>
       </section>
     </main>
+
+    </HeaderLayout>
   );
 }
