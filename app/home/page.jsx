@@ -52,14 +52,14 @@ export default function Homepage() {
                 Discover the inspiring journey of José Rizal—his works, ideals,
                 and lasting impact on the Philippines and beyond.
               </p>
-              <a href="" className="btn btn-lg btn-primary">
+              <a href="#bio" className="btn btn-lg btn-primary">
                 Get Started
               </a>
             </div>
           </div>
         </section>
 
-        <section className="-mt-24 pb-24 overflow-visible z-10 relative">
+        <section id="bio" className="-mt-24 pb-24 overflow-visible z-10 relative">
           <div className="container px-4 mx-auto border-l-4 border-l-primary">
             <h1 className="text-2xl font-semibold popup">Biography of Jose Rizal</h1>
             <p className="popup">
