@@ -29,6 +29,15 @@ export default function Visit() {
     setInterval(() => {
       setPos((prev) => prev - 100 / 6);
     }, 4000);
+
+    anime({
+      targets: ".popup",
+      translateY: [20, 0],
+      opacity: [0, 1],
+      duration: 1000,
+      easing: 'easeInOutQuad',
+      delay: anime.stagger(200)
+    })
   }, []);
 
   useEffect(() => {
@@ -56,9 +65,9 @@ export default function Visit() {
         />
         <div className="overlay absolute top-0 left-0 w-full h-full bg-black opacity-70"></div>
         <div className="content absolute top-0 left-0 w-full h-full flex flex-col gap-6 justify-center items-center">
-          <p>Places He Visited</p>
-          <h1 className="text-6xl font-black">{data[currentIdx].title}</h1>
-          <button onClick={togglePlace} className="btn btn-xl btn-primary btn-circle hover:animate-bounce">
+          <p className="popup">Places He Visited</p>
+          <h1 className="text-6xl font-black popup">{data[currentIdx].title}</h1>
+          <button onClick={togglePlace} className="btn btn-xl btn-primary btn-circle hover:animate-bounce popup">
             <ArrowRight />
           </button>
         </div>
@@ -78,11 +87,11 @@ export default function Visit() {
           </div>
         </div>
         <div className="p-6">
-          <h1 className="text-2xl font-bold border-l-2 border-primary pl-4">{data[currentIdx].title}</h1>
-          <p className="my-6">
+          <h1 className="text-2xl font-bold border-l-2 border-primary pl-4 popup">{data[currentIdx].title}</h1>
+          <p className="my-6 popup">
             {data[currentIdx].description}
           </p>
-          <Link className="btn btn-outline btn-primary btn-lg w-full" href={`visit/${data[currentIdx].url}`}>
+          <Link className="btn btn-outline btn-primary btn-lg w-full popup" href={`visit/${data[currentIdx].url}`}>
             See More
           </Link>
         </div>
