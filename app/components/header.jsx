@@ -21,7 +21,7 @@ export default function Header() {
     {
       id: "explore",
       label: "Explore the Museum",
-      urlPath: "museum",
+      urlPath: "",
     },
     {
       id: "about",
@@ -51,7 +51,7 @@ export default function Header() {
   return (
     <header className={`navbar fixed top-0 left-0 w-full z-50 flex-col-reverse md:flex-row ${isScrolled ? 'bg-black opacity-65 shadow-sm' : ''}`}>
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl bg-primary">pepetoons</a>
+        <a className="btn btn-ghost text-xl bg-primary" href="/">pepetoons</a>
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
