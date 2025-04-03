@@ -1,8 +1,12 @@
+import Image from "next/image";
+
 export default function Footer() {
   return (
 <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10 border-t-4 border-primary">
   <aside>
-    <a className="bg-primary text-white text-2xl font-bold p-2 rounded" href="/" >pepetoons</a>
+    <a className="p-2" href="/" >
+    <Image src={'/logo.png'} alt={"logo"} width={150} height={150} />
+    </a>
     <p>
       <br />
       All Rights Reserved 2025
