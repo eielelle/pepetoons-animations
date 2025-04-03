@@ -43,6 +43,15 @@ export default function RomanticLifePage() {
 
   useEffect(() => {
     animate(currentIdx);
+
+    anime({
+      targets: ".popup",
+      translateY: [20, 0],
+      opacity: [0, 1],
+      duration: 1000,
+      easing: 'easeInOutQuad',
+      delay: anime.stagger(200)
+    })
   }, [currentIdx]);
 
   return (
@@ -54,16 +63,16 @@ export default function RomanticLifePage() {
           alt={"img"}
         />
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-70"></div>
-        <div className="absolute top-0 left-0 w-full h-full grid grid-cols-2 gap-10 md:w-auto">
+        <div className="absolute top-0 left-0 w-full h-full grid grid-cols-2 gap-10 md:w-auto pt-28 lg:pt-0">
           <div className="flex flex-col justify-center md:h-screen p-1 lg:p-6 col-span-2 md:col-span-1">
             <div className="text-center md:text-left sm:text-sm">
-              <p className="text-sm">Personal and Romantic Life</p>
-              <h1 className="text-2xl md:text-4xl font-black my-2 md:my-4">
+              <p className="text-sm popup">Personal and Romantic Life</p>
+              <h1 className="text-2xl md:text-4xl font-black my-2 md:my-4 popup">
                 {data[currentIdx].name}
               </h1>
               <ul className="list">
                 {data[currentIdx].content.map((data, key) => (
-                  <li className="list-row" key={key}>
+                  <li className="list-row popup" key={key}>
                     {data}
                   </li>
                 ))}
@@ -76,7 +85,7 @@ export default function RomanticLifePage() {
               {data.map((data, key) => (
                 <div
                   key={key}
-                  className="w-64 h-96 shrink-0 bg-white card rounded-none sm: w-54 h-76"
+                  className="w-64 h-96 shrink-0 bg-white card rounded-none"
                 >
                   <figure className="h-[90%] p-4">
                     <Image

@@ -18,21 +18,21 @@ export default function TimelineItem({ img, title, year, description, isEnd }) {
       >
         <div className="grid grid-cols-3 items-center gap-4">
           {isEnd && (
-            <div className="w-full h-full aspect-square object-contain">
+            <div className="w-full h-full aspect-square object-contain popup">
               <Image src={img} alt={"img"} />
             </div>
           )}
 
           <div className="col-span-2">
-            <time className="font-mono italic text-xl">{year}</time>
-            <div className={`text-4xl my-4 font-black border-primary ${
+            <time className="font-mono italic text-xl popup">{year}</time>
+            <div className={`text-4xl my-4 font-black border-primary popup ${
           isEnd ? "border-l-4 pl-4" : "border-r-4 pr-4"
         }`}>{title}</div>
-            <p className="font-[montserrat]">{description}</p>
+            <p className="font-[montserrat] popup">{description}</p>
           </div>
 
           {!isEnd && (
-            <div className="w-full h-full aspect-square object-contain">
+            <div className="w-full h-full aspect-square object-contain popup">
               <Image src={img} alt={"img"} />
             </div>
           )}

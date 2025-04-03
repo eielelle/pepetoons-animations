@@ -1,7 +1,9 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const pathName = usePathname();
@@ -20,7 +22,7 @@ export default function Header() {
     {
       id: "explore",
       label: "Explore the Museum",
-      urlPath: "museum",
+      urlPath: "",
     },
     {
       id: "about",
@@ -29,10 +31,30 @@ export default function Header() {
     },
   ];
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="navbar fixed top-0 left-0 w-full z-50 flex-col-reverse md:flex-row">
+    <header className={`navbar fixed top-0 left-0 w-full z-50 flex-col-reverse md:flex-row ${isScrolled ? 'bg-black opacity-90 shadow-sm' : ''}`}>
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl bg-primary">pepetoons</a>
+      <a className="block pl-3" href="/">
+        <Image src={'/logo.png'} alt={"logo"} width={150} height={150} />
+      </a>
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
@@ -44,7 +66,6 @@ export default function Header() {
           ))}
         </ul>
       </div>
-    </header>
-    
+    </header>    
   );
 }
