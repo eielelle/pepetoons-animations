@@ -8,15 +8,41 @@ import {
   faHandBackFist,
 } from "@fortawesome/free-solid-svg-icons";
 
-import {
-  faPen,
-  faCommentDots,
-  faCloud,
-  faMusic,
-  faGem,
-  faPenNib,
-} from "@fortawesome/free-solid-svg-icons";
+const members = [
+  { name: "Jameson Teodore", role: "Project Manager", image: "#" },
+  { name: "Jamesmar Martin", role: "Animator", image: "#" },
+  { name: "Eleazar Romero", role: "Developer, QA", image: "#" },
+  { name: "Shello Lois Roxas", role: "Developer, Animator", image: "#" },
+  { name: "Axelwaren OIeno", role: "Developer", image: "#" },
+  { name: "Alghie Vic Timan", role: "Developer", image: "#" },
+  { name: "Jerick De Guzman", role: "Developer", image: "#" },
+  { name: "Vincent John", role: "Animator", image: "#" },
+];
 
+import {
+  FaBox,
+  FaSlack,
+  FaCloud,
+  FaFigma,
+  FaGem,
+  FaFeather,
+  FaBook,
+  FaHatCowboySide,
+  FaHatCowboy,
+  FaHatWizard,
+  FaRedhat,
+  FaShoePrints,
+  FaLanguage,
+  FaChalkboard,
+  FaAward,
+  FaTrademark,
+  FaBrain,
+  FaIdeal,
+  FaPen,
+  FaWikipediaW,
+  FaGlasses,
+  FaSun,
+} from "react-icons/fa";
 export default function Team() {
   return (
     // Team Group Picture
@@ -47,25 +73,12 @@ export default function Team() {
             "Honoring the legacy of Rizal, inspiring generations of change."
           </h1>
 
-          <div className="flex gap-8 md:gap-12">
-            <div className="text-4xl text-white md:text-5xl">
-              <FontAwesomeIcon icon={faPen} />
-            </div>
-            <div className="text-4xl md:text-5xl">
-              <FontAwesomeIcon icon={faCommentDots} />
-            </div>
-            <div className="text-4xl md:text-5xl">
-              <FontAwesomeIcon icon={faCloud} />
-            </div>
-            <div className="text-4xl md:text-5xl">
-              <FontAwesomeIcon icon={faMusic} />
-            </div>
-            <div className="text-4xl md:text-5xl">
-              <FontAwesomeIcon icon={faGem} />
-            </div>
-            <div>
-              <FontAwesomeIcon icon={faPenNib} className="bg-white text-4xl" />
-            </div>
+          <div className="flex space-x-6 mt-6">
+            <FaPen className="text-gray-400 text-3xl hover:text-white transition" />
+            <FaBook className="text-gray-400 text-3xl hover:text-white transition" />
+            <FaRedhat className="text-gray-400 text-3xl hover:text-white transition" />
+            <FaSun className="text-gray-400 text-3xl hover:text-white transition" />
+            <FaLanguage className="text-gray-400 text-3xl hover:text-white transition" />
           </div>
         </div>
 
@@ -111,38 +124,87 @@ export default function Team() {
 
           {/* Team Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
-            {[
-              { name: "Jameson Teodore", role: "Project Manager", image: "#" },
-              { name: "Jamesmar Martin", role: "Animator", image: "#" },
-              { name: "Eleazar Romero", role: "Developer, QA", image: "#" },
-              { name: "Shello Lois Roxas", role: "Developer", image: "#" },
-              { name: "Axelwaren OIeno", role: "Developer", image: "#" },
-              { name: "Alghie Vic Timan", role: "Developer", image: "#" },
-              { name: "Jerick De Guzman", role: "Developer", image: "#" },
-              { name: "Vincent John", role: "Animation", image: "#" },
-            ].map((member, index) => (
-              <div
-                key={index}
-                className="bg-white shadow-lg rounded-2xl p-6 text-center"
-              >
-                {/* Profile Picture */}
-                <div className="w-24 h-24 rounded-full bg-gray-300 mx-auto overflow-hidden">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover"
-                  />
+            {/* Render all members except the last two if needed */}
+            {members
+              .slice(0, members.length - (members.length % 3 === 2 ? 2 : 0))
+              .map((member, index) => (
+                <div
+                  key={index}
+                  className="bg-white shadow-lg rounded-2xl p-6 text-center"
+                >
+                  {/* Profile Picture */}
+                  <div className="w-24 h-24 rounded-full bg-gray-300 mx-auto overflow-hidden">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+
+                  {/* Name */}
+                  <h3 className="text-xl text-black font-bold mt-4">
+                    {member.name}
+                  </h3>
+
+                  {/* Role */}
+                  <p className="text-gray-500 text-sm mt-1">{member.role}</p>
                 </div>
+              ))}
 
-                {/* Name */}
-                <h3 className="text-xl text-black font-bold mt-4">
-                  {member.name}
-                </h3>
+            {/* Center the last two members if they exist */}
+            {members.length % 3 === 2 && (
+              <div className="col-span-3 flex justify-center gap-6">
+                {members.slice(-2).map((member, index) => (
+                  <div
+                    key={index}
+                    className="bg-white shadow-lg rounded-2xl p-6 text-center w-1/3"
+                  >
+                    {/* Profile Picture */}
+                    <div className="w-24 h-24 rounded-full bg-gray-300 mx-auto overflow-hidden">
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
 
-                {/* Role */}
-                <p className="text-gray-500 text-sm mt-1">{member.role}</p>
+                    {/* Name */}
+                    <h3 className="text-xl text-black font-bold mt-4">
+                      {member.name}
+                    </h3>
+
+                    {/* Role */}
+                    <p className="text-gray-500 text-sm mt-1">{member.role}</p>
+                  </div>
+                ))}
               </div>
-            ))}
+            )}
+
+            {/* Center the last member if only 1 remains */}
+            {members.length % 3 === 1 && (
+              <div className="col-span-3 flex justify-center">
+                <div className="bg-white shadow-lg rounded-2xl p-6 text-center w-1/3">
+                  {/* Profile Picture */}
+                  <div className="w-24 h-24 rounded-full bg-gray-300 mx-auto overflow-hidden">
+                    <img
+                      src={members[members.length - 1].image}
+                      alt={members[members.length - 1].name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+
+                  {/* Name */}
+                  <h3 className="text-xl text-black font-bold mt-4">
+                    {members[members.length - 1].name}
+                  </h3>
+
+                  {/* Role */}
+                  <p className="text-gray-500 text-sm mt-1">
+                    {members[members.length - 1].role}
+                  </p>
+                </div>
+              </div>
+            )}
           </div>
         </div>
 
