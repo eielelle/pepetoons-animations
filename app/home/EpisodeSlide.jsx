@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function CarouselSlide({ href, src, alt, children }) {
+export default function EpisodeSlide({ href, src, alt, children }) {
   return (
     <Link
       href={href}
@@ -11,6 +11,8 @@ export default function CarouselSlide({ href, src, alt, children }) {
         className="w-full h-full object-cover group-hover:scale-110 transition duration-300"
         src={src}
         alt={alt}
+        width={400}
+        height={400}
       />
       <div className="bg-black opacity-70 group-hover:opacity-30 absolute top-0 left-0 w-full h-full flex justify-center items-center pointer-events-none p-4">
       </div>
