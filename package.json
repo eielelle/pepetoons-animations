@@ -20,7 +20,7 @@
     "leaflet": "^1.9.4",
     "lottie-react": "^2.4.1",
     "motion": "^12.4.7",
-    "next": "15.2.3",
+    "next": "15.2.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-feather": "^2.0.10",
