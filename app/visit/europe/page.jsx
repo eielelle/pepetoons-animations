@@ -2,6 +2,8 @@
 import { useState, useRef } from "react";
 import EuropeActivities from "./data";
 import EuropeGrid from "./EuropeGrid";
+import { ArrowLeft } from "react-feather";
+import Link from "next/link";
 
 export default function Europe() {
   const [selectedCity, setSelectedCity] = useState(null);
@@ -46,7 +48,12 @@ export default function Europe() {
   return (
     <>
       {/* Start of eorupe module */}
-      <div className="h-screen overflow-auto scrollbar-thin scrollbar-thumb-red-500 scrollbar-track-gray-200">
+      <div className="h-screen overflow-auto scrollbar-thin scrollbar-thumb-red-500 scrollbar-track-gray-200 ">
+        <Link href="/visit">
+          <button className="btn btn-xl btn-primary btn-circle absolute top-5 left-5 z-50 transform transition duration-75 hover:scale-110 hover:cursor-pointer">
+            <ArrowLeft />
+          </button>
+        </Link>
         <div className="grid grid-cols-3 max-sm:grid-cols-1 max-[950px]:grid-cols-2 lg:grid-cols-3 gap-0 min-h-full overflow-hidden">
           {EuropeActivities.map((city) => (
             <EuropeGrid key={city.id} {...city} onOpen={openModal} />
