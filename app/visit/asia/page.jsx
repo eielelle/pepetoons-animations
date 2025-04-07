@@ -4,6 +4,8 @@ import { useState, useRef } from "react";
 import React from "react";
 import asiaCountry from "./data";
 import AsiaGrid from "./AsiaGrid";
+import { ArrowLeft } from "react-feather";
+import Link from "next/link";
 
 export default function Asia() {
   const [selectedCity, setSelectedCity] = useState(null);
@@ -29,6 +31,11 @@ export default function Asia() {
     <>
       {/* Start of Asia */}
       <div className="h-screen overflow-auto">
+        <Link href="/visit">
+          <button className="btn btn-xl btn-primary btn-circle absolute top-5 left-5 z-50 transform transition duration-75 hover:scale-110 hover:cursor-pointer">
+            <ArrowLeft />
+          </button>
+        </Link>
         <div className="grid grid-cols-3 max-sm:grid-cols-1 max-[950px]:grid-cols-2 lg:grid-cols-3 min-h-full overflow-hidden">
           {asiaCountry.map((city) => (
             <AsiaGrid key={city.id} {...city} onOpen={openModal} />
