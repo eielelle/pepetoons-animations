@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import SidebarLayout from "../layouts/SidebarLayout";
@@ -13,7 +15,23 @@ import travelsImg from "../../assets/homepage/travels.jpg";
 import CarouselSlide from "./CarouselSlide";
 import HeaderLayout from "../layouts/HeaderLayout";
 
+import { useEffect } from "react";
+import anime from "animejs";
+import EpisodeSlide from "./EpisodeSlide";
+import { PlayCircle } from "react-feather";
+
 export default function Homepage() {
+  useEffect(() => {
+    anime({
+      targets: ".popup",
+      translateY: [20, 0],
+      opacity: [0, 1],
+      duration: 1000,
+      easing: "easeInOutQuad",
+      delay: anime.stagger(200),
+    });
+  }, []);
+
   return (
     <HeaderLayout>
       <main className="bg-black">
@@ -29,24 +47,29 @@ export default function Homepage() {
           ></div>
           <div className="absolute top-0 left-0 size-full flex justify-center items-center">
             <div className="w-1/2 mx-auto text-center">
-              <h1 className="text-4xl font-black">
+              <h1 className="text-4xl font-black popup">
                 José Rizal: The Life, Legacy, and Literature of a National Hero
               </h1>
-              <p className="my-4">
+              <p className="my-4 popup">
                 Discover the inspiring journey of José Rizal—his works, ideals,
                 and lasting impact on the Philippines and beyond.
               </p>
-              <a href="" className="btn btn-lg btn-primary">
+              <a href="#bio" className="btn btn-lg btn-primary">
                 Get Started
               </a>
             </div>
           </div>
         </section>
 
-        <section className="-mt-24 pb-24 overflow-visible z-10 relative">
+        <section
+          id="bio"
+          className="-mt-24 pb-24 overflow-visible z-10 relative"
+        >
           <div className="container px-4 mx-auto border-l-4 border-l-primary">
-            <h1 className="text-2xl font-semibold">Biography of Jose Rizal</h1>
-            <p>
+            <h1 className="text-2xl font-semibold popup">
+              Biography of Jose Rizal
+            </h1>
+            <p className="popup">
               Discover José Rizal's life, works, and legacy that inspired
               Philippine independence.
             </p>
@@ -67,9 +90,9 @@ export default function Homepage() {
               <CarouselSlide
                 href={"/exile"}
                 src={monumentImg}
-                alt={"monuments-and-his-exile"}
+                alt={"monuments"}
               >
-                Monuments and his Exile
+                Monuments
               </CarouselSlide>
               <CarouselSlide href={"/family"} src={familyImg} alt={"family"}>
                 Family
@@ -97,8 +120,8 @@ export default function Homepage() {
 
         <section className="pb-24">
           <div className="container px-4 mx-auto border-l-4 border-l-primary">
-            <h1 className="text-2xl font-semibold">Check this out!</h1>
-            <p>
+            <h1 className="text-2xl font-semibold popup">Check this out!</h1>
+            <p className="popup">
               Watch PepeToons and explore the various chapters of José Rizal's
               Life.
             </p>
@@ -106,18 +129,16 @@ export default function Homepage() {
 
           <div className="w-full overflow-x-scroll mt-4">
             <div className="carousel carousel-center gap-4">
-              <div className="carousel-item aspect-video w-lg bg-black">
-                <video controls src="/videos/aerial-luneta.mp4" />
-              </div>
-              <div className="carousel-item aspect-video w-lg bg-black">
-                <video controls src="/videos/aerial-luneta.mp4" />
-              </div>
-              <div className="carousel-item aspect-video w-lg bg-black">
-                <video controls src="/videos/aerial-luneta.mp4" />
-              </div>
-              <div className="carousel-item aspect-video w-lg bg-black">
-                <video controls src="/videos/aerial-luneta.mp4" />
-              </div>
+              {[...Array(14)].map((_, index) => (
+                <EpisodeSlide
+                  key={index}
+                  href={"/visit"}
+                  src={`/thumbs/episode-${index + 1}.png`}
+                  alt={"episode"}
+                >
+                  <PlayCircle size={52} />
+                </EpisodeSlide>
+              ))}
             </div>
           </div>
         </section>

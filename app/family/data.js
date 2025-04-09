@@ -1,16 +1,16 @@
-import Teodora from "../../assets/Resources/Teodora_Alonso.png";
-import Francisco from "../../assets/Resources/Francisco_Mercado.png";
-import Saturina from "../../assets/Resources/Saturnina_Rizal.png";
-import Paciano from "../../assets/Resources/Paciano_Rizal.png";
-import Narcisa from "../../assets/Resources/Narcisa_Rizal.png";
-import Olympia from "../../assets/Resources/Olympia_Rizal.png";
-import Lucia from "../../assets/Resources/Lucia_Rizal.png";
-import Maria from "../../assets/Resources/Maria_Rizal.png";
-import Jose from "../../assets/Resources/José_Rizal.png";
-import Concepcion from "../../assets/Resources/Concepcion_Rizal.png";
-import Josefa from "../../assets/Resources/Josefa_Rizal.png";
-import Trinidad from "../../assets/Resources/Trinidad_Rizal.png";
-import Soledad from "../../assets/Resources/Soledad_Rizal.png";
+import Teodora from "../../assets/Resources/teodora.png";
+import Francisco from "../../assets/Resources/francisco.png";
+import Saturina from "../../assets/Resources/saturnina.png";
+import Paciano from "../../assets/Resources/paciano.png";
+import Narcisa from "../../assets/Resources/narcisa.png";
+import Olympia from "../../assets/Resources/olimpia.png";
+import Lucia from "../../assets/Resources/lucia.png";
+import Maria from "../../assets/Resources/maria.png";
+import Jose from "../../assets/Resources/jose.png";
+import Concepcion from "../../assets/Resources/conception.png";
+import Josefa from "../../assets/Resources/josefia.png";
+import Trinidad from "../../assets/Resources/trinidad.png";
+import Soledad from "../../assets/Resources/soledad.png";
 
 export const familyData = [
   {
