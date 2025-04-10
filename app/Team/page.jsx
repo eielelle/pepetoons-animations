@@ -21,8 +21,8 @@ import eleazarImg from "../../assets/Resources/Eleazar.png";
 import shelloImg from "../../assets/Resources/Shello.png";
 import axelImg from "../../assets/Resources/Axel.png";
 import jerickImg from "../../assets/Resources/Jerick.png";
-import vincentImg from "../../assets/Resources/Vincent.png";
 import alghieImg from "../../assets/Resources/Alghie.png";
+import vincentImg from "../../assets/Resources/cent.png";
 
 const members = [
   { name: "Jameson G. Teodore", role: "Project Manager", image: jamesonImg },
