@@ -15,7 +15,7 @@ import { FaBook, FaRedhat, FaLanguage, FaPen, FaSun } from "react-icons/fa";
 import PBGen_Quilates from "../../assets/Resources/PBGen.Quilates.png";
 import PCPT_Karim from "../../assets/Resources/PCPT.Ben_Karim.png";
 import Pat_Peñon from "../../assets/Resources/Pat.Peñon.png";
-import jamesonImg from "../../assets/Resources/Francisco_Mercado.png";
+import jamesonImg from "../../assets/Resources/Jamesmar.png";
 import jamesmarImg from "../../assets/Resources/Jamesmar.png";
 import eleazarImg from "../../assets/Resources/Eleazar.png";
 import shelloImg from "../../assets/Resources/Shello.png";
