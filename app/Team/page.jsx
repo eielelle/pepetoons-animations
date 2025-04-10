@@ -15,7 +15,7 @@ import { FaBook, FaRedhat, FaLanguage, FaPen, FaSun } from "react-icons/fa";
 import PBGen_Quilates from "../../assets/Resources/PBGen.Quilates.png";
 import PCPT_Karim from "../../assets/Resources/PCPT.Ben_Karim.png";
 import Pat_Peñon from "../../assets/Resources/Pat.Peñon.png";
-import jamesonImg from "../../assets/Resources/Jamesmar.png";
+import jamesonImg from "../../assets/Resources/Jameson.png";
 import jamesmarImg from "../../assets/Resources/Jamesmar.png";
 import eleazarImg from "../../assets/Resources/Eleazar.png";
 import shelloImg from "../../assets/Resources/Shello.png";
@@ -108,8 +108,8 @@ export default function Team() {
             </div>
           </div>
 
+          {/* Testimonial */}
           <div className="flex flex-col lg:flex-row items-center bg-white p-6 rounded-lg shadow-lg max-w-4xl mx-auto mt-13">
-            {/* Text Section */}
             <div className="text-center lg:text-left w-full lg:w-2/3">
               <h2 className="text-2xl font-bold mb-3 text-black">
                 What our community says about us!
