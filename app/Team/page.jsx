@@ -11,6 +11,7 @@ import {
 import { FaBook, FaRedhat, FaLanguage, FaPen, FaSun } from "react-icons/fa";
 
 // Import team images
+import PBGen_Quilates from "../../assets/Resources/PBGen.Quilates.png";
 import PCPT_Karim from "../../assets/Resources/PCPT.Ben_Karim.png";
 import jamesonImg from "../../assets/Resources/Francisco_Mercado.png";
 import jamesmarImg from "../../assets/Resources/Jamesmar.png";
@@ -25,11 +26,15 @@ const members = [
   { name: "Jameson Teodore", role: "Project Manager", image: jamesonImg },
   { name: "Jamesmar Martin", role: "Animator", image: jamesmarImg },
   { name: "Eleazar Romero", role: "Developer, QA", image: eleazarImg },
-  { name: "Shello Lois Roxas", role: "Developer, Animator", image: shelloImg },
+  {
+    name: "Shello Lois B Roxas",
+    role: "Developer, Animator",
+    image: shelloImg,
+  },
   { name: "Axelwaren OIeno", role: "Developer", image: axelImg },
-  { name: "Alghie Vic Timan", role: "Developer", image: alghieImg },
-  { name: "Jerick De Guzman", role: "Developer", image: jerickImg },
-  { name: "Vincent John", role: "Animator", image: vincentImg },
+  { name: "Alghie Vic B Timan", role: "Developer", image: alghieImg },
+  { name: "Jerick C De Guzman", role: "Developer", image: jerickImg },
+  { name: "Vincent Jhon G Diala", role: "Animator", image: vincentImg },
 ];
 
 export default function Team() {
@@ -194,8 +199,52 @@ export default function Team() {
               understanding of our history and inspired me to make a difference
               in my community."
             </p>
-            <p className="font-bold mt-4 text-black">PCPT Karim, OIC, ITMS</p>
+            <p className="font-bold mt-4 text-black">PBGen Edwin A Quilates</p>
+            <p className="text-sm text-gray-500">Director, ITMS</p>
+          </div>
+          <div className="lg:w-1/2 mt-6 lg:mt-0 flex justify-center">
+            <Image
+              src={PBGen_Quilates}
+              alt="Testimonial"
+              className="rounded-lg shadow-md w-64 object-cover"
+            />
+          </div>
+        </div>
+
+        <div className="flex flex-col lg:flex-row items-center bg-white p-10 rounded-lg shadow-lg max-w-3xl mx-auto mt-13">
+          <div className="text-center lg:text-left lg:w-1/2">
+            <h2 className="text-3xl font-bold mb-4 text-black">
+              What our community says about us!
+            </h2>
+            <p className="text-lg italic text-gray-700">
+              "Exploring Rizal’s life through this platform has deepened my
+              understanding of our history and inspired me to make a difference
+              in my community."
+            </p>
+            <p className="font-bold mt-4 text-black">PCpt Bensar Ali A Karim</p>
             <p className="text-sm text-gray-500">OJT Supervisor</p>
+          </div>
+          <div className="lg:w-1/2 mt-6 lg:mt-0 flex justify-center">
+            <Image
+              src={PCPT_Karim}
+              alt="Testimonial"
+              className="rounded-lg shadow-md w-64 object-cover"
+            />
+          </div>
+        </div>
+
+        <div className="flex flex-col lg:flex-row items-center bg-white p-10 rounded-lg shadow-lg max-w-3xl mx-auto mt-13">
+          <div className="text-center lg:text-left lg:w-1/2">
+            <h2 className="text-3xl font-bold mb-4 text-black">
+              What our community says about us!
+            </h2>
+            <p className="text-lg italic text-gray-700">
+              "Exploring Rizal’s life through this platform has deepened my
+              understanding of our history and inspired me to make a difference
+              in my community."
+            </p>
+            <p className="font-bold mt-4 text-black">Pat. Jayson C Peñon</p>
+            <p className="text-sm text-gray-500">OJT Assistant Supervisor</p>
           </div>
           <div className="lg:w-1/2 mt-6 lg:mt-0 flex justify-center">
             <Image
