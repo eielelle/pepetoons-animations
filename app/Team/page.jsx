@@ -11,12 +11,13 @@ import {
 import { FaBook, FaRedhat, FaLanguage, FaPen, FaSun } from "react-icons/fa";
 
 // Import team images
+import PCPT_Karim from "../../assets/Resources/PCPT.Ben_Karim.png";
 import jamesonImg from "../../assets/Resources/Francisco_Mercado.png";
 import jamesmarImg from "../../assets/Resources/Jamesmar.png";
 import eleazarImg from "../../assets/Resources/Eleazar.png";
 import shelloImg from "../../assets/Resources/Shello.png";
 import axelImg from "../../assets/Resources/Axel.png";
-import jerickImg from "../../assets/Resources/Paciano_Rizal.png";
+import jerickImg from "../../assets/Resources/Jerick.png";
 import vincentImg from "../../assets/Resources/Vincent.png";
 import alghieImg from "../../assets/Resources/Alghie.png";
 
@@ -194,11 +195,11 @@ export default function Team() {
               in my community."
             </p>
             <p className="font-bold mt-4 text-black">PCPT Karim, OIC, ITMS</p>
-            <p className="text-sm text-gray-500">OJT Coordinator</p>
+            <p className="text-sm text-gray-500">OJT Supervisor</p>
           </div>
           <div className="lg:w-1/2 mt-6 lg:mt-0 flex justify-center">
-            <img
-              src="/images/testimonial.png"
+            <Image
+              src={PCPT_Karim}
               alt="Testimonial"
               className="rounded-lg shadow-md w-64 object-cover"
             />
