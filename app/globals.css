@@ -7,7 +7,7 @@
 
 html {
   @apply bg-black;
-  @apply font-[montserrat];
+  /* @apply font-[montserrat]; */
 
   scroll-behavior: smooth;
 }
