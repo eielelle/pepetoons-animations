@@ -58,7 +58,7 @@ export default function RomanticLifePage() {
     <HeaderLayout>
       <main className="h-screen w-screen relative">
         <Image
-          className="w-full h-full object-cover blur-md"
+          className="w-full h-full object-contain blur-md"
           src={data[currentIdx].img}
           alt={"img"}
         />
