@@ -10,7 +10,7 @@ export default function Page({ params }) {
 
   return (
     <HeaderLayout>
-      <main className="mt-20 container mx-auto min-h-screen grid grid-cols-3 gap-6">
+      <main className="mt-20 p-4 container mx-auto min-h-screen grid grid-cols-1 xl:grid-cols-3 gap-6">
         <section className="col-span-2">
           <iframe
             src={data[slug].link}
@@ -20,7 +20,7 @@ export default function Page({ params }) {
           <h2 className="font-semibold">Description</h2>
           <p>{data[slug].description}</p>
         </section>
-        <section>
+        <section className="h-screen flex flex-col mb-6">
           <ul className="list bg-base-100 rounded-box shadow-md">
             <li className="p-4 pb-2 tracking-wide">
               <h2 className="text-2xl font-bold">Up Next:</h2>
@@ -30,7 +30,7 @@ export default function Page({ params }) {
               <div>
                 <img
                   className="size-10 rounded-box"
-                  src={`/thumbs/episode-${Number(slug) + 1}.png`}
+                  src={`/thumbs/episode-${Number(slug) + 2}.png`}
                 />
               </div>
               <div>
@@ -61,14 +61,14 @@ export default function Page({ params }) {
 
           <div className="divider"></div>
 
-          <ul className="list rounded-box">
+          <ul className="list rounded-box flex-1 overflow-scroll">
 
           {data.slice(Number(slug) + 2).map((val, index) => (
             <li key={index} className="list-row">
               <div>
                 <img
                   className="w-[200px] object-cover aspect-video rounded-box"
-                  src={`/thumbs/episode-${Number(slug) + index + 2}.png`}
+                  src={`/thumbs/episode-${Number(slug) + index + 3}.png`}
                 />
               </div>
               <div>

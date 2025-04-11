@@ -132,7 +132,7 @@ export default function Homepage() {
               {[...Array(14)].map((_, index) => (
                 <EpisodeSlide
                   key={index}
-                  href={"/visit"}
+                  href={`video/${index}`}
                   src={`/thumbs/episode-${index + 1}.png`}
                   alt={"episode"}
                 >
