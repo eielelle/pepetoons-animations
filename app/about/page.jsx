@@ -101,6 +101,39 @@ export default function About() {
               </div>
             </div>
 
+            <div className="w-1/2 mx-auto relative mb-14">
+              <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-30">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="120"
+                  height="120"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-pen-tool"
+                >
+                  <path d="M12 19l7-7 3 3-7 7-3-3z" />
+                  <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+                  <path d="M2 2l7.586 7.586" />
+                  <circle cx="11" cy="11" r="2" />
+                </svg>
+              </span>
+              <h1 className="text-center text-4xl font-bold mb-2">
+                Why <i>Pepetoons</i>?
+              </h1>
+              <p className="text-center mb-6">
+                The name Pepetoons is a playful blend of “Pepe” and “cartoons.”
+                “Pepe” was José Rizal's nickname, and since we tell his story
+                through animated videos (or cartoons), the name captures both
+                his identity and our creative approach. It's our fun way of
+                making history feel more alive and relatable—especially for
+                younger audiences!
+              </p>
+            </div>
+
             <div className="w-full lg:w-2/3 mx-auto">
               <h1 className="text-center text-4xl font-bold mb-2">FAQ</h1>
               <p className="text-center mb-6">Frequently Asked Questions</p>
