@@ -17,7 +17,7 @@ export default function Footer() {
     <a className="link link-hover" href="/home">Home</a>
     <a className="link link-hover" >Explore the Museum</a>
     <a className="link link-hover" href="/about">About</a>
-    <a className="link link-hover">Meet the Team</a>
+    <a className="link link-hover" href="/team">Meet the Team</a>
   </nav>
   <nav>
     <h6 className="footer-title">Biography</h6>
