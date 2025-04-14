@@ -3,11 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Qwigley&display=swap');
 @import "tailwindcss";
 
-@plugin "daisyui";
+@plugin "daisyui" {
+  themes: dark --default;
+}
 
 html {
   @apply bg-black;
-  @apply font-[montserrat];
+  /* @apply font-[montserrat]; */
 
   scroll-behavior: smooth;
 }
