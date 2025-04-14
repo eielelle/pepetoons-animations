@@ -1,5 +1,4 @@
 "use client";
-
 import anime from "animejs";
 import Image from "next/image";
 import { data } from "./db";
@@ -49,9 +48,9 @@ export default function RomanticLifePage() {
       translateY: [20, 0],
       opacity: [0, 1],
       duration: 1000,
-      easing: 'easeInOutQuad',
-      delay: anime.stagger(200)
-    })
+      easing: "easeInOutQuad",
+      delay: anime.stagger(200),
+    });
   }, [currentIdx]);
 
   return (
@@ -68,7 +67,14 @@ export default function RomanticLifePage() {
             <div className="text-center md:text-left sm:text-sm">
               <p className="text-sm popup">Personal and Romantic Life</p>
               <h1 className="text-2xl md:text-4xl font-black my-2 md:my-4 popup">
-                {data[currentIdx].name}
+                {data[currentIdx].name}{" "}
+                <Image
+                  src={data[currentIdx].flag}
+                  alt="National Flag"
+                  width={45}
+                  height={45}
+                  className="inline-block"
+                />
               </h1>
               <ul className="list">
                 {data[currentIdx].content.map((data, key) => (
@@ -118,7 +124,6 @@ export default function RomanticLifePage() {
           </div>
         </div>
       </main>
-
     </HeaderLayout>
   );
 }
