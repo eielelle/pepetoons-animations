@@ -226,56 +226,32 @@ export default function Team() {
                     <p className="text-gray-500 text-sm mt-1">{member.role}</p>
                   </div>
                 ))}
+            </div>
 
-              {members.length % 3 === 2 && (
-                <div className="col-span-3 flex justify-center gap-6">
-                  {members.slice(-2).map((member, index) => (
-                    <div
-                      key={index}
-                      className="bg-white shadow-lg rounded-2xl p-6 text-center w-1/3"
-                    >
-                      <div className="w-24 h-24 rounded-full bg-gray-300 mx-auto overflow-hidden">
-                        <Image
-                          src={member.image}
-                          alt={member.name}
-                          width={96}
-                          height={96}
-                          className="object-cover rounded-full"
-                        />
-                      </div>
-                      <h3 className="text-xl text-black font-bold mt-4">
-                        {member.name}
-                      </h3>
-                      <p className="text-gray-500 text-sm mt-1">
-                        {member.role}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              )}
-
-              {members.length % 3 === 1 && (
-                <div className="col-span-3 flex justify-center">
-                  <div className="bg-white shadow-lg rounded-2xl p-6 text-center w-1/3">
+            {members.length % 3 === 2 && (
+              <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mt-6">
+                {members.slice(-2).map((member, index) => (
+                  <div
+                    key={index}
+                    className="bg-white shadow-lg rounded-2xl p-6 text-center w-[300px]"
+                  >
                     <div className="w-24 h-24 rounded-full bg-gray-300 mx-auto overflow-hidden">
                       <Image
-                        src={members[members.length - 1].image}
-                        alt={members[members.length - 1].name}
+                        src={member.image}
+                        alt={member.name}
                         width={96}
                         height={96}
                         className="object-cover rounded-full"
                       />
                     </div>
                     <h3 className="text-xl text-black font-bold mt-4">
-                      {members[members.length - 1].name}
+                      {member.name}
                     </h3>
-                    <p className="text-gray-500 text-sm mt-1">
-                      {members[members.length - 1].role}
-                    </p>
+                    <p className="text-gray-500 text-sm mt-1">{member.role}</p>
                   </div>
-                </div>
-              )}
-            </div>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </div>
