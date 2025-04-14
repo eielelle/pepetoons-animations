@@ -36,7 +36,7 @@ export default function Homepage() {
     <HeaderLayout>
       <main className="bg-black">
         <section
-          className="relative bg-cover hero h-[800px] w-screen"
+          className="relative bg-cover hero h-screen w-screen"
           style={{ backgroundImage: `url('${travelsImg.src}')` }}
         >
           <div
@@ -63,7 +63,7 @@ export default function Homepage() {
 
         <section
           id="bio"
-          className="-mt-24 pb-24 overflow-visible z-10 relative"
+          className="pb-24 overflow-visible z-10 relative"
         >
           <div className="container px-4 mx-auto border-l-4 border-l-primary">
             <h1 className="text-2xl font-semibold popup">
@@ -132,7 +132,7 @@ export default function Homepage() {
               {[...Array(14)].map((_, index) => (
                 <EpisodeSlide
                   key={index}
-                  href={"/visit"}
+                  href={`video/${index}`}
                   src={`/thumbs/episode-${index + 1}.png`}
                   alt={"episode"}
                 >

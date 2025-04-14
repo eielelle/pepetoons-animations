@@ -29,6 +29,11 @@ export default function Header() {
       label: "About",
       urlPath: "about",
     },
+    {
+      id: "team",
+      label: "Team",
+      urlPath: "team",
+    },
   ];
 
   const [isScrolled, setIsScrolled] = useState(false);
