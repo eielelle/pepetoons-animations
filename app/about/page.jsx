@@ -32,17 +32,15 @@ export default function About() {
                 </p>
                 <br />
                 <p>
-                  Our website is a comprehensive and interactive platform created
-                  to honor and celebrate the remarkable life of Dr. José Rizal,
-                  the national hero of the Philippines. Here, we aim to provide an
-                  in-depth exploration of his life, his work, and his influence on
-                  Filipino culture and the history of the Philippines.
+                  Our website is a comprehensive and interactive platform
+                  created to honor and celebrate the remarkable life of Dr. José
+                  Rizal, the national hero of the Philippines. Here, we aim to
+                  provide an in-depth exploration of his life, his work, and his
+                  influence on Filipino culture and the history of the
+                  Philippines.
                 </p>
                 <br />
-                <Link
-                  href={"/home"}
-                  className="btn btn-lg btn-primary"
-                >
+                <Link href={"/home"} className="btn btn-lg btn-primary">
                   Get Started
                 </Link>
               </div>
@@ -68,12 +66,14 @@ export default function About() {
                 </div>
               </div>
               <div className="w-full lg:w-1/4">
-                <h1 className="text-4xl font-bold mb-4">Explore Rizal's Life</h1>
+                <h1 className="text-4xl font-bold mb-4">
+                  Explore Rizal's Life
+                </h1>
                 <p>
-                  Learn about the life journey of José Rizal, from his early years
-                  in Calamba to his execution in Bagumbayan. Our website covers
-                  his education, travels, literary works, and contributions to the
-                  fight for Filipino rights and freedom.
+                  Learn about the life journey of José Rizal, from his early
+                  years in Calamba to his execution in Bagumbayan. Our website
+                  covers his education, travels, literary works, and
+                  contributions to the fight for Filipino rights and freedom.
                 </p>
               </div>
             </div>
@@ -83,8 +83,8 @@ export default function About() {
                 <h1 className="text-4xl font-bold mb-4">His Works</h1>
                 <p>
                   Dive deep into Rizal's major works like Noli Me Tangere and El
-                  Filibusterismo, and explore their relevance in today's world. We
-                  provide analyses, insights, and context behind these iconic
+                  Filibusterismo, and explore their relevance in today's world.
+                  We provide analyses, insights, and context behind these iconic
                   works that continue to inspire enerations.
                 </p>
               </div>
@@ -101,42 +101,150 @@ export default function About() {
               </div>
             </div>
 
-            <div className="w-full lg:w-1/2 mx-auto">
-              <h1 className="text-center text-4xl font-bold mb-6">FAQ</h1>
-              <div className="collapse collapse-arrow bg-base-100 border border-base-300">
-                <input type="radio" name="my-accordion-2" defaultChecked />
-                <div className="collapse-title font-semibold">
-                  Who was Dr. Jose Rizal?
+            <div className="w-1/2 mx-auto relative mb-14">
+              <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-30">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="120"
+                  height="120"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-pen-tool"
+                >
+                  <path d="M12 19l7-7 3 3-7 7-3-3z" />
+                  <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+                  <path d="M2 2l7.586 7.586" />
+                  <circle cx="11" cy="11" r="2" />
+                </svg>
+              </span>
+              <h1 className="text-center text-4xl font-bold mb-2">
+                Why <i>Pepetoons</i>?
+              </h1>
+              <p className="text-center mb-6">
+                The name Pepetoons is a playful blend of “Pepe” and “cartoons.”
+                “Pepe” was José Rizal's nickname, and since we tell his story
+                through animated videos (or cartoons), the name captures both
+                his identity and our creative approach. It's our fun way of
+                making history feel more alive and relatable—especially for
+                younger audiences!
+              </p>
+            </div>
+
+            <div className="w-full lg:w-2/3 mx-auto">
+              <h1 className="text-center text-4xl font-bold mb-2">FAQ</h1>
+              <p className="text-center mb-6">Frequently Asked Questions</p>
+
+              <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-12">
+                <div>
+                  <br />
+                  <div className="collapse collapse-arrow bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-2" />
+                    <div className="collapse-title font-semibold">
+                      Who was Dr. Jose Rizal?
+                    </div>
+                    <div className="collapse-content text-sm">
+                      Dr. José Rizal was a Filipino nationalist, writer, and the
+                      country's national hero, known for his novels Noli Me
+                      Tangere and El Filibustegviype, which exposed the
+                      injustices of Spanish colonial rule.
+                    </div>
+                  </div>
+                  <br />
+                  <div className="collapse collapse-arrow bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-2" />
+                    <div className="collapse-title font-semibold">
+                      What were Rizal's Major Contributions?
+                    </div>
+                    <div className="collapse-content text-sm">
+                      Rizal contributed to Philippine independence through his
+                      writings, advocacy for reforms, and peaceful resistance.
+                      His works inspired Filipinos to fight for justice and
+                      freedom.
+                    </div>
+                  </div>
+                  <br />
+                  <div className="collapse collapse-arrow bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-2" />
+                    <div className="collapse-title font-semibold">
+                      Why is Rizal Considered a National Hero?
+                    </div>
+                    <div className="collapse-content text-sm">
+                      Rizal is a national hero because of his intellectual
+                      contributions to the fight for freedom and his martyrdom,
+                      which inspired the Philippine Revolution against Spanish
+                      rule.
+                    </div>
+                  </div>
+                  <br />
+                  <div className="collapse collapse-arrow bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-2" />
+                    <div className="collapse-title font-semibold">
+                      What is the goal of this website?
+                    </div>
+                    <div className="collapse-content text-sm">
+                      Our goal is to make Rizal's life and contributions more
+                      accessible and engaging through storytelling and
+                      animation—perfect for students, educators, and anyone
+                      curious about Philippine history.
+                    </div>
+                  </div>
                 </div>
-                <div className="collapse-content text-sm">
-                  Dr. José Rizal was a Filipino nationalist, writer, and the
-                  country's national hero, known for his novels Noli Me Tangere
-                  and El Filibustegviype, which exposed the injustices of Spanish
-                  colonial rule.
-                </div>
-              </div>
-              <br />
-              <div className="collapse collapse-arrow bg-base-100 border border-base-300">
-                <input type="radio" name="my-accordion-2" />
-                <div className="collapse-title font-semibold">
-                  What were Rizal's Major Contributions?
-                </div>
-                <div className="collapse-content text-sm">
-                  Rizal contributed to Philippine independence through his
-                  writings, advocacy for reforms, and peaceful resistance. His
-                  works inspired Filipinos to fight for justice and freedom.
-                </div>
-              </div>
-              <br />
-              <div className="collapse collapse-arrow bg-base-100 border border-base-300">
-                <input type="radio" name="my-accordion-2" />
-                <div className="collapse-title font-semibold">
-                  Why is Rizal Considered a National Hero?
-                </div>
-                <div className="collapse-content text-sm">
-                  Rizal is a national hero because of his intellectual
-                  contributions to the fight for freedom and his martyrdom, which
-                  inspired the Philippine Revolution against Spanish rule.
+
+                <div>
+                  <br />
+                  <div className="collapse collapse-arrow bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-1" />
+                    <div className="collapse-title font-semibold">
+                      Who is the intended audience for this website?
+                    </div>
+                    <div className="collapse-content text-sm">
+                      Our content is designed for learners of all ages—students,
+                      teachers, researchers, and history enthusiasts who want to
+                      learn about Rizal in a visual and simplified way.
+                    </div>
+                  </div>
+                  <br />
+                  <div className="collapse collapse-arrow bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-1" />
+                    <div className="collapse-title font-semibold">
+                      What makes this website different?
+                    </div>
+                    <div className="collapse-content text-sm">
+                      We use concise, animated videos to tell Rizal's story in a
+                      visually engaging way. Our content is bite-sized, modern,
+                      and easy to digest—perfect for quick learning or classroom
+                      integration.
+                    </div>
+                  </div>
+                  <br />
+                  <div className="collapse collapse-arrow bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-1" />
+                    <div className="collapse-title font-semibold">
+                      Is the website free to use?
+                    </div>
+                    <div className="collapse-content text-sm">
+                      Yes! All our content is freely accessible for educational
+                      and non-commercial use. We believe that learning about
+                      history should be open to everyone.
+                    </div>
+                  </div>
+                  <br />
+                  <div className="collapse collapse-arrow bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-1" />
+                    <div className="collapse-title font-semibold">
+                      What key topics do the videos explore?
+                    </div>
+                    <div className="collapse-content text-sm">
+                      We cover Rizal's childhood, education, travels, major
+                      literary works (Noli Me Tangere, El Filibusterismo),
+                      social reforms, key relationships, and his role in the
+                      Philippine revolution.
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -148,16 +256,16 @@ export default function About() {
                     Our Mission
                   </h1>
                   <p>
-                    At PepeToons, our mission is to make Dr. José Rizal's life and
-                    legacy accessible and engaging for people of all ages and
-                    backgrounds. We strive to educate, inspire, and provide a
-                    platform where visitors can deepen their understanding of
+                    At PepeToons, our mission is to make Dr. José Rizal's life
+                    and legacy accessible and engaging for people of all ages
+                    and backgrounds. We strive to educate, inspire, and provide
+                    a platform where visitors can deepen their understanding of
                     Rizal's pivotal role in Philippine history. Whether you're a
-                    student, a history enthusiast, or simply curious about Rizal's
-                    impact, this website is a resource to help you learn more
-                    about one of the most important figures in Philippine history.
-                    Join us in remembering and celebrating Dr. José Rizal's
-                    contributions to the Filipino people and the world.
+                    student, a history enthusiast, or simply curious about
+                    Rizal's impact, this website is a resource to help you learn
+                    more about one of the most important figures in Philippine
+                    history. Join us in remembering and celebrating Dr. José
+                    Rizal's contributions to the Filipino people and the world.
                   </p>
                 </div>
               </div>

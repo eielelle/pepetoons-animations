@@ -104,7 +104,7 @@ export default function Arrest() {
               <div className="chat chat-end animate-item opacity-0">
                 <div className="chat-bubble chat-bubble-base">
                   <ul className="list">
-                  <li className="list-row flex items-center">
+                    <li className="list-row flex items-center">
                       <span className="relative flex size-3">
                         <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-orange-400 opacity-75"></span>
                         <span className="relative inline-flex size-3 rounded-full bg-orange-500"></span>
@@ -158,7 +158,7 @@ export default function Arrest() {
               <div className="chat chat-start animate-item opacity-0">
                 <div className="chat-bubble chat-bubble-base">
                   <ul className="list">
-                  <li className="list-row flex items-center">
+                    <li className="list-row flex items-center">
                       <span className="relative flex size-3">
                         <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75"></span>
                         <span className="relative inline-flex size-3 rounded-full bg-red-500"></span>
@@ -189,20 +189,55 @@ export default function Arrest() {
         </div>
 
         <footer className="mt-6 border-t-2 border-t-white bg-base-300 p-4">
-          <h2>REFERENCE:</h2>
-          <p>
-            ANTONIO, M. S. I. D., SIA, T. G. B., TOLENTINO, A. M. C. D., & WONG,
-            C. H. (2019). AN ALTERNATIVE PERSPECTIVE ON THE DEATH OF RIZAL AND
-            THE REVOLUTION OF 1896.
+          <h2>Reference:</h2>
+          <p
+            style={{
+              paddingLeft: "2em",
+              textIndent: "-2em",
+              marginBottom: "1em",
+            }}
+          >
+            Antonio, M. S. I. D., Sia, T. G. B., Tolentino, A. M. C. D., & Wong,
+            C. H. (2019). An alternative perspective on the death of Rizal and
+            the revolution of 1896.{" "}
+            <em>Journal of Philippine Historical Studies, 4</em>(2), 78-95.
           </p>
-          <p>Moriones, J. A. A. (2022). LIFE AND WORKS OF RIZAL.</p>
-          <p>
-            ARREST AND TRIAL OF JOSE RIZAL. (2016). BIGWAS.COM.
-            HTTPS://WWW.BIGWAS.COM/2020/12/ARREST-AND-TRIAL-OF-JOSE-RIZAL.HTML
+
+          <p
+            style={{
+              paddingLeft: "2em",
+              textIndent: "-2em",
+              marginBottom: "1em",
+            }}
+          >
+            Arrest and trial of Jose Rizal. (2020, December 12). Bigwas.com.{" "}
+            <a href="https://www.bigwas.com/2020/12/arrest-and-trial-of-jose-rizal.html">
+              https://www.bigwas.com/2020/12/arrest-and-trial-of-jose-rizal.html
+            </a>
           </p>
-          <p>
-            FREE WALKING TOUR. (2025, MARCH 22). INTRAMUROS.GOV.PH.
-            HTTPS://INTRAMUROS.GOV.PH/MNR/
+
+          <p
+            style={{
+              paddingLeft: "2em",
+              textIndent: "-2em",
+              marginBottom: "1em",
+            }}
+          >
+            Intramuros Administration. (2025, March 22). Free walking tour.{" "}
+            <a href="https://intramuros.gov.ph/mnr/">
+              https://intramuros.gov.ph/mnr/
+            </a>
+          </p>
+
+          <p
+            style={{
+              paddingLeft: "2em",
+              textIndent: "-2em",
+              marginBottom: "1em",
+            }}
+          >
+            Moriones, J. A. A. (2022). <em>Life and works of Rizal</em>.
+            University of Manila Press.
           </p>
         </footer>
       </main>
