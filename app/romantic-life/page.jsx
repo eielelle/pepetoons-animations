@@ -66,11 +66,11 @@ export default function RomanticLifePage() {
           <div className="flex flex-col justify-center md:h-screen p-1 lg:p-6 col-span-2 md:col-span-1">
             <div className="text-center md:text-left sm:text-sm">
               <p className="text-sm popup">Personal and Romantic Life</p>
-              <h1 className="text-2xl md:text-4xl font-black my-2 md:my-4 popup">
-                {data[currentIdx].name}{" "}
+              <h1 className=" flex gap-2 text-2xl md:text-4xl font-black my-2 md:my-4 popup">
+                {data[currentIdx].name}
                 <Image
                   src={data[currentIdx].flag}
-                  alt="National Flag"
+                  alt={data[currentIdx].country}
                   width={45}
                   height={45}
                   className="inline-block"
@@ -124,6 +124,7 @@ export default function RomanticLifePage() {
           </div>
         </div>
       </main>
+
     </HeaderLayout>
   );
 }
