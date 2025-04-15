@@ -188,57 +188,22 @@ export default function Arrest() {
           </div>
         </div>
 
-        <footer className="mt-6 border-t-2 border-t-white bg-base-300 p-4">
-          <h2>References:</h2>
-          <p
-            style={{
-              paddingLeft: "2em",
-              textIndent: "-2em",
-              marginBottom: "1em",
-            }}
-          >
-            Antonio, M. S. I. D., Sia, T. G. B., Tolentino, A. M. C. D., & Wong,
-            C. H. (2019). An alternative perspective on the death of Rizal and
-            the revolution of 1896.{" "}
-            <em>Journal of Philippine Historical Studies, 4</em>(2), 78-95.
-          </p>
-
-          <p
-            style={{
-              paddingLeft: "2em",
-              textIndent: "-2em",
-              marginBottom: "1em",
-            }}
-          >
-            Arrest and trial of Jose Rizal. (2020, December 12). Bigwas.com.{" "}
-            <a href="https://www.bigwas.com/2020/12/arrest-and-trial-of-jose-rizal.html">
-              https://www.bigwas.com/2020/12/arrest-and-trial-of-jose-rizal.html
-            </a>
-          </p>
-
-          <p
-            style={{
-              paddingLeft: "2em",
-              textIndent: "-2em",
-              marginBottom: "1em",
-            }}
-          >
-            Intramuros Administration. (2025, March 22). Free walk tour.{" "}
-            <a href="https://intramuros.gov.ph/mnr/">
-              https://intramuros.gov.ph/mnr/
-            </a>
-          </p>
-
-          <p
-            style={{
-              paddingLeft: "2em",
-              textIndent: "-2em",
-              marginBottom: "1em",
-            }}
-          >
-            Moriones, J. A. A. (2022). <em>Life and works of Rizal</em>.
-            University of Manila Press.
-          </p>
+      <footer className="mt-6 border-t-2 border-t-white bg-base-300 p-4">
+          <h2 className="text-lg font-semibold mb-2">References:</h2>
+          <ul className="list-disc pl-6 space-y-2">
+            <li> Antonio, M. S. I. D., Sia, T. G. B., Tolentino, A. M. C. D., & Wong,
+      C. H. (2019). An alternative perspective on the death of Rizal and
+      the revolution of 1896. <em>Journal of Philippine Historical Studies, 4</em>(2), 78-95. </li>
+      <li> Arrest and trial of Jose Rizal. (2020, December 12). Bigwas.com.{" "}
+        <a 
+        href="https://www.bigwas.com/2020/12/arrest-and-trial-of-jose-rizal.html" className="text-blue-400 underline hover:text-blue-200">https://www.bigwas.com/2020/12/arrest-and-trial-of-jose-rizal.html</a>
+      </li>
+      <li>
+      Intramuros Administration. (2025, March 22). Free walking tour.{" "}
+      <a href="https://intramuros.gov.ph/mnr/"  className="text-blue-400 underline hover:text-blue-200">https://intramuros.gov.ph/mnr/</a>
+      </li>
+      <li>Moriones, J. A. A. (2022). <em>Life and works of Rizal</em>. University of Manila Press.</li>
+          </ul>
         </footer>
       </main>
     </HeaderLayout>
