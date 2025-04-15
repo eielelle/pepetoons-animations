@@ -54,7 +54,7 @@ export default function Europe() {
             <ArrowLeft />
           </button>
         </Link>
-        <div className="grid grid-cols-3 max-sm:grid-cols-1 max-[950px]:grid-cols-2 lg:grid-cols-3 gap-0 min-h-full overflow-hidden">
+        <div className="grid grid-cols-3 max-sm:grid-cols-1 max-[950px]:grid-cols-2 min-h-full overflow-hidden">
           {EuropeActivities.map((city) => (
             <EuropeGrid key={city.id} {...city} onOpen={openModal} />
           ))}

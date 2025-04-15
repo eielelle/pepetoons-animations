@@ -1,6 +1,8 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import Image from "next/image";
+
 
 const MapLeaflet = dynamic(() => import("./Map"), { ssr: false });
 
@@ -64,15 +66,28 @@ export default function Exile() {
         <div className="relative z-50 h-full container mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-10">
           <div className="order-2 lg:order-1">
             <div className="flex justify-start items-center gap-4 mb-4">
-              <button onClick={prev} className="popup">
+              <button
+                onClick={prev}
+                className="popup transform transition duration-75 hover:scale-110 hover:cursor-pointer"
+              >
                 <ArrowLeftCircle size={32} />
               </button>
-              <button onClick={next} className="popup">
+              <button
+                onClick={next}
+                className="popup transform transition duration-75 hover:scale-110 hover:cursor-pointer"
+              >
                 <ArrowRightCircle size={32} />
               </button>
             </div>
             <h1 className="text-4xl font-bold pl-4 border-l-4 border-primary popup">
-              {data[currentIdx].title}
+              {data[currentIdx].title}{" "}
+              <Image
+                src={data[currentIdx].flag}
+                alt="National Flag"
+                width={45}
+                height={45}
+                className="inline-block"
+              />
             </h1>
             <p className="py-4 popup">{data[currentIdx].description}</p>
             <Link

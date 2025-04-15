@@ -1,15 +1,22 @@
-import JapanImg from "../../../assets/visit/asia/japan-1.jpg";
-import HongKongImg from "../../../assets/visit/asia/hong-kong.jpg";
-import MacauImg from "../../../assets/visit/asia/macau.jpg";
-import SriLankaImg from "../../../assets/visit/asia/sri-lanka.jpg";
-import SingaporeImg from "../../../assets/visit/asia/singapore.jpg";
-import SaigonImg from "../../../assets/visit/asia/saigon.jpg";
+import JapanBackgroundImg from "../../../assets/visit/asia/japan-1.jpg";
+import HongKongBackgroundImg from "../../../assets/visit/asia/hong-kong.jpg";
+import MacauBackgroundImg from "../../../assets/visit/asia/macau.jpg";
+import SriLankaBackgroundImg from "../../../assets/visit/asia/sri-lanka.jpg";
+import SingaporeBackgroundImg from "../../../assets/visit/asia/singapore.jpg";
+import VietnamBackgroundImg from "../../../assets/visit/asia/saigon.jpg";
+import JapanFlagSvg from "../../../assets/flag/JP.svg";
+import HongKongFlagSvg from "../../../assets/flag/HK.svg";
+import MacauFlagSvg from "../../../assets/flag/MO.svg";
+import SriLankaFlagSvg from "../../../assets/flag/LK.svg";
+import SingaporeFlagSvg from "../../../assets/flag/SG.svg";
+import VietnamFlagSvg from "../../../assets/flag/VN.svg";
 
 const Asia = [
   {
     id: "1",
     country: "Japan",
-    img: JapanImg,
+    flag: JapanFlagSvg,
+    background: JapanBackgroundImg,
     paragraph1:
       "Jose Rizal traveled to Japan in order to receive a firsthand look at a rapidly modernizing Asian country as well as to escape the growing tensions in the Philippines. His intellectual and emotional growth was permanently impacted by this brief but crucial time in his life which gave him the rare chance to observe and engage with a culture very different from his own.",
     paragraph2:
@@ -20,7 +27,8 @@ const Asia = [
   {
     id: "2",
     country: "Hongkong",
-    img: HongKongImg,
+    flag: HongKongFlagSvg,
+    background: HongKongBackgroundImg,
     paragraph1:
       "After his initial trip to Europe and the release of Noli Me Tángere Jose Rizal spent two periods in Hong Kong: from February to May 1888 and again from 1891 to 1892. During this pivotal time in his life he was able to continue practicing medicine find a temporary refuge from the Philippines rising tensions and advance his reformist objectives.",
     paragraph2:
@@ -31,7 +39,8 @@ const Asia = [
   {
     id: "3",
     country: "Macau",
-    img: MacauImg,
+    flag: MacauFlagSvg,
+    background: MacauBackgroundImg,
     paragraph1:
       "As a quick stopover on his way from Hong Kong to Japan in February 1888 Jose Rizal and Jose Maria Basa traveled briefly to the Portuguese colony of Macau. His brief visit gave him a glimpse of a unique colonial setting that stood in stark contrast to Hong Kongs busy modernity.",
     paragraph2:
@@ -42,7 +51,8 @@ const Asia = [
   {
     id: "4",
     country: "Sri Lanka",
-    img: SriLankaImg,
+    flag: SriLankaFlagSvg,
+    background: SriLankaBackgroundImg,
     paragraph1:
       "Jose Rizal made a brief but significant stop in Ceylon (modern-day Sri Lanka) in May 1882 as part of his first trip to Europe. Primarily a transit stop this trip gave him a priceless chance to see a unique colonial landscape and immerse himself in a new cultural and religious setting which widened his perspective on the world.",
     paragraph2:
@@ -53,7 +63,8 @@ const Asia = [
   {
     id: "5",
     country: "Singapore",
-    img: SingaporeImg,
+    flag: SingaporeFlagSvg,
+    background: SingaporeBackgroundImg,
     paragraph1:
       "Throughout his lengthy travels Jose Rizal frequently visited Singapore which was an essential stopover on his way between the Philippines Europe and other Asian countries. Even though these visits were frequently short they gave him the chance to see a city that was growing quickly and was very different from his home country.",
     paragraph2:
@@ -63,8 +74,9 @@ const Asia = [
   },
   {
     id: "6",
-    country: "Saigon",
-    img: SaigonImg,
+    country: "Vietnam",
+    flag: VietnamFlagSvg,
+    background: VietnamBackgroundImg,
     paragraph1:
       "Saigon was the first place outside of the Philippines where Jose Rizal made his crucial first trip to Europe in May 1882. Despite the short duration of his stay it marked the start of his life-changing journey and gave him a vital first look at a French colonial city.",
     paragraph2:
