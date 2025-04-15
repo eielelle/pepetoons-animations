@@ -61,10 +61,7 @@ export default function Homepage() {
           </div>
         </section>
 
-        <section
-          id="bio"
-          className="pb-24 overflow-visible z-10 relative"
-        >
+        <section id="bio" className="pb-24 overflow-visible z-10 relative">
           <div className="container px-4 mx-auto border-l-4 border-l-primary">
             <h1 className="text-2xl font-semibold popup">
               Biography of Jose Rizal
@@ -77,9 +74,10 @@ export default function Homepage() {
 
           <div className="w-full overflow-x-scroll my-4 scrollba">
             <div className="carousel carousel-center gap-4">
-              <CarouselSlide href={"/arrest"} src={arrestImg} alt={"arrest"}>
-                Arrest
+              <CarouselSlide href={"/family"} src={familyImg} alt={"family"}>
+                Family
               </CarouselSlide>
+
               <CarouselSlide
                 href={"/education"}
                 src={educationImg}
@@ -87,23 +85,7 @@ export default function Homepage() {
               >
                 Education
               </CarouselSlide>
-              <CarouselSlide
-                href={"/exile"}
-                src={monumentImg}
-                alt={"monuments"}
-              >
-                Monuments
-              </CarouselSlide>
-              <CarouselSlide href={"/family"} src={familyImg} alt={"family"}>
-                Family
-              </CarouselSlide>
-              <CarouselSlide
-                href={"/works/novels"}
-                src={legacyImg}
-                alt={"legacy"}
-              >
-                Writings
-              </CarouselSlide>
+
               <CarouselSlide
                 href={"/romantic-life"}
                 src={romanticLifeImg}
@@ -111,8 +93,29 @@ export default function Homepage() {
               >
                 Romantic Life
               </CarouselSlide>
-              <CarouselSlide href={"/visit"} src={travelsImg} alt={"travels"}>
+
+              <CarouselSlide href={"/visit"} src={travelsImg} alt={"visit"}>
                 Travels
+              </CarouselSlide>
+
+              <CarouselSlide
+                href={"/works/novels"}
+                src={legacyImg}
+                alt={"legacy"}
+              >
+                Writings
+              </CarouselSlide>
+
+              <CarouselSlide href={"/arrest"} src={arrestImg} alt={"arrest"}>
+                Arrest
+              </CarouselSlide>
+
+              <CarouselSlide
+                href={"/exile"}
+                src={monumentImg}
+                alt={"monuments"}
+              >
+                Monuments
               </CarouselSlide>
             </div>
           </div>
