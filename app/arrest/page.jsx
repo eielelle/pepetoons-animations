@@ -223,7 +223,7 @@ export default function Arrest() {
               marginBottom: "1em",
             }}
           >
-            Intramuros Administration. (2025, March 22). Free walking tour.{" "}
+            Intramuros Administration. (2025, March 22). Free walk tour.{" "}
             <a href="https://intramuros.gov.ph/mnr/">
               https://intramuros.gov.ph/mnr/
             </a>
