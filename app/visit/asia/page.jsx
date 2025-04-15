@@ -12,8 +12,8 @@ export default function Asia() {
   const modalRef = useRef(null);
 
   //Open model
-  const openModal = (country, img, paragraph1, paragraph2, paragraph3) => {
-    setSelectedCity({ country, img, paragraph1, paragraph2, paragraph3 });
+  const openModal = (country, paragraph1, paragraph2, paragraph3) => {
+    setSelectedCity({ country, paragraph1, paragraph2, paragraph3 });
     if (modalRef.current) {
       modalRef.current.showModal();
     }
@@ -36,7 +36,7 @@ export default function Asia() {
             <ArrowLeft />
           </button>
         </Link>
-        <div className="grid grid-cols-3 max-sm:grid-cols-1 max-[950px]:grid-cols-2 lg:grid-cols-3 min-h-full overflow-hidden">
+        <div className="grid grid-cols-3 max-sm:grid-cols-1 max-[950px]:grid-cols-2 min-h-full overflow-hidden">
           {asiaCountry.map((city) => (
             <AsiaGrid key={city.id} {...city} onOpen={openModal} />
           ))}
