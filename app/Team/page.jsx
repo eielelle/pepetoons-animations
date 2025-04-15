@@ -25,8 +25,12 @@ import alghieImg from "../../assets/Resources/Alghie.png";
 import vincentImg from "../../assets/Resources/cent.png";
 
 const members = [
-  { name: "Jameson G. Teodore", role: "Project Manager", image: jamesonImg },
-  { name: "Jamesmar P. Martin", role: "Animator", image: jamesmarImg },
+  {
+    name: "Jameson G. Teodore",
+    role: "Project Manager, Animator",
+    image: jamesonImg,
+  },
+  { name: "Jamesmar P. Martin", role: "Animator, QA", image: jamesmarImg },
   { name: "Eleazar A. Romero", role: "Developer, QA", image: eleazarImg },
   {
     name: "Shello Lois B. Roxas",
