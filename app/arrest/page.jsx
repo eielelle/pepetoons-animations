@@ -189,7 +189,7 @@ export default function Arrest() {
         </div>
 
         <footer className="mt-6 border-t-2 border-t-white bg-base-300 p-4">
-          <h2>Reference:</h2>
+          <h2>References:</h2>
           <p
             style={{
               paddingLeft: "2em",
