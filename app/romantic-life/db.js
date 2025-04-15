@@ -7,11 +7,18 @@ import gertrudeImg from "../../assets/romantic-life/rizal-gertrude.jpg";
 import suzanneImg from "../../assets/romantic-life/rizal-susanjacoby.jpg";
 import nellieImg from "../../assets/romantic-life/rizal-nelly.jpg";
 import josephineImg from "../../assets/romantic-life/rizal-josephine.jpg";
+import philippinesFlagImg from "../../assets/flag/PH.svg";
+import spainFlagImg from "../../assets/flag/ES.svg";
+import japanFlagImg from "../../assets/flag/JP.svg";
+import unitedKingdomFlagImg from "../../assets/flag/GB.svg";
+import belgiumFlagImg from "../../assets/flag/BE.svg";
 
 export const data = [
   {
     name: "Segunda Katigbak",
     img: katigbakImg,
+    flag: philippinesFlagImg,
+    country: "Philippines",
     content: [
       "Rizal's first love; he was 16 when they met.",
       "A Batangueña whom he met through her brother, Mariano Katigbak.",
@@ -23,6 +30,8 @@ export const data = [
   {
     name: "Leonor Valenzuela",
     img: valenzuelaImg,
+    flag: philippinesFlagImg,
+    country: "Philippines",
     content: [
       "Nicknamed 'Orang', a neighbor in Intramuros.",
       "Rizal sent her love letters written in invisible ink, which could only be read by heating.",
@@ -32,6 +41,8 @@ export const data = [
   {
     name: "Leonor Rivera",
     img: riveraImg,
+    flag: philippinesFlagImg,
+    country: "Philippines",
     content: [
       "Rizal's second cousin and considered his greatest love.",
       "Described as beautiful, musically talented, and intelligent.",
@@ -45,6 +56,8 @@ export const data = [
   {
     name: "Consuelo Ortega Y Rey",
     img: consueloImg,
+    flag: spainFlagImg,
+    country: "Spain",
     content: [
       "Daughter of Don Pablo Ortiga y Rey, former mayor of Manila.",
       "Met in Madrid, where Rizal frequented their house.",
@@ -55,6 +68,8 @@ export const data = [
   {
     name: "Seiko Usui",
     img: seikoImg,
+    flag: japanFlagImg,
+    country: "Japan",
     content: [
       "A Japanese woman Rizal met in Tokyo.",
       "Fluent in English and French, making communication easy.",
@@ -65,6 +80,8 @@ export const data = [
   {
     name: "Gertrude Beckett",
     img: gertrudeImg,
+    flag: unitedKingdomFlagImg,
+    country: "United Kingdom",
     content: [
       "British woman in London, daughter of Rizal's landlord.",
       "Nicknamed 'Gettie', she was deeply in love with Rizal.",
@@ -75,6 +92,8 @@ export const data = [
   {
     name: "Suzanne Jacoby",
     img: suzanneImg,
+    flag: belgiumFlagImg,
+    country: "Belgium",
     content: [
       "Belgian woman Rizal met while boarding in Brussels.",
       "She fell in love with Rizal, but he did not prioritize the relationship.",
@@ -84,6 +103,8 @@ export const data = [
   {
     name: "Nellie Boustead",
     img: nellieImg,
+    flag: philippinesFlagImg,
+    country: "Philippines",
     content: [
       "A Filipina mestiza from a wealthy family in France.",
       "Rizal considered marrying her after Leonor Rivera's engagement.",
@@ -94,6 +115,8 @@ export const data = [
   {
     name: "Josephine Bracken",
     img: josephineImg,
+    flag: unitedKingdomFlagImg,
+    country: "United Kingdom",
     content: [
       "Irish woman, adopted daughter of George Taufer.",
       "Met Rizal in Dapitan, where they fell in love.",

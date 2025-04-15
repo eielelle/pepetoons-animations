@@ -1,18 +1,24 @@
 // Import images
-import MadridSpainImg from "../../../assets/visit/europe/Madrid Spain.png";
-import ParisFranceImg from "../../../assets/visit/europe/Paris France.png";
-import HeidelbergGermanyImg from "../../../assets/visit/europe/Heidelberg Germany.png";
-import BerlinGermanyImg from "../../../assets/visit/europe/Berlin Germany.png";
-import LondonEnglandImg from "../../../assets/visit/europe/London England.jpg";
-import BrusselsBelgiumImg from "../../../assets/visit/europe/Brussels Belgium.png";
+import SpainBackgroundImg from "../../../assets/visit/europe/Madrid Spain.png";
+import FranceBackgroundImg from "../../../assets/visit/europe/Paris France.png";
+import HeidelbergGermanyBackgroundImg from "../../../assets/visit/europe/Heidelberg Germany.png";
+import BerlinGermanyBackgroundImg from "../../../assets/visit/europe/Berlin Germany.png";
+import EnglandBackgroundImg from "../../../assets/visit/europe/London England.jpg";
+import BelgiumBackgroundImg from "../../../assets/visit/europe/Brussels Belgium.png";
+import SpainFlagSvg from "../../../assets/flag/ES.svg";
+import FranceFlagSvg from "../../../assets/flag/FR.svg";
+import GermanyFlagSvg from "../../../assets/flag/DE.svg";
+import EnglandFlagSvg from "../../../assets/flag/GB-ENG.svg";
+import BelgiumFlagSvg from "../../../assets/flag/BE.svg";
 
 //Start of Jose Rizal visited Cities Date, Acitivies Description
 const Europe = [
   {
     id: "1",
-    image: MadridSpainImg,
-    city: "Madrid",
     country: "Spain",
+    flag: SpainFlagSvg,
+    city: "Madrid",
+    background: SpainBackgroundImg,
     date: "(September 12, 1882 - May 1883)",
     activity1: "Writing, Noli Me Tangere ",
     description1:
@@ -26,9 +32,10 @@ const Europe = [
   },
   {
     id: "2",
-    image: ParisFranceImg,
-    city: "Paris",
     country: "France",
+    flag: FranceFlagSvg,
+    city: "Paris",
+    background: FranceBackgroundImg,
     date: "(October 1885)",
     activity1: "Studying Ophthalmology",
     description1:
@@ -42,9 +49,10 @@ const Europe = [
   },
   {
     id: "3",
-    image: HeidelbergGermanyImg,
-    city: "Heidelberg",
     country: "Germany",
+    flag: GermanyFlagSvg,
+    city: "Heidelberg",
+    background: HeidelbergGermanyBackgroundImg,
     date: "(February 1886)",
     activity1: "Writing Noli Me Tangere",
     description1:
@@ -58,9 +66,10 @@ const Europe = [
   },
   {
     id: "4",
-    image: BerlinGermanyImg,
-    city: "Berlin",
     country: "Germany",
+    flag: GermanyFlagSvg,
+    city: "Berlin",
+    background: BerlinGermanyBackgroundImg,
     date: "(November 1886 - May 1887)",
     activity1: "Completion of Noli Me Tangere",
     description1:
@@ -74,9 +83,10 @@ const Europe = [
   },
   {
     id: "5",
-    image: LondonEnglandImg,
-    city: "London",
     country: "England",
+    flag: EnglandFlagSvg,
+    city: "London",
+    background: EnglandBackgroundImg,
     date: "(May 1888 - March 1889)",
     activity1: "Learning English",
     description1:
@@ -90,9 +100,10 @@ const Europe = [
   },
   {
     id: "6",
-    image: BrusselsBelgiumImg,
-    city: "Brussels",
     country: "Belgium",
+    flag: BelgiumFlagSvg,
+    city: "Brussels",
+    background: BelgiumBackgroundImg,
     date: "(1889)",
     activity1: "Writing El Filibusterismo",
     description1:
