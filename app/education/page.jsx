@@ -19,7 +19,7 @@ export default function Education() {
         <section className="grid grid-cols-3 gap-8 pt-6 px-5 pb-8">
           <div className="col-span-3 md:col-span-3 lg:col-span-1">
             <h2 className="text-blue-400 text-xl font-bold">
-              Early Education of Jose Rizal (1869 - 1877)
+              Early Education of José Rizal (1869 - 1877)
             </h2>
             <div className="divider before:bg-white before:h-1 after:h-1 after:bg-white"></div>
             <p>Rizal's mother, Doña Teodora was his first teacher.</p>
@@ -37,14 +37,14 @@ export default function Education() {
               Who was Rizals first teacher?
             </h2>
             <p>
-              Jose Rizal's first teacher was his mother, who taught him to read,
+            José Rizal's first teacher was his mother, who taught him to read,
               pray, and write poetry. He later learned Spanish and Latin from
               private tutors before attending a school in Biñan. At 11, he
               enrolled in the Ateneo Municipal de Manila.
             </p>
             <div className="divider before:bg-white before:h-1 after:h-1 after:bg-white"></div>
             <h2 className="text-blue-400 text-xl font-bold mb-4">
-              Priavate Tutors of Jose Rizal
+              Priavate Tutors of José Rizal
             </h2>
             <p>
               José Rizal's early education was guided by private tutors, including
@@ -115,7 +115,7 @@ export default function Education() {
               1877 - 1882 : Medical Studies at University of Sto. Tomas
             </h3>
             <p>
-              Jose Rizal first studied philosophy and letters at the University of
+              José Rizal first studied philosophy and letters at the University of
               Santo Tomas (UST) then moved to the Faculty of Medicine and Surgery
               to study medicine in 1877
             </p>
@@ -130,7 +130,7 @@ export default function Education() {
               Pre-Med Course
             </h2>
             <p>
-              Jose Rizal changed his major from pre-law to medicine at the
+              José Rizal changed his major from pre-law to medicine at the
               University of Santo Tomas (UST) in order to pursue a career in
               medicine and focus in opthalmology.
             </p>

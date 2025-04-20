@@ -64,7 +64,7 @@ export default function Homepage() {
         <section id="bio" className="pb-24 overflow-visible z-10 relative">
           <div className="container px-4 mx-auto border-l-4 border-l-primary">
             <h1 className="text-2xl font-semibold popup">
-              Biography of Jose Rizal
+              Biography of José Rizal
             </h1>
             <p className="popup">
               Discover José Rizal's life, works, and legacy that inspired

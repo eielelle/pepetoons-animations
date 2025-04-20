@@ -18,7 +18,7 @@ const Asia = [
     flag: JapanFlagSvg,
     background: JapanBackgroundImg,
     paragraph1:
-      "Jose Rizal traveled to Japan in order to receive a firsthand look at a rapidly modernizing Asian country as well as to escape the growing tensions in the Philippines. His intellectual and emotional growth was permanently impacted by this brief but crucial time in his life which gave him the rare chance to observe and engage with a culture very different from his own.",
+      "José Rizal traveled to Japan in order to receive a firsthand look at a rapidly modernizing Asian country as well as to escape the growing tensions in the Philippines. His intellectual and emotional growth was permanently impacted by this brief but crucial time in his life which gave him the rare chance to observe and engage with a culture very different from his own.",
     paragraph2:
       "Rizal became fully immersed in Japanese culture while he was there. The countrys exquisitely preserved urban settings and landscapes enthralled him with their aesthetic beauty. He observed that the Japanese people were committed to efficiency and progress and admired their hard work and courteous manner. By studying the language investigating traditional arts like theater and martial arts and taking note of the quick developments that were launching Japan onto the international scene he actively attempted to comprehend Japanese culture. The most noteworthy aspect of Rizals stay in Japan was probably his heartfelt romantic relationship with Usui Seiko also known as O-Sei-san. Rizal found immense joy and emotional depth in their relationship which gave his observations of Japanese life a more intimate touch. He demonstrated his ability to form strong emotional bonds with O-Sei-san through their relationship.",
     paragraph3:
@@ -30,7 +30,7 @@ const Asia = [
     flag: HongKongFlagSvg,
     background: HongKongBackgroundImg,
     paragraph1:
-      "After his initial trip to Europe and the release of Noli Me Tángere Jose Rizal spent two periods in Hong Kong: from February to May 1888 and again from 1891 to 1892. During this pivotal time in his life he was able to continue practicing medicine find a temporary refuge from the Philippines rising tensions and advance his reformist objectives.",
+      "After his initial trip to Europe and the release of Noli Me Tángere José Rizal spent two periods in Hong Kong: from February to May 1888 and again from 1891 to 1892. During this pivotal time in his life he was able to continue practicing medicine find a temporary refuge from the Philippines rising tensions and advance his reformist objectives.",
     paragraph2:
       "Rizal sought safety during his first visit from the persecution he was subjected to in the Philippines. Hong Kong seemed to him to be a cosmopolitan and reasonably tranquil place. As an ophthalmologist he opened a clinic and became well-known for his abilities. In addition he kept writing and submitted pieces to different magazines. His family accompanied him on his second longer visit. In Borneo he intended to found a Filipino colony because he thought it would offer refuge to Filipinos escaping Spanish persecution. His dream was for Filipinos to live in freedom and reach their full potential. He kept up his correspondence with fellow reformists in the Philippines and continued to write articles and letters. Despite the risks he also intended to return to the Philippines because he felt that his presence was essential to carrying on the fight for reform. In order to demonstrate his liberal views he also translated the Declaration of the Rights of Man and of the Citizen into Tagalog and wrote Ang Mga Karapatan ng Tao (The Rights of Man).",
     paragraph3:
@@ -42,7 +42,7 @@ const Asia = [
     flag: MacauFlagSvg,
     background: MacauBackgroundImg,
     paragraph1:
-      "As a quick stopover on his way from Hong Kong to Japan in February 1888 Jose Rizal and Jose Maria Basa traveled briefly to the Portuguese colony of Macau. His brief visit gave him a glimpse of a unique colonial setting that stood in stark contrast to Hong Kongs busy modernity.",
+      "As a quick stopover on his way from Hong Kong to Japan in February 1888 José Rizal and Jose Maria Basa traveled briefly to the Portuguese colony of Macau. His brief visit gave him a glimpse of a unique colonial setting that stood in stark contrast to Hong Kongs busy modernity.",
     paragraph2:
       "Most of Rizals stay in Macau was spent observing. After traveling by ferry from Hong Kong he spent his brief stay observing the distinctive features of the city. He noted that in contrast to the dynamic quickly evolving Hong Kong Macau had a more ancient traditional charm that was a reflection of its Portuguese colonial past.",
     paragraph3:
@@ -54,7 +54,7 @@ const Asia = [
     flag: SriLankaFlagSvg,
     background: SriLankaBackgroundImg,
     paragraph1:
-      "Jose Rizal made a brief but significant stop in Ceylon (modern-day Sri Lanka) in May 1882 as part of his first trip to Europe. Primarily a transit stop this trip gave him a priceless chance to see a unique colonial landscape and immerse himself in a new cultural and religious setting which widened his perspective on the world.",
+      "José Rizal made a brief but significant stop in Ceylon (modern-day Sri Lanka) in May 1882 as part of his first trip to Europe. Primarily a transit stop this trip gave him a priceless chance to see a unique colonial landscape and immerse himself in a new cultural and religious setting which widened his perspective on the world.",
     paragraph2:
       "Rizals time in Ceylon was marked by astute observation. He was astounded by the islands colorful tropical vegetation as soon as he arrived at Point de Galle. He proceeded to Colombo where he added to his descriptions of the city and its environs. Most notably he came across and witnessed Buddhist rituals deepening his knowledge of various religious traditions. Additionally he was able to practice and advance his French language skills while traveling on the French ship Djemnah. Rizals dedication to expanding his horizons was strengthened by this brief visit which gave him the opportunity to observe a culture and environment that were very different from his own.",
     paragraph3:
@@ -66,7 +66,7 @@ const Asia = [
     flag: SingaporeFlagSvg,
     background: SingaporeBackgroundImg,
     paragraph1:
-      "Throughout his lengthy travels Jose Rizal frequently visited Singapore which was an essential stopover on his way between the Philippines Europe and other Asian countries. Even though these visits were frequently short they gave him the chance to see a city that was growing quickly and was very different from his home country.",
+      "Throughout his lengthy travels José Rizal frequently visited Singapore which was an essential stopover on his way between the Philippines Europe and other Asian countries. Even though these visits were frequently short they gave him the chance to see a city that was growing quickly and was very different from his home country.",
     paragraph2:
       "The main focus of Rizals stay in Singapore was astute observation. He was always impressed by the citys modern infrastructure and effective governance and he frequently remarked on its amazing development as a thriving trading center. He was especially impressed by the populations diversity which added to Singapores lively and international vibe. Rizal was able to examine the colonial governance and development of other areas such as the Philippines using these observations as a comparative lens. He was able to observe directly the results of colonial rule that was comparatively progressive which helped him to understand what his own nation could achieve.",
     paragraph3:
@@ -78,7 +78,7 @@ const Asia = [
     flag: VietnamFlagSvg,
     background: VietnamBackgroundImg,
     paragraph1:
-      "Saigon was the first place outside of the Philippines where Jose Rizal made his crucial first trip to Europe in May 1882. Despite the short duration of his stay it marked the start of his life-changing journey and gave him a vital first look at a French colonial city.",
+      "Saigon was the first place outside of the Philippines where José Rizal made his crucial first trip to Europe in May 1882. Despite the short duration of his stay it marked the start of his life-changing journey and gave him a vital first look at a French colonial city.",
     paragraph2:
       "Rizal spent most of his time in Saigon observing. By examining the citys architecture and ambiance he observed the widespread influence of French colonialism. His early exposure to European colonial governance outside of Spanish domination provided a comparative viewpoint that would influence how he understood colonial dynamics around the world. The city functioned as a spot of transition a departure from his comfortable surroundings and the beginning of his aspirational quest for reform and knowledge in Europe.",
     paragraph3:
