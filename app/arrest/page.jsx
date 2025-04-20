@@ -78,7 +78,7 @@ export default function Arrest() {
                       <h2 className="text-lg font-semibold">Arrest</h2>
                     </li>
                     <li className="list-row">
-                      On October 6, 1896, Rizals ship made a port call in
+                      On October 6, 1896, Rizal's ship made a port call in
                       Barcelona on its way to Cuba. His arrest was ordered by
                       the Spanish authorities after they intercepted his
                       communications and suspected him of being involved in the
@@ -92,7 +92,7 @@ export default function Arrest() {
                     <li className="list-row">
                       Rizal was cruelly imprisoned. He was questioned while
                       being kept in seclusion. With the revolution raging
-                      outside its walls the atmosphere in Fort Santiago would
+                      outside its walls, the atmosphere in Fort Santiago would
                       have been extremely tense.
                     </li>
                   </ul>
@@ -121,17 +121,17 @@ export default function Arrest() {
                       question these witnesses.
                     </li>
                     <li className="list-row">
-                      Rizal faced severe accusations of sedition rebellion and
-                      illegal association formation. Based on his writings his
-                      affiliation with reformists and his purported ties to the
-                      Katipunan these accusations were made.
+                      Rizal faced severe accusations of sedition, rebellion and
+                      illegal association formation. Based on his writings, his
+                      affiliation with reformists, and his purported ties to the
+                      Katipunan, these accusations were made.
                     </li>
                     <li className="list-row">
                       By saying that he supported nonviolent reforms and was not
-                      involved in the revolution Rizal insisted on his
+                      involved in the revolution, Rizal insisted on his
                       innocence. He noted that his manifesto even included a
-                      condemnation of the uprising the court found him guilty
-                      and he was sentence to death.
+                      condemnation of the uprising. The court found him guilty,
+                      and he was sentenced to death.
                     </li>
                   </ul>
                 </div>
@@ -167,16 +167,16 @@ export default function Arrest() {
                       <h2 className="text-lg font-semibold">Execution</h2>
                     </li>
                     <li className="list-row">
-                      On December 29, 1896 Rizal was remarkably composed in his
+                      On December 29, 1896, Rizal was remarkably composed in his
                       last days. He sent love letters and farewell notes to his
-                      family and friends. In addition he wrote his well-known
-                      poem Mi Último Adiós (or My Last Farewell) which is a
+                      family and friends. In addition, he wrote his well-known
+                      poem Mi Último Adiós (or My Last Farewell), which is a
                       tribute to his sacrifice and patriotism.
                     </li>
                     <li className="list-row">
-                      On the morning of December 30, 1896, From Fort Santiago
-                      Rizal was escorted to Bagumbayan which is now Luneta. In
-                      the company of priests and guards he strolled calmly. A
+                      On the morning of December 30, 1896, from Fort Santiago
+                      Rizal was escorted to Bagumbayan, which is now Luneta. In
+                      the company of priests and guards, he strolled calmly. A
                       firing squad was used to put Rizal to death. Consummatum
                       est! [It is finished!] was reportedly his final words as
                       he stood erect before his executioners.
