@@ -61,7 +61,7 @@ export const poems = [
     name: "Un Recuerdo A Mi Pueblo",
     years: "1876",
     description:
-      "In this nostalgic poem, Jose Rizal remembers his childhood days in Calamba, Laguna. Rizal had the happiest and most beautiful memories of the place, the hospitality and friendliness as well as the industry of the people of Calamba. Those memories were influential in molding his character and his values.",
+      "In this nostalgic poem, José Rizal remembers his childhood days in Calamba, Laguna. Rizal had the happiest and most beautiful memories of the place, the hospitality and friendliness as well as the industry of the people of Calamba. Those memories were influential in molding his character and his values.",
     content:
       "Un Recuerdo A Mi Pueblo is a nostalgic poem penned by a young José Rizal, expressing his heartfelt memories and deep affection for his hometown of Calamba. Through vivid imagery, he fondly recalls the natural beauty of his surroundings – the fields, the lake, the mountains – and the simple joys of his childhood, highlighting the formative influence of his early life and the deep connection he felt to his family and community. This tender recollection reveals the roots of his patriotism and his appreciation for the beauty of his homeland. \n\n see the content:\n\n",
     image: Town,
@@ -101,7 +101,7 @@ export const poems = [
     name: "Himno Al Trabajo",
     years: "1888",
     description:
-      "This poem demonstrates Jose Rizals patriotism as he exhorts his fellow citizens to work and strive for their nation whether in times of peace or conflict. Originally titled Imno sa Paggawa this poem was composed in Tagalog.  ",
+      "This poem demonstrates José Rizals patriotism as he exhorts his fellow citizens to work and strive for their nation whether in times of peace or conflict. Originally titled Imno sa Paggawa this poem was composed in Tagalog.  ",
     content:
       "'Himno Al Trabajo' ('Hymn to Labor') is a poem written by José Rizal in 1888. In this patriotic and uplifting work, Rizal extols the virtues and importance of labor for the progress and prosperity of the Philippines. The poem celebrates the dignity of work in various forms, from agriculture and industry to science and the arts, emphasizing its crucial role in building a strong and virtuous nation. Rizal calls upon the Filipino youth and all citizens to embrace hard work, diligence, and perseverance as the means to achieve national development, self-reliance, and honor, portraying labor not just as a necessity but as a noble and patriotic endeavor. \n\n see the content:\n\n",
     image: Labor,
@@ -131,7 +131,7 @@ export const poems = [
     name: "El Canto del Viajero",
     years: "1903",
     description:
-      "The poem of El Canto del Viajero (Song of the Wanderer describes Jose Rizal) as a traveler and vagrant. In this poem Rizal describes the heartbreak of being a stranger in his native country after being away from it for a long time and the loneliness of being a nomad (thinking back on his return to the Philippines from Europe).",
+      "The poem of El Canto del Viajero (Song of the Wanderer describes José Rizal) as a traveler and vagrant. In this poem Rizal describes the heartbreak of being a stranger in his native country after being away from it for a long time and the loneliness of being a nomad (thinking back on his return to the Philippines from Europe).",
     content:
       "'El Canto del Viajero' ('The Song of the Traveler') is a poignant poem written by José Rizal in 1882, during his travels in Europe. In this reflective piece, Rizal expresses the feelings of a wanderer, experiencing both the allure and the loneliness of being away from one's homeland. The poem captures the traveler's yearning for his native land, the memories of loved ones left behind, and the sense of displacement that comes with being abroad, even amidst the beauty and new experiences encountered. Through evocative imagery, Rizal conveys the deep emotional ties that bind him to the Philippines and the enduring longing in the heart of someone far from home. \n\n see the content:\n\n",
     image: Wanderer,
@@ -141,7 +141,7 @@ export const poems = [
     name: "Himno Al Talisay",
     years: "1888",
     description:
-      "Jose Rizal taught his students not to be afraid of anything including the ghosts in the balete trees at Dapitan where he spent the majority of his days. He gave them a challenge by allowing them to scale balete trees. Rizal composed Hymn to Talisay for his students to sing as they gathered beneath the Talisay tree.",
+      "José Rizal taught his students not to be afraid of anything including the ghosts in the balete trees at Dapitan where he spent the majority of his days. He gave them a challenge by allowing them to scale balete trees. Rizal composed Hymn to Talisay for his students to sing as they gathered beneath the Talisay tree.",
     content:
       "during his exile in Dapitan. This lyrical piece is a tribute to the Talisay tree, a specific species of tree abundant in the area where Rizal established a school for local children. The poem goes beyond a simple botanical description, imbuing the Talisay tree with symbolic significance. It represents resilience, strength, shelter, and the nurturing environment Rizal created in his school. Through personification, Rizal seems to address the tree directly, celebrating its steadfast presence and the shade it provides for the young learners under his care, making the 'Himno Al Talisay' a subtle ode to education and the hope for the future nurtured in his secluded retreat. \n\n see the content:\n\n",
     image: Talisay,
@@ -151,7 +151,7 @@ export const poems = [
     name: "To The Child Jesus",
     years: "1875",
     description:
-      "Jose Rizal then 14 years old wrote Child Jesus in Spanish in 1875. Actually written in accordance with the Spanish standard for poetry the poem is an octave real or short poem with only eight verses. Similar to To the Virgin Mary this is another of Rizals religious poems.",
+      "José Rizal then 14 years old wrote Child Jesus in Spanish in 1875. Actually written in accordance with the Spanish standard for poetry the poem is an octave real or short poem with only eight verses. Similar to To the Virgin Mary this is another of Rizals religious poems.",
     content:
       "'To the Child Jesus' ('Al Niño Jesús') is a poem written by a young José Rizal, believed to have been composed around 1875 when he was a student at the Ateneo de Manila. In this short but sincere piece, Rizal expresses his devotion and reverence for the infant Jesus. The poem reflects a child's innocent faith and adoration, praising the divine child and conveying a sense of wonder and piety. It is a testament to the religious upbringing and early spiritual inclinations of the young Rizal. \n\n see the content:\n\n",
     image: Jesus,
@@ -161,7 +161,7 @@ export const poems = [
     name: "To The Virgin Mary",
     years: "1876",
     description:
-      "As a young child Jose Rizal carved a statue of the Virgin Mary because he was a Marian devotee. While attending the Ateneo Rizal is credited with writing the sonnet To the Virgin Mary on December 3 1876. ",
+      "As a young child José Rizal carved a statue of the Virgin Mary because he was a Marian devotee. While attending the Ateneo Rizal is credited with writing the sonnet To the Virgin Mary on December 3 1876. ",
     content:
       "this poem written by the young José Rizal, likely around the same time as 'To The Child Jesus' during his studies at the Ateneo de Manila. In this expression of Marian devotion, Rizal offers his heartfelt reverence and praise to the Virgin Mary. The poem reflects a deep sense of faith and piety, typical of the religious education he received. Through simple yet sincere language, Rizal conveys his admiration for the Virgin Mary's purity and her role as a compassionate intercessor, highlighting his early spiritual leanings and the strong Catholic influence of his upbringing.\n\n see the content:\n\n",
     image: VirginMary,
@@ -171,7 +171,7 @@ export const poems = [
     name: "Agua y Fiego",
     years: "1891",
     description:
-      "Jose Rizals very brief composition El Agua y El Fuego (Water and Fire) is taken from the chapter Bajo Cubierta of his book El Filibusterismo. The chapter talks about Isagani one of the books many characters who complained to Simoun Ibarra about a few things when they first met on the ship sailing to Laguna de Bay. The advancement of his home country is the poets greatest passion and it is expressed in this poem.",
+      "José Rizals very brief composition El Agua y El Fuego (Water and Fire) is taken from the chapter Bajo Cubierta of his book El Filibusterismo. The chapter talks about Isagani one of the books many characters who complained to Simoun Ibarra about a few things when they first met on the ship sailing to Laguna de Bay. The advancement of his home country is the poets greatest passion and it is expressed in this poem.",
     content:
       "'Agua y Fuego' ('Water and Fire') is a poem written by José Rizal in 1889. In this symbolic work, Rizal explores the contrasting yet interconnected forces of water and fire. Water often represents calmness, purity, and life-giving sustenance, while fire embodies passion, energy, destruction, and transformation. Through vivid imagery, Rizal delves into the dynamic interplay between these elements, perhaps reflecting on the complexities of human nature, societal forces, or the turbulent political climate of his time. The poem suggests a profound understanding of opposing forces and their potential for both creation and destruction, hinting at the delicate balance within individuals and society. \n\n see the content:\n\n",
     image: FireWater,

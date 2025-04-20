@@ -15,7 +15,7 @@ export default function Gallery() {
       <div className="container mx-auto">
         <Header color="white" />
         <div className="border-t-2 border-white mb-24">
-          <h1 className="text-8xl font-bold">Introducing Jose Rizal</h1>
+          <h1 className="text-8xl font-bold">Introducing José Rizal</h1>
         </div>
 
         <div className="flex justify-between">

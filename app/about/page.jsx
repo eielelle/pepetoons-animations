@@ -28,7 +28,7 @@ export default function About() {
               <div className="w-2/4">
                 <h1 className="text-4xl font-bold mb-4">About Us</h1>
                 <p>
-                  Welcome to dedicated to the Life and Legacy of Dr. Jose Rizal!
+                  Welcome to dedicated to the Life and Legacy of Dr. José Rizal!
                 </p>
                 <br />
                 <p>
@@ -144,7 +144,7 @@ export default function About() {
                   <div className="collapse collapse-arrow bg-base-100 border border-base-300">
                     <input type="radio" name="my-accordion-2" />
                     <div className="collapse-title font-semibold">
-                      Who was Dr. Jose Rizal?
+                      Who was Dr. José Rizal?
                     </div>
                     <div className="collapse-content text-sm">
                       Dr. José Rizal was a Filipino nationalist, writer, and the
