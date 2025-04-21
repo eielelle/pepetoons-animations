@@ -72,7 +72,7 @@ export default function Team() {
 
           {/* Quote Section */}
           <div className="flex flex-col items-center justify-center min-h-96 bg-black text-white text-center px-4 mt-10">
-            <h1 className="text-2xl md:text-3xl font-semibold mb-10">
+            <h1 className="text-xl md:text-2xl font-semibold mb-10">
               "Honoring the legacy of Rizal, inspiring generations of change."
             </h1>
             <div className="flex space-x-6 mt-6">
