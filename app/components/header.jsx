@@ -17,22 +17,22 @@ export default function Header() {
     {
       id: "home",
       label: "Home",
-      urlPath: "home",
+      urlPath: "/home",
     },
     {
       id: "explore",
       label: "Explore the Museum",
-      urlPath: "",
+      urlPath: "/museum",
     },
     {
       id: "about",
       label: "About",
-      urlPath: "about",
+      urlPath: "/about",
     },
     {
       id: "team",
       label: "Team",
-      urlPath: "team",
+      urlPath: "/team",
     },
   ];
 
