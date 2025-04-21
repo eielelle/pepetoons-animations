@@ -11,13 +11,57 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import HeaderLayout from "../layouts/HeaderLayout";
+import Head from "next/head";
 
 export default function About() {
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (typeof window.FinisherHeader !== "undefined") {
+        new window.FinisherHeader({
+          count: 5,
+          size: {
+            min: 280,
+            max: 780,
+            pulse: 0,
+          },
+          speed: {
+            x: {
+              min: 0.6,
+              max: 3,
+            },
+            y: {
+              min: 0.6,
+              max: 3,
+            },
+          },
+          colors: {
+            background: "#020202",
+            particles: ["#9f4416", "#87ddfe", "#231efe", "#ff0a53"],
+          },
+          blending: "overlay",
+          opacity: {
+            center: 0.6,
+            edge: 0,
+          },
+          skew: 0,
+          shapes: ["c"],
+        });
+
+        clearInterval(interval);
+      }
+    }, 100);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <HeaderLayout>
       <main className="">
-        <Script src="/scripts/finisher-header.es5.min.js" defer={true} />
-        <Script src="/scripts/header.js" defer={true} />
+        <Script
+          src="https://finisher.co/lab/header/assets/finisher-header.es5.min.js"
+          strategy="afterInteractive"
+        />
+        {/* <Script src="/scripts/finisher-header.es5.min.js" strategy="afterInteractive" onLoad={() => {console.log("loaded")}} /> */}
+        {/* <Script src="/scripts/header.js" /> */}
         <section className="hero relative">
           <div
             className="header finisher-header"
@@ -110,10 +154,10 @@ export default function About() {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-pen-tool"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="feather feather-pen-tool"
                 >
                   <path d="M12 19l7-7 3 3-7 7-3-3z" />
                   <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
