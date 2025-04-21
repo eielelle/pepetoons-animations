@@ -21,7 +21,7 @@ export default function Footer() {
             </a>
           </li>
           <li>
-            <a className="link link-hover">Explore the museum</a>
+            <a href="/museum" className="link link-hover">Explore the museum</a>
           </li>
           <li>
             <a className="link link-hover" href="/about">
