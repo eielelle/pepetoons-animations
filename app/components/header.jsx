@@ -17,22 +17,22 @@ export default function Header() {
     {
       id: "home",
       label: "Home",
-      urlPath: "home",
+      urlPath: "/home",
     },
     {
       id: "explore",
       label: "Explore the Museum",
-      urlPath: "",
+      urlPath: "/museum",
     },
     {
       id: "about",
       label: "About",
-      urlPath: "about",
+      urlPath: "/about",
     },
     {
       id: "team",
       label: "Team",
-      urlPath: "team",
+      urlPath: "/team",
     },
   ];
 
@@ -55,7 +55,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={`navbar fixed top-0 left-0 w-full z-50 flex-col-reverse md:flex-row ${isScrolled ? 'bg-black opacity-90 shadow-sm' : ''}`}>
+    <header className={`navbar fixed top-0 left-0 w-full z-[150] flex-col-reverse md:flex-row ${isScrolled ? 'bg-black opacity-90 shadow-sm' : ''}`}>
       <div className="flex-1">
       <a className="block pl-3" href="/">
         <Image src={'/logo.png'} alt={"logo"} width={150} height={150} />

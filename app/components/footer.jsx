@@ -17,20 +17,20 @@ export default function Footer() {
         <ul className="list-disc list-inside">
           <li>
             <a className="link link-hover" href="/home">
-              home
+              Home
             </a>
           </li>
           <li>
-            <a className="link link-hover">explore the museum</a>
+            <a href="/museum" className="link link-hover">Explore the museum</a>
           </li>
           <li>
             <a className="link link-hover" href="/about">
-              about
+              About
             </a>
           </li>
           <li>
             <a className="link link-hover" href="/team">
-              meet the team
+              Meet the team
             </a>
           </li>
         </ul>
@@ -40,22 +40,22 @@ export default function Footer() {
         <ul className="list-disc list-inside">
           <li>
             <a className="link link-hover" href="/family">
-              family
+              Family
             </a>
           </li>
           <li>
             <a className="link link-hover" href="/education">
-              education
+              Education
             </a>
           </li>
           <li>
             <a className="link link-hover" href="/romantic-life">
-              romantic Life
+              Romantic Life
             </a>
           </li>
           <li>
             <a className="link link-hover" href="/visit">
-              travels
+              Travels
             </a>
           </li>
         </ul>
@@ -65,17 +65,17 @@ export default function Footer() {
         <ul className="list-disc list-inside">
           <li>
             <a className="link link-hover" href="/works">
-              writings
+              Writings
             </a>
           </li>
           <li>
             <a className="link link-hover" href="/arrest">
-              arrest
+              Arrest
             </a>
           </li>
           <li>
             <a className="link link-hover" href="/exile">
-              monuments
+              Monuments
             </a>
           </li>
         </ul>

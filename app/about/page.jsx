@@ -11,13 +11,57 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import HeaderLayout from "../layouts/HeaderLayout";
+import Head from "next/head";
 
 export default function About() {
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (typeof window.FinisherHeader !== "undefined") {
+        new window.FinisherHeader({
+          count: 5,
+          size: {
+            min: 280,
+            max: 780,
+            pulse: 0,
+          },
+          speed: {
+            x: {
+              min: 0.6,
+              max: 3,
+            },
+            y: {
+              min: 0.6,
+              max: 3,
+            },
+          },
+          colors: {
+            background: "#020202",
+            particles: ["#9f4416", "#87ddfe", "#231efe", "#ff0a53"],
+          },
+          blending: "overlay",
+          opacity: {
+            center: 0.6,
+            edge: 0,
+          },
+          skew: 0,
+          shapes: ["c"],
+        });
+
+        clearInterval(interval);
+      }
+    }, 100);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <HeaderLayout>
       <main className="">
-        <Script src="/scripts/finisher-header.es5.min.js" defer={true} />
-        <Script src="/scripts/header.js" defer={true} />
+        <Script
+          src="https://finisher.co/lab/header/assets/finisher-header.es5.min.js"
+          strategy="afterInteractive"
+        />
+        {/* <Script src="/scripts/finisher-header.es5.min.js" strategy="afterInteractive" onLoad={() => {console.log("loaded")}} /> */}
+        {/* <Script src="/scripts/header.js" /> */}
         <section className="hero relative">
           <div
             className="header finisher-header"
@@ -28,7 +72,7 @@ export default function About() {
               <div className="w-2/4">
                 <h1 className="text-4xl font-bold mb-4">About Us</h1>
                 <p>
-                  Welcome to dedicated to the Life and Legacy of Dr. Jose Rizal!
+                  Welcome to dedicated to the Life and Legacy of Dr. José Rizal!
                 </p>
                 <br />
                 <p>
@@ -110,10 +154,10 @@ export default function About() {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-pen-tool"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="feather feather-pen-tool"
                 >
                   <path d="M12 19l7-7 3 3-7 7-3-3z" />
                   <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
@@ -144,13 +188,17 @@ export default function About() {
                   <div className="collapse collapse-arrow bg-base-100 border border-base-300">
                     <input type="radio" name="my-accordion-2" />
                     <div className="collapse-title font-semibold">
-                      Who was Dr. Jose Rizal?
+                      Did José Rizal retract his criticisms of the Catholic
+                      Church before his execution?
                     </div>
                     <div className="collapse-content text-sm">
-                      Dr. José Rizal was a Filipino nationalist, writer, and the
-                      country's national hero, known for his novels Noli Me
-                      Tangere and El Filibustegviype, which exposed the
-                      injustices of Spanish colonial rule.
+                      The claim that José Rizal retracted his criticisms of the
+                      Catholic Church before his execution is highly debated.
+                      The Church says he signed a retraction, but many scholars
+                      doubt its authenticity due to inconsistencies, lack of
+                      original copies, Rizal's character, and the circumstances
+                      of his death. There are arguments on both sides, and no
+                      definitive conclusion has been reached.
                     </div>
                   </div>
                   <br />
@@ -256,16 +304,9 @@ export default function About() {
                     Our Mission
                   </h1>
                   <p>
-                    At PepeToons, our mission is to make Dr. José Rizal's life
-                    and legacy accessible and engaging for people of all ages
-                    and backgrounds. We strive to educate, inspire, and provide
-                    a platform where visitors can deepen their understanding of
-                    Rizal's pivotal role in Philippine history. Whether you're a
-                    student, a history enthusiast, or simply curious about
-                    Rizal's impact, this website is a resource to help you learn
-                    more about one of the most important figures in Philippine
-                    history. Join us in remembering and celebrating Dr. José
-                    Rizal's contributions to the Filipino people and the world.
+                  PepeToons aims to make Dr. José Rizal’s life and legacy engaging and accessible for everyone. 
+                  The website serves as a platform to educate and inspire people about his impact on Philippine history, 
+                  inviting visitors of all backgrounds to learn and celebrate his contributions.
                   </p>
                 </div>
               </div>
