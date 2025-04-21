@@ -144,13 +144,17 @@ export default function About() {
                   <div className="collapse collapse-arrow bg-base-100 border border-base-300">
                     <input type="radio" name="my-accordion-2" />
                     <div className="collapse-title font-semibold">
-                      Who was Dr. Jose Rizal?
+                      Did Jose Rizal retract his criticisms of the Catholic
+                      Church before his execution?
                     </div>
                     <div className="collapse-content text-sm">
-                      Dr. José Rizal was a Filipino nationalist, writer, and the
-                      country's national hero, known for his novels Noli Me
-                      Tangere and El Filibustegviype, which exposed the
-                      injustices of Spanish colonial rule.
+                      The claim that Jose Rizal retracted his criticisms of the
+                      Catholic Church before his execution is highly debated.
+                      The Church says he signed a retraction, but many scholars
+                      doubt its authenticity due to inconsistencies, lack of
+                      original copies, Rizal's character, and the circumstances
+                      of his death. There are arguments on both sides, and no
+                      definitive conclusion has been reached.
                     </div>
                   </div>
                   <br />
