@@ -28,7 +28,7 @@ export default function About() {
               <div className="w-2/4">
                 <h1 className="text-4xl font-bold mb-4">About Us</h1>
                 <p>
-                  Welcome to dedicated to the Life and Legacy of Dr. Jose Rizal!
+                  Welcome to dedicated to the Life and Legacy of Dr. José Rizal!
                 </p>
                 <br />
                 <p>

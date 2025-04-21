@@ -17,7 +17,7 @@ export const familyData = [
     name: "Teodora Alonso Realonda",
     year: "1827-1911",
     description:
-      "Teodora was a well-educated woman from a prominent family in Manila. She was known for her intelligence, strong will, and exceptional influence on her children. Her guidance and nurturing played a crucial role in shaping Jose Rizal's character and values.",
+      "Teodora was a well-educated woman from a prominent family in Manila. She was known for her intelligence, strong will, and exceptional influence on her children. Her guidance and nurturing played a crucial role in shaping José Rizal's character and values.",
     img: Teodora,
   },
   {
@@ -31,35 +31,35 @@ export const familyData = [
     name: "Saturnina Rizal Hidalgo",
     year: "1850-1913",
     description:
-      "The eldest child of Francisco and Teodora, Saturnina played a maternal role among her siblings. She was married to Manuel T. Hidalgo and actively supported Jose Rizal throughout his life.",
+      "The eldest child of Francisco and Teodora, Saturnina played a maternal role among her siblings. She was married to Manuel T. Hidalgo and actively supported José Rizal throughout his life.",
     img: Saturina,
   },
   {
     name: "Paciano Rizal",
     year: "1851-1930",
     description:
-      "Paciano was Jose Rizal's older brother and a prominent revolutionary. As a devoted nationalist, Paciano guided and supported Jose, acting as a father figure and playing a significant role in his educational and political journey.",
+      "Paciano was José Rizal's older brother and a prominent revolutionary. As a devoted nationalist, Paciano guided and supported Jose, acting as a father figure and playing a significant role in his educational and political journey.",
     img: Paciano,
   },
   {
     name: "Narcisa Rizal Lopez",
     year: "1852-1939",
     description:
-      "Narcisa was known for her resourcefulness and strong family loyalty. She played a vital role in locating Jose Rizal's remains after his execution.",
+      "Narcisa was known for her resourcefulness and strong family loyalty. She played a vital role in locating José Rizal's remains after his execution.",
     img: Narcisa,
   },
   {
     name: "Olympia Rizal",
     year: "1855-1887",
     description:
-      "Olympia was Jose Rizal's sister who married Silvestre Ubaldo. She maintained a close relationship with her brother and supported him during his endeavors.",
+      "Olympia was José Rizal's sister who married Silvestre Ubaldo. She maintained a close relationship with her brother and supported him during his endeavors.",
     img: Olympia,
   },
   {
     name: "Lucia Rizal Herbosa",
     year: "1857-1919",
     description:
-      "Lucia married Mariano Herbosa, who passed away due to health complications. She supported her brother Jose Rizal's reforms and ideals.",
+      "Lucia married Mariano Herbosa, who passed away due to health complications. She supported her brother José Rizal's reforms and ideals.",
     img: Lucia,
   },
   {
@@ -70,7 +70,7 @@ export const familyData = [
     img: Maria,
   },
   {
-    name: "Jose Rizal",
+    name: "José Rizal",
     year: "1861-1896",
     description:
       "José Rizal was the seventh of eleven children born to Doña Teodora Alonso Realonda and Don Francisco Mercado Rizal. Growing up in a well-educated and affluent family in Calamba, Laguna, he displayed exceptional intelligence and a deep love for learning from an early age. His parents instilled in him strong values of education, patriotism, and perseverance, which later shaped his role as a national hero of the Philippines.",
@@ -80,7 +80,7 @@ export const familyData = [
     name: "Concepcion Rizal",
     year: "1862-1865",
     description:
-      "Concepcion, affectionately called 'Concha,' passed away at a young age. Her death deeply affected Jose Rizal, who often mentioned her in his writings.",
+      "Concepcion, affectionately called 'Concha,' passed away at a young age. Her death deeply affected José Rizal, who often mentioned her in his writings.",
     img: Concepcion,
   },
   {
@@ -94,7 +94,7 @@ export const familyData = [
     name: "Trinidad Rizal",
     year: "1868-1951",
     description:
-      "Trinidad, like Josefa, never married and dedicated herself to supporting Jose Rizal's cause. Before his execution, Jose entrusted her with his famous poem, 'Mi Ultimo Adios.'",
+      "Trinidad, like Josefa, never married and dedicated herself to supporting José Rizal's cause. Before his execution, Jose entrusted her with his famous poem, 'Mi Ultimo Adios.'",
     img: Trinidad,
   },
   {
