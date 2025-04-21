@@ -25,8 +25,12 @@ import alghieImg from "../../assets/Resources/Alghie.png";
 import vincentImg from "../../assets/Resources/cent.png";
 
 const members = [
-  { name: "Jameson G. Teodore", role: "Project Manager", image: jamesonImg },
-  { name: "Jamesmar P. Martin", role: "Animator", image: jamesmarImg },
+  {
+    name: "Jameson G. Teodore",
+    role: "Project Manager, Animator",
+    image: jamesonImg,
+  },
+  { name: "Jamesmar P. Martin", role: "Animator, QA", image: jamesmarImg },
   { name: "Eleazar A. Romero", role: "Developer, QA", image: eleazarImg },
   {
     name: "Shello Lois B. Roxas",
@@ -68,7 +72,7 @@ export default function Team() {
 
           {/* Quote Section */}
           <div className="flex flex-col items-center justify-center min-h-96 bg-black text-white text-center px-4 mt-10">
-            <h1 className="text-2xl md:text-3xl font-semibold mb-10">
+            <h1 className="text-xl md:text-2xl font-semibold mb-10">
               "Honoring the legacy of Rizal, inspiring generations of change."
             </h1>
             <div className="flex space-x-6 mt-6">

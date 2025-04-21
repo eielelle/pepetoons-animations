@@ -44,7 +44,7 @@ export default function Home() {
           </h1>
           <h1 className="text-xl md:text-5xl font-bold bg-white text-black p-4 inline-block relative">
             DISCOVER THE LIFE, IDEALS, AND LEGACY OF{" "}
-            <span className="whitespace-nowrap">DR. JOSE RIZAL</span> ...
+            <span className="whitespace-nowrap">DR. JOSE RIZAL</span>
             <div className="slide absolute top-0 right-0 size-full bg-white"></div>
           </h1>
 

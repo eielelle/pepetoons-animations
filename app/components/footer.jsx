@@ -14,43 +14,71 @@ export default function Footer() {
       </aside>
       <nav>
         <h6 className="footer-title normal-case">About Pepetoons</h6>
-        <a className="link link-hover" href="/home">
-          Home
-        </a>
-        <a className="link link-hover">Explore the Museum</a>
-        <a className="link link-hover" href="/about">
-          About
-        </a>
-        <a className="link link-hover" href="/team">
-          Meet the Team
-        </a>
+        <ul className="list-disc list-inside">
+          <li>
+            <a className="link link-hover" href="/home">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="/museum" className="link link-hover">Explore the museum</a>
+          </li>
+          <li>
+            <a className="link link-hover" href="/about">
+              About
+            </a>
+          </li>
+          <li>
+            <a className="link link-hover" href="/team">
+              Meet the team
+            </a>
+          </li>
+        </ul>
       </nav>
       <nav>
         <h6 className="footer-title normal-case">Biography</h6>
-        <a className="link link-hover" href="/arrest">
-          Arrest
-        </a>
-        <a className="link link-hover" href="/education">
-          Education
-        </a>
-        <a className="link link-hover" href="/exile">
-          Monuments
-        </a>
-        <a className="link link-hover" href="/family">
-          Family
-        </a>
+        <ul className="list-disc list-inside">
+          <li>
+            <a className="link link-hover" href="/family">
+              Family
+            </a>
+          </li>
+          <li>
+            <a className="link link-hover" href="/education">
+              Education
+            </a>
+          </li>
+          <li>
+            <a className="link link-hover" href="/romantic-life">
+              Romantic Life
+            </a>
+          </li>
+          <li>
+            <a className="link link-hover" href="/visit">
+              Travels
+            </a>
+          </li>
+        </ul>
       </nav>
       <nav>
         <h6 className="footer-title opacity-0">A</h6>
-        <a className="link link-hover" href="/works">
-          Writings
-        </a>
-        <a className="link link-hover" href="/romantic-life">
-          Romantic Life
-        </a>
-        <a className="link link-hover" href="/visit">
-          Travels
-        </a>
+        <ul className="list-disc list-inside">
+          <li>
+            <a className="link link-hover" href="/works">
+              Writings
+            </a>
+          </li>
+          <li>
+            <a className="link link-hover" href="/arrest">
+              Arrest
+            </a>
+          </li>
+          <li>
+            <a className="link link-hover" href="/exile">
+              Monuments
+            </a>
+          </li>
+        </ul>
       </nav>
     </footer>
   );
