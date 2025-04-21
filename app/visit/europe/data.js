@@ -11,7 +11,7 @@ import GermanyFlagSvg from "../../../assets/flag/DE.svg";
 import EnglandFlagSvg from "../../../assets/flag/GB-ENG.svg";
 import BelgiumFlagSvg from "../../../assets/flag/BE.svg";
 
-//Start of Jose Rizal visited Cities Date, Acitivies Description
+//Start of José Rizal visited Cities Date, Acitivies Description
 const Europe = [
   {
     id: "1",
@@ -116,6 +116,6 @@ const Europe = [
       "Rizal remained active and healthy during his time in Brussels. He engaged in fencing and target practice at the armory and gymnastics at the gym.",
   },
 ];
-//End of Jose Rizal visited Cities Date, Acitivies Description
+//End of José Rizal visited Cities Date, Acitivies Description
 
 export default Europe;
