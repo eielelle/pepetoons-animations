@@ -144,11 +144,11 @@ export default function About() {
                   <div className="collapse collapse-arrow bg-base-100 border border-base-300">
                     <input type="radio" name="my-accordion-2" />
                     <div className="collapse-title font-semibold">
-                      Did Jose Rizal retract his criticisms of the Catholic
+                      Did José Rizal retract his criticisms of the Catholic
                       Church before his execution?
                     </div>
                     <div className="collapse-content text-sm">
-                      The claim that Jose Rizal retracted his criticisms of the
+                      The claim that José Rizal retracted his criticisms of the
                       Catholic Church before his execution is highly debated.
                       The Church says he signed a retraction, but many scholars
                       doubt its authenticity due to inconsistencies, lack of
