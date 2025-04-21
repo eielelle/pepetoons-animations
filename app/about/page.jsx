@@ -256,16 +256,9 @@ export default function About() {
                     Our Mission
                   </h1>
                   <p>
-                    At PepeToons, our mission is to make Dr. José Rizal's life
-                    and legacy accessible and engaging for people of all ages
-                    and backgrounds. We strive to educate, inspire, and provide
-                    a platform where visitors can deepen their understanding of
-                    Rizal's pivotal role in Philippine history. Whether you're a
-                    student, a history enthusiast, or simply curious about
-                    Rizal's impact, this website is a resource to help you learn
-                    more about one of the most important figures in Philippine
-                    history. Join us in remembering and celebrating Dr. José
-                    Rizal's contributions to the Filipino people and the world.
+                  PepeToons aims to make Dr. José Rizal’s life and legacy engaging and accessible for everyone. 
+                  The website serves as a platform to educate and inspire people about his impact on Philippine history, 
+                  inviting visitors of all backgrounds to learn and celebrate his contributions.
                   </p>
                 </div>
               </div>
