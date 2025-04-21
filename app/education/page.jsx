@@ -44,7 +44,7 @@ export default function Education() {
             </p>
             <div className="divider before:bg-white before:h-1 after:h-1 after:bg-white"></div>
             <h2 className="text-blue-400 text-xl font-bold mb-4">
-              Priavate Tutors of José Rizal
+              Private Tutors of José Rizal
             </h2>
             <p>
               José Rizal's early education was guided by private tutors, including
