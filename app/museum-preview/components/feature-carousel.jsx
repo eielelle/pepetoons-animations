@@ -107,7 +107,7 @@ export default function FeatureCarousel({ parentHeight, scrollTop }) {
         <div className="w-[calc((100%/5)/2)] h-full border-r-2 border-black relative">
           <ImageContainer image={luneta} />
           <p className="absolute bottom-0 left-0 w-[50%] mb-4 p-5 font-semibold">
-            Monuments of Dr. Jose Rizal | Luneta Park, Manila
+            Monuments of Dr. José Rizal | Luneta Park, Manila
           </p>
         </div>
         <div className="w-[calc((100%/5)/7)] h-full border-r-2 border-black relative">
