@@ -1,0 +1,48 @@
+import Image from "next/image";
+import { Home, Info, Power } from "react-feather";
+import {data} from '../data'
+
+export default function Item({ nextWork, workIndex }) {
+    return (
+      <div className="absolute top-0 left-0 h-full w-full flex flex-col z-50 ">
+        <header className="navbar">
+          <div className="flex-1">
+            <Image src={"/logo.png"} alt={"logo"} width={150} height={150} />
+          </div>
+          <div className="flex-none flex gap-4">
+            <button className="btn btn-square bg-[#C66030]">
+              <Info />
+            </button>
+
+            <button className="btn btn-square bg-[#C66030]">
+              <Home />
+            </button>
+          </div>
+        </header>
+
+        <section className="flex-1 grid grid-cols-3">
+          <div className="flex justify-center pb-4">
+            <div className="bg-white h-1/2 w-2/3 text-black p-4 rounded-lg rounded-tr-4xl shadow-sm">
+                <p className="uppercase text-center text-sm tracking-[.2rem]">Description</p>
+              <h1 className="border-b border-black pb-3 my-3 font-semibold">{data[workIndex].title}</h1>
+              <p>{data[workIndex].description}</p>
+            </div>
+          </div>
+          <div></div>
+          <div className="flex justify-center pb-4">
+            <div className="bg-white h-1/2 w-2/3 text-black p-4 rounded-lg shadow-sm flex flex-col">
+                <h1 className="text-6xl font-bold mb-6">0{workIndex}</h1>
+                <div>
+                    <h2 className="font-semibold">Material Used</h2>
+                    <p>{data[workIndex].material}</p>
+                    <br />
+                    <h2 className="font-semibold">Remarks</h2>
+                    <p>{data[workIndex].remarks}</p>
+                </div>
+                <button className="btn btn-square bg-[#C66030] join-item w-full py-4 mt-auto" onClick={nextWork}>Next</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    );
+}
