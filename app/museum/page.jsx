@@ -32,14 +32,20 @@ function SceneBridge({ cameraRef }) {
   return null;
 }
 
-function CameraController({ cameraRef, targetPosition, targetLookAt, shouldLerp }) {
+function CameraController({ cameraRef, targetPosition, targetLookAt, shouldLerp, controlsRef }) {
   useFrame(() => {
     const cam = cameraRef.current;
+    const controls = controlsRef.current;
+
     if (cam && shouldLerp.current) {
       cam.position.lerp(targetPosition.current, 0.1);
       cam.lookAt(targetLookAt.current);
 
-      // Stop lerping when close enough
+      if (controls) {
+        controls.target.lerp(targetLookAt.current, 0.1);
+        controls.update();
+      }
+
       if (cam.position.distanceTo(targetPosition.current) < 0.01) {
         shouldLerp.current = false;
       }
@@ -61,6 +67,7 @@ export default function Mtest() {
   const targetPosition = useRef(new THREE.Vector3(...cameraOpts.position));
   const targetLookAt = useRef(new THREE.Vector3(0, 0, 0));
   const shouldLerp = useRef(false);
+  const controlsRef = useRef();
 
   const handleKeyDown = useCallback((event) => {
     if (cameraRef.current) {
@@ -112,27 +119,29 @@ export default function Mtest() {
 
   return (
     <main className="h-screen flex justify-center items-center relative">
-      {sessionStart ? (
+     {sessionStart ? (
         <Item nextWork={nextWork} workIndex={workIndex} />
       ) : (
         <WelcomeScreen start={enterMuseum} />
-      )}
+      )} 
 
       <div className="h-full w-full">
         <Canvas camera={cameraOpts}>
           <SceneBridge cameraRef={cameraRef} />
           <CameraController
-            cameraRef={cameraRef}
-            targetPosition={targetPosition}
-            targetLookAt={targetLookAt}
-            shouldLerp={shouldLerp}
+             cameraRef={cameraRef}
+             controlsRef={controlsRef}
+             targetPosition={targetPosition}
+             targetLookAt={targetLookAt}
+             shouldLerp={shouldLerp}
+             
           />
-          {/* <CameraDebugger /> */}
-          {/* <Stats /> */}
+          {/* <CameraDebugger />
+          <Stats /> */}
           <ambientLight intensity={0.5} />
           <directionalLight position={[5, 5, 10]} intensity={1} />
           <Model />
-          <OrbitControls enableZoom={true} />
+          <OrbitControls ref={controlsRef} enableZoom={true} />
         </Canvas>
       </div>
     </main>
