@@ -12,7 +12,7 @@ import {
 import { FaBook, FaRedhat, FaLanguage, FaPen, FaSun } from "react-icons/fa";
 
 // Import team images
-import PBGen_Quilates from "../../assets/Resources/w_BG_PBGen.Quilates.png";
+import PBGen_Quilates from "../../assets/Resources/PBGen.Quilates.png";
 import PCPT_Karim from "../../assets/Resources/PCPT.Ben_Karim.png";
 import Pat_Peñon from "../../assets/Resources/Pat.Peñon.png";
 import jamesonImg from "../../assets/Resources/Jameson.png";
@@ -46,7 +46,7 @@ const members = [
 export default function Team() {
   return (
     <HeaderLayout>
-      <div className="relative min-h-screen w-full flex flex-col items-center  justify-center bg-black mt-15">
+      <div className="relative min-h-screen w-full flex flex-col items-center justify-center bg-black mt-25">
         <div className="container mx-auto p-6 w-full max-w-5xl text-center">
           <h1 className="text-5xl font-extrabold text-white mb-3">
             <span className="text-white">Pepe</span>
@@ -76,11 +76,11 @@ export default function Team() {
               "Honoring the legacy of Rizal, inspiring generations of change."
             </h1>
             <div className="flex space-x-6 mt-6">
-              <FaPen className="text-gray-400 text-3xl hover:text-white transition" />
-              <FaBook className="text-gray-400 text-3xl hover:text-white transition" />
-              <FaRedhat className="text-gray-400 text-3xl hover:text-white transition" />
-              <FaSun className="text-gray-400 text-3xl hover:text-white transition" />
-              <FaLanguage className="text-gray-400 text-3xl hover:text-white transition" />
+              <FaPen className="text-gray-400 text-3xl" />
+              <FaBook className="text-gray-400 text-3xl" />
+              <FaRedhat className="text-gray-400 text-3xl" />
+              <FaSun className="text-gray-400 text-3xl" />
+              <FaLanguage className="text-gray-400 text-3xl" />
             </div>
           </div>
 
@@ -134,7 +134,7 @@ export default function Team() {
               <Image
                 src={PBGen_Quilates}
                 alt="PBGen Edwin A Quilates"
-                className="rounded-lg shadow-md w-40 h-auto object-cover"
+                className="bg-white rounded-lg shadow-md w-40 h-auto object-cover"
               />
             </div>
           </div>
@@ -163,7 +163,7 @@ export default function Team() {
                 <Image
                   src={PCPT_Karim}
                   alt="PCpt Bensar Ali A Karim"
-                  className="rounded-lg shadow-md w-32 h-auto object-cover"
+                  className="bg-white rounded-lg shadow-md w-32 h-auto object-cover"
                 />
               </div>
             </div>
@@ -191,7 +191,7 @@ export default function Team() {
                 <Image
                   src={Pat_Peñon}
                   alt="Pat Jayson C Peñon"
-                  className="rounded-lg shadow-md w-32 h-auto object-cover"
+                  className=" bg-white rounded-lg shadow-md w-32 h-auto object-cover"
                 />
               </div>
             </div>
@@ -215,13 +215,13 @@ export default function Team() {
                     key={index}
                     className="bg-black shadow-lg rounded-2xl p-6 text-center"
                   >
-                    <div className="w-24 h-24 rounded-full bg-gray-300 mx-auto overflow-hidden">
+                    <div className="w-24 h-24 rounded-full bg-white-300 mx-auto overflow-hidden">
                       <Image
                         src={member.image}
                         alt={member.name}
                         width={96}
                         height={96}
-                        className="object-cover rounded-full"
+                        className="bg-black object-cover rounded-full"
                       />
                     </div>
                     <h3 className="text-xl text-white font-bold mt-4">
