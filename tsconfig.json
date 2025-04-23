@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "app/museum/scene/MuseumModel.jsx"  ],
+, "app/museum/Explore.jsx"  ],
   "exclude": [
     "node_modules"
   ]
