@@ -51,7 +51,7 @@ export default function Home() {
           <div className="flex justify-center items-center gap-4 flex-wrap">
             <Link
               className="btn btn-white btn-outline md:btn-lg grow-0 popup"
-              href={"/museum-preview"}
+              href={"/museum"}
             >
               Visit Museum
             </Link>
