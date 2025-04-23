@@ -120,9 +120,9 @@ export default function Mtest() {
   return (
     <main className="h-screen flex justify-center items-center relative">
      {sessionStart ? (
-        <Item nextWork={nextWork} workIndex={workIndex} />
+        <Item nextWork={nextWork} workIndex={workIndex} resetPos={() => stopAndReposition(true)} />
       ) : (
-        <WelcomeScreen start={enterMuseum} />
+        <WelcomeScreen start={enterMuseum} resetPos={() => stopAndReposition(true)} />
       )} 
 
       <div className="h-full w-full">
@@ -136,8 +136,8 @@ export default function Mtest() {
              shouldLerp={shouldLerp}
              
           />
-          {/* <CameraDebugger />
-          <Stats /> */}
+          <CameraDebugger />
+          <Stats />
           <ambientLight intensity={0.5} />
           <directionalLight position={[5, 5, 10]} intensity={1} />
           <Model />
