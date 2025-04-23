@@ -16,11 +16,53 @@ export const data = [
         description: "Dr. José Rizal, the Philippine national hero, created a pencil sketch of his close friend and confidant, Ferdinand Blumentritt, during his travels in Europe. This artwork was drawn in Leitmeritz (now Litoměřice), Bohemia in 1886, and Rizal sent it to Blumentritt as a gesture of friendship and admiration.",
     },
     {
-        pos: [8.07, 1.87, -0.61],
-        lookAt: [7.1, 1.65, 0.54],
+        pos: [7.84, 1.95, -0.66],
+        lookAt: [6.88, 1.71, -0.58],
         material: "Pencil Sketch",
         remarks: "A quiet glimpse into Rizal's thoughtful and artistic soul.",
         title: "A sketch of himself",
         description: "Dr. José Rizal, the Philippine national hero, created a self-portrait sketch in late 1886, which he sent to his close friend, Ferdinand Blumentritt. This pencil drawing, often referred to as Rizal's 'selfie,'' was a personal gesture preceding their first meeting in May 1887. The sketch captures Rizal's likeness with meticulous detail, showcasing his artistic talent and the depth of his friendship with Blumentritt. This self-portrait is among the cherished Rizaliana items preserved by Blumentritt's heirs and later acquired by the National Library of the Philippines.",
-    }
+    },
+    {
+        pos: [-7.5, 1.88, 0.81],
+        lookAt: [-6.5, 1.86, 0.79],
+        material: "Pencil Sketch",
+        remarks: "A quiet glimpse into Rizal's thoughtful and artistic soul.",
+        title: "A sketch of himself",
+        description: "Dr. José Rizal, the Philippine national hero, created a self-portrait sketch in late 1886, which he sent to his close friend, Ferdinand Blumentritt. This pencil drawing, often referred to as Rizal's 'selfie,'' was a personal gesture preceding their first meeting in May 1887. The sketch captures Rizal's likeness with meticulous detail, showcasing his artistic talent and the depth of his friendship with Blumentritt. This self-portrait is among the cherished Rizaliana items preserved by Blumentritt's heirs and later acquired by the National Library of the Philippines.",
+    },
+    {
+        pos: [0.1, 2.23, 0.05],
+        lookAt: [0.18, 2.17, 1.04],
+        material: "Oil on Canvas",
+        remarks: "Made in Berlin in 1886",
+        title: "Allegory on a pair of porcelain bases of the new year celebration",
+        description: "Dr. José Rizal, An elegant allegory crafted on a pair of porcelain bases, symbolizing the joy and renewal of New Year celebrations. Rich in detail and artistic symbolism, the pieces capture festive elements and traditional motifs that reflect hope, prosperity, and new beginnings.",
+    },
+    {
+        pos: [-0.39, 1.98, -1.88],
+        lookAt: [-0.5, 1.93, -2.87],
+        material: "Oil on Canvas",
+        remarks: "Shells painted by Rizal in Dapitan and given as a gift to Doña Leonor Valenzuela and later passed into the hands of Doña Margarita Valenzuela",
+        title: "A painting on a pair of mother-of-pearl",
+        description: "Dr. José Rizal, A delicate painting rendered on a pair of shimmering mother-of-pearl surfaces, capturing elegance and artistry on a natural canvas.",
+    },
+    {
+        pos:  [ 1.84, 1.97, -0.89 ],
+        lookAt: [ 2.82, 1.85, -0.8 ],
+        material: "Oil on Canvas",
+        remarks: "Now in Rizal Shrine in Fort Santiago",
+        title: "Saturnina Rizal",
+        description: "Dr. José Rizal, A graceful painting of Saturnina Rizal delicately rendered on a pair of lustrous mother-of-pearl pieces, blending historical portraiture with the elegance of natural materials.",
+    },
+    {
+        pos: [-2.57, 1.83, 0.11],
+        lookAt: [-3.56, 1.84, 0.28],
+        material: "Oil on Canvas",
+        remarks: "Made in Dapitan, 1894",
+        title: "Dapitan Church Curtains",
+        description: "Dr. José Rizal, Embroidered curtains from Dapitan Church, showcasing intricate craftsmanship and historical significance from the Spanish colonial era.",
+    },
+
+
 ]
