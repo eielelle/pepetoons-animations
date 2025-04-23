@@ -12,7 +12,7 @@ import {
 import { FaBook, FaRedhat, FaLanguage, FaPen, FaSun } from "react-icons/fa";
 
 // Import team images
-import PBGen_Quilates from "../../assets/Resources/PBGen.Quilates.png";
+import PBGen_Quilates from "../../assets/Resources/w_BG_PBGen.Quilates.png";
 import PCPT_Karim from "../../assets/Resources/PCPT.Ben_Karim.png";
 import Pat_Peñon from "../../assets/Resources/Pat.Peñon.png";
 import jamesonImg from "../../assets/Resources/Jameson.png";
@@ -46,15 +46,15 @@ const members = [
 export default function Team() {
   return (
     <HeaderLayout>
-      <div className="relative min-h-screen w-full flex flex-col items-center  justify-center bg-white mt-15">
+      <div className="relative min-h-screen w-full flex flex-col items-center  justify-center bg-black mt-15">
         <div className="container mx-auto p-6 w-full max-w-5xl text-center">
-          <h1 className="text-5xl font-extrabold text-black mb-3">
-            <span className="text-[#000]">Pepe</span>
-            <span className="text-[#000]">Toons</span> Team
+          <h1 className="text-5xl font-extrabold text-white mb-3">
+            <span className="text-white">Pepe</span>
+            <span className="text-white">Toons</span> Team
           </h1>
           <p className="text-xl text-gray-600 mb-8">
             Meet the team and learn more about the origin story behind{" "}
-            <span className="font-semibold text-black">PepeToons</span>
+            <span className="font-semibold text-white">PepeToons</span>
           </p>
 
           {/* Group Image */}
@@ -85,37 +85,37 @@ export default function Team() {
           </div>
 
           {/* Core Values */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 p-6 bg-white place-items-center">
-            <div className="w-45 bg-white shadow-xl p-6 text-center rounded-2xl">
-              <FontAwesomeIcon icon={faMedal} className="text-black text-4xl" />
-              <h2 className="font-bold text-lg mt-4 text-black">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 p-6 bg-black place-items-center">
+            <div className="w-45 bg-black shadow-xl p-6 text-center rounded-2xl">
+              <FontAwesomeIcon icon={faMedal} className="text-white text-4xl" />
+              <h2 className="font-bold text-lg mt-4 text-white">
                 Honor the Past
               </h2>
             </div>
-            <div className="w-45 bg-white shadow-xl p-6 text-center rounded-2xl">
+            <div className="w-45 bg-black shadow-xl p-6 text-center rounded-2xl">
               <FontAwesomeIcon
                 icon={faBullseye}
-                className="text-black text-4xl"
+                className="text-white text-4xl"
               />
-              <h2 className="font-bold text-lg mt-4 text-black">
+              <h2 className="font-bold text-lg mt-4 text-white">
                 Inspire the Future
               </h2>
             </div>
-            <div className="w-45 h-65 lg:col-span-2 bg-white shadow-xl p-6 text-center rounded-2xl">
+            <div className="w-45 h-65 lg:col-span-2 bg-black shadow-xl p-6 text-center rounded-2xl">
               <FontAwesomeIcon
                 icon={faHandBackFist}
-                className="text-black text-4xl"
+                className="text-white text-4xl"
               />
-              <h2 className="font-bold text-lg mt-4 text-black">
+              <h2 className="font-bold text-lg mt-4 text-white">
                 Empower Change
               </h2>
             </div>
           </div>
 
           {/* Testimonial */}
-          <div className="flex flex-col lg:flex-row items-center bg-white p-6 rounded-lg shadow-lg max-w-4xl mx-auto mt-13">
+          <div className="flex flex-col lg:flex-row items-center bg-black p-6 rounded-lg shadow-lg max-w-4xl mx-auto mt-13">
             <div className="text-center lg:text-left w-full lg:w-2/3">
-              <h2 className="text-2xl font-bold mb-3 text-black">
+              <h2 className="text-2xl font-bold mb-3 text-white">
                 What our community says about us!
               </h2>
               <p className="text-base italic text-gray-700">
@@ -141,10 +141,10 @@ export default function Team() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto mt-10">
             {/* Card 1 */}
-            <div className="flex flex-col md:flex-row items-center bg-white p-6 rounded-lg shadow-md h-full">
+            <div className="flex flex-col md:flex-row items-center bg-black p-6 rounded-lg shadow-md h-full">
               {/* Text */}
               <div className="w-full md:w-2/3 text-center md:text-left">
-                <h2 className="text-xl font-semibold mb-2 text-black">
+                <h2 className="text-xl font-semibold mb-2 text-whute">
                   What our community says
                 </h2>
                 <p className="text-base italic text-gray-700">
@@ -152,7 +152,7 @@ export default function Team() {
                   understanding of our history and inspired me to make a
                   difference in my community."
                 </p>
-                <p className="font-bold mt-2 text-black">
+                <p className="font-bold mt-2 text-white">
                   PCpt Bensar Ali A Karim
                 </p>
                 <p className="text-sm text-gray-500">OJT Supervisor</p>
@@ -169,10 +169,10 @@ export default function Team() {
             </div>
 
             {/* Card 2 */}
-            <div className="flex flex-col md:flex-row items-center bg-white p-6 rounded-lg shadow-md h-full">
+            <div className="flex flex-col md:flex-row items-center bg-black p-6 rounded-lg shadow-md h-full">
               {/* Text */}
               <div className="w-full md:w-2/3 text-center md:text-left">
-                <h2 className="text-xl font-semibold mb-2 text-black">
+                <h2 className="text-xl font-semibold mb-2 text-white">
                   What our community says
                 </h2>
                 <p className="text-base italic text-gray-700">
@@ -180,7 +180,7 @@ export default function Team() {
                   understanding of our history and inspired me to make a
                   difference in my community."
                 </p>
-                <p className="font-bold mt-2 text-black">Pat Jayson C Peñon</p>
+                <p className="font-bold mt-2 text-white">Pat Jayson C Peñon</p>
                 <p className="text-sm text-gray-500">
                   OJT Assistant Supervisor
                 </p>
@@ -199,7 +199,7 @@ export default function Team() {
 
           {/* Team Section */}
           <div className="text-center py-10">
-            <h2 className="text-4xl text-black font-bold">Our Team</h2>
+            <h2 className="text-4xl text-white font-bold">Our Team</h2>
             <p className="text-gray-500 max-w-xl mx-auto mt-2">
               We’re a passionate, dedicated team united by a shared mission to
               honor Dr. José Rizal’s legacy. Our diverse group collaborates
@@ -213,7 +213,7 @@ export default function Team() {
                 .map((member, index) => (
                   <div
                     key={index}
-                    className="bg-white shadow-lg rounded-2xl p-6 text-center"
+                    className="bg-black shadow-lg rounded-2xl p-6 text-center"
                   >
                     <div className="w-24 h-24 rounded-full bg-gray-300 mx-auto overflow-hidden">
                       <Image
@@ -224,7 +224,7 @@ export default function Team() {
                         className="object-cover rounded-full"
                       />
                     </div>
-                    <h3 className="text-xl text-black font-bold mt-4">
+                    <h3 className="text-xl text-white font-bold mt-4">
                       {member.name}
                     </h3>
                     <p className="text-gray-500 text-sm mt-1">{member.role}</p>
@@ -237,7 +237,7 @@ export default function Team() {
                 {members.slice(-2).map((member, index) => (
                   <div
                     key={index}
-                    className="bg-white shadow-lg rounded-2xl p-6 text-center w-[300px]"
+                    className="bg-black shadow-lg rounded-2xl p-6 text-center w-[300px]"
                   >
                     <div className="w-24 h-24 rounded-full bg-gray-300 mx-auto overflow-hidden">
                       <Image
@@ -248,7 +248,7 @@ export default function Team() {
                         className="object-cover rounded-full"
                       />
                     </div>
-                    <h3 className="text-xl text-black font-bold mt-4">
+                    <h3 className="text-xl text-white font-bold mt-4">
                       {member.name}
                     </h3>
                     <p className="text-gray-500 text-sm mt-1">{member.role}</p>
