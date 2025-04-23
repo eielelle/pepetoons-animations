@@ -6,8 +6,11 @@ import { useState } from "react";
 export default function WelcomeScreen({ start }) {
   const [isHidden, setIsHidden] = useState(false);
 
+  const pointerEvents = `${isHidden ? "pointer-events-none" : ""}`;
+
   return (
-    <div className="absolute top-0 left-0 h-full w-full flex flex-col z-50 ">
+    <div className={` absolute top-0 left-0 h-full w-full flex flex-col z-50 ${pointerEvents}`}
+    >
       <Header hide={() => setIsHidden(!isHidden)} />
 
       {isHidden ? null : (
