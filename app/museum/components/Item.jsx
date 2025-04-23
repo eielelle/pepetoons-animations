@@ -2,12 +2,19 @@ import { useState } from "react";
 import { data } from "../data";
 import Header from "./Header";
 
-export default function Item({ nextWork, workIndex }) {
+export default function Item({ nextWork, workIndex, resetPos }) {
   const [isHidden, setIsHidden] = useState(false);
 
+  const hFull = `${!isHidden ? "h-full" : ""}`;
+
+  function hide() {
+    setIsHidden(!isHidden)
+    resetPos()
+  }
+
   return (
-    <div className="absolute top-0 left-0 h-full w-full flex flex-col z-50 ">
-      <Header hide={() => setIsHidden(!isHidden)} />
+    <div className={`absolute top-0 left-0 w-full ${hFull} flex flex-col z-50`}>
+      <Header hide={hide} />
 
       {isHidden ? null : (
         <section className="flex-1 grid grid-cols-3">

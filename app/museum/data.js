@@ -16,8 +16,8 @@ export const data = [
         description: "Dr. José Rizal, the Philippine national hero, created a pencil sketch of his close friend and confidant, Ferdinand Blumentritt, during his travels in Europe. This artwork was drawn in Leitmeritz (now Litoměřice), Bohemia in 1886, and Rizal sent it to Blumentritt as a gesture of friendship and admiration.",
     },
     {
-        pos: [8.07, 1.87, -0.61],
-        lookAt: [7.1, 1.65, 0.54],
+        pos: [7.84, 1.95, -0.66],
+        lookAt: [6.88, 1.71, -0.58],
         material: "Pencil Sketch",
         remarks: "A quiet glimpse into Rizal's thoughtful and artistic soul.",
         title: "A sketch of himself",
@@ -48,8 +48,8 @@ export const data = [
         description: "Dr. José Rizal, A delicate painting rendered on a pair of shimmering mother-of-pearl surfaces, capturing elegance and artistry on a natural canvas.",
     },
     {
-        pos: [1.86, 1.97, -0.87],
-        lookAt: [-0.5, 1.93, -2.87],
+        pos:  [ 1.84, 1.97, -0.89 ],
+        lookAt: [ 2.82, 1.85, -0.8 ],
         material: "Oil on Canvas",
         remarks: "Now in Rizal Shrine in Fort Santiago",
         title: "Saturnina Rizal",
