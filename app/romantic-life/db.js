@@ -12,6 +12,7 @@ import spainFlagImg from "../../assets/flag/ES.svg";
 import japanFlagImg from "../../assets/flag/JP.svg";
 import unitedKingdomFlagImg from "../../assets/flag/GB.svg";
 import belgiumFlagImg from "../../assets/flag/BE.svg";
+import irishFlagImg from "../../assets/flag/IE.svg"; 
 
 export const data = [
   {
@@ -115,8 +116,8 @@ export const data = [
   {
     name: "Josephine Bracken",
     img: josephineImg,
-    flag: unitedKingdomFlagImg,
-    country: "United Kingdom",
+    flag: irishFlagImg,
+    country: "Ireland",
     content: [
       "Irish woman, adopted daughter of George Taufer.",
       "Met Rizal in Dapitan, where they fell in love.",
