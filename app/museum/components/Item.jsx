@@ -12,14 +12,14 @@ export default function Item({ nextWork, workIndex }) {
       {isHidden ? null : (
         <section className="flex-1 grid grid-cols-3">
           <div className="flex justify-center pb-4">
-            <div className="bg-white h-1/2 w-2/3 text-black p-4 rounded-lg rounded-tr-4xl shadow-sm">
+            <div className="overflow-y-scroll bg-white h-1/2 w-2/3 text-black p-4 rounded-lg rounded-tr-4xl shadow-sm">
               <p className="uppercase text-center text-sm tracking-[.2rem]">
                 Description
               </p>
               <h1 className="border-b border-black pb-3 my-3 font-semibold">
                 {data[workIndex].title}
               </h1>
-              <p>{data[workIndex].description}</p>
+              <p >{data[workIndex].description}</p>
             </div>
           </div>
           <div></div>
