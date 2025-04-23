@@ -10,7 +10,7 @@ export default function Header() {
 
   function isActive(pathName, urlPath, alt = false) {
     const parsedPath = urlPath.startsWith("/") ? urlPath : "/" + urlPath;
-    const styling = alt ? "bg-white text-primary" : "border-b-2 border-primary"
+    const styling = alt ? "bg-white text-primary" : "border-b-2 border-primary";
     return pathName == parsedPath ? styling : "";
   }
 
@@ -58,23 +58,94 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-[150] ${
-        isScrolled ? "bg-black opacity-90 shadow-sm -translate-y-[40px] transition-transform duration-300 ease-in-out" : ""
+        isScrolled
+          ? "bg-black opacity-90 shadow-sm -translate-y-[40px] transition-transform duration-300 ease-in-out"
+          : ""
       }`}
     >
       <div className="bg-primary px-6 flex h-[40px] text-center overflow-x-scroll">
-        <Link href={"/family"} className={`flex items-center px-2 h-full font-semibold ${isActive(pathName, "family", true)}`}>Family</Link>
-        <Link href={"/education"} className={`flex items-center px-2 h-full font-semibold ${isActive(pathName, "education", true)}`}>Education</Link>
-        <Link href={"/romantic-life"} className={`flex items-center px-2 h-full font-semibold ${isActive(pathName, "romantic-life", true)}`}>Romantic Life</Link>
-        <Link href={"/visit"} className={`flex items-center px-2 h-full font-semibold ${isActive(pathName, "visit", true)}`}>Travels</Link>
-        <Link href={"/works/novels"} className={`flex items-center px-2 h-full font-semibold ${isActive(pathName, "works/novels", true)}`}>Writings</Link>
-        <Link href={"/arrest"} className={`flex items-center px-2 h-full font-semibold ${isActive(pathName, "arrest", true)}`}>Arrest</Link>
-        <Link href={"/exile"} className={`flex items-center px-2 h-full font-semibold ${isActive(pathName, "exile", true)}`}>Monuments</Link>
+        <Link
+          href={"/family"}
+          className={`flex items-center px-2 h-full font-semibold ${isActive(
+            pathName,
+            "family",
+            true
+          )}`}
+        >
+          Family
+        </Link>
+        <Link
+          href={"/education"}
+          className={`flex items-center px-2 h-full font-semibold ${isActive(
+            pathName,
+            "education",
+            true
+          )}`}
+        >
+          Education
+        </Link>
+        <Link
+          href={"/romantic-life"}
+          className={`flex items-center px-2 h-full font-semibold ${isActive(
+            pathName,
+            "romantic-life",
+            true
+          )}`}
+        >
+          Romantic Life
+        </Link>
+        <Link
+          href={"/visit"}
+          className={`flex items-center px-2 h-full font-semibold ${isActive(
+            pathName,
+            "visit",
+            true
+          )}`}
+        >
+          Travels
+        </Link>
+        <Link
+          href={"/works/novels"}
+          className={`flex items-center px-2 h-full font-semibold ${isActive(
+            pathName,
+            "works/novels",
+            true
+          )}`}
+        >
+          Writings
+        </Link>
+        <Link
+          href={"/arrest"}
+          className={`flex items-center px-2 h-full font-semibold ${isActive(
+            pathName,
+            "arrest",
+            true
+          )}`}
+        >
+          Arrest
+        </Link>
+        <Link
+          href={"/exile"}
+          className={`flex items-center px-2 h-full font-semibold ${isActive(
+            pathName,
+            "exile",
+            true
+          )}`}
+        >
+          Monuments
+        </Link>
       </div>
 
-      <div className="navbar flex-col-reverse md:flex-row">
+      <div className="navbar flex-row flex-wrap items-center justify-between">
         <div className="flex-1">
-          <a className="block pl-3" href="/">
-            <Image src={"/logo.png"} alt={"logo"} width={150} height={150} />
+          <a className="block pl-3 py-2" href="/">
+            <Image
+              src="/logo.png"
+              alt="logo"
+              width={120}
+              height={120}
+              className="w-[100px] md:w-[150px] h-auto"
+            />
           </a>
         </div>
         <div className="flex-none">
