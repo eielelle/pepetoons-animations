@@ -4,6 +4,7 @@ import EuropeActivities from "./data";
 import EuropeGrid from "./EuropeGrid";
 import { ArrowLeft } from "react-feather";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Europe() {
   const [selectedCity, setSelectedCity] = useState(null);
@@ -62,16 +63,28 @@ export default function Europe() {
         {/* //End of eorupe module */}
 
         {/* Reusable Modals */}
-        <dialog ref={modalRef} className="modal">
-          <div className="modal-box w-11/12 max-w-5xl text-center p-7 flex flex-col gap-4 overflow-auto">
-            <form method="dialog">
-              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
-                ✕
-              </button>
-            </form>
-            {selectedCity && (
-              <>
+        {selectedCity && (
+          <div className="modal modal-open">
+            <div className="modal-box w-11/12 h-auto max-w-5xl text-center">
+              <div className="modal-header sticky top-0 right-0 bottom-0 z-10 flex justify-end items-end m-auto">
+                <button
+                  className="btn btn-md btn-circle absolute top-1 btn-primary items-center outline-offset-0 transform transition duration-75 hover:scale-110 hover:cursor-pointer"
+                  onClick={closeModal}
+                >
+                  ✕
+                </button>
+              </div>
+
+              <div className="modal-body flex flex-col gap-4 overflow-auto p-5">
+                {/* <span className="absolute">{selectedCity.flag} </span> */}
+
                 <h5 className="text-2xl font-extrabold">
+                  <Image
+                    src={selectedCity.flag}
+                    alt={selectedCity.city}
+                    fill={true}
+                    className="absolute top-0 left-0 right-0 bottom-0 m-auto w-20 h-20"
+                  />
                   {selectedCity.city}, {selectedCity.country}{" "}
                   {selectedCity.date}{" "}
                 </h5>
@@ -87,15 +100,10 @@ export default function Europe() {
                   {selectedCity.activity3}
                 </h3>
                 <p className="text-lg">{selectedCity.description3}</p>
-              </>
-            )}
-            <div className="modal-action">
-              <form method="dialog">
-                <button className="btn">Close</button>
-              </form>
+              </div>
             </div>
           </div>
-        </dialog>
+        )}
       </div>
     </>
   );

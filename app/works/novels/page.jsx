@@ -164,9 +164,9 @@ export default function NovelsContent() {
         {selectedItem && (
           <div className="modal modal-open">
             <div className="modal-box w-11/12 h-3/4 max-w-5xl">
-              <div className="modal-header flex justify-end items-center text-center">
+              <div className="modal-header sticky top-0 right-0 z-10 flex justify-end items-end p-4">
                 <button
-                  className="btn btn-md btn-circle btn-ghost items-center"
+                  className="btn btn-md btn-circle btn-primary items-center outline-offset-0 transform transition duration-75 hover:scale-110 hover:cursor-pointer"
                   onClick={closeModal}
                 >
                   ✕
@@ -182,7 +182,7 @@ export default function NovelsContent() {
                   {selectedItem.content}
                   <br />
                   <a
-                    className="btn btn-neutral link text-blue-500 hover:text-blue-700 mt-3 no-underline"
+                    className="btn bg-white link text-black hover:text-blue-700 mt-3 no-underline transform transition duration-75 hover:scale-110 hover:cursor-pointer"
                     href={selectedItem.url}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -190,13 +190,6 @@ export default function NovelsContent() {
                     See more content
                   </a>
                 </p>
-              </div>
-              <div className="modal-action">
-                <form method="dialog">
-                  <button className="btn" onClick={closeModal}>
-                    Close
-                  </button>
-                </form>
               </div>
             </div>
           </div>
