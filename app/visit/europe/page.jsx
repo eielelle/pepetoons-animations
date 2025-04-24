@@ -79,12 +79,6 @@ export default function Europe() {
                 {/* <span className="absolute">{selectedCity.flag} </span> */}
 
                 <h5 className="text-2xl font-extrabold">
-                  <Image
-                    src={selectedCity.flag}
-                    alt={selectedCity.city}
-                    fill={true}
-                    className="absolute top-0 left-0 right-0 bottom-0 m-auto w-20 h-20"
-                  />
                   {selectedCity.city}, {selectedCity.country}{" "}
                   {selectedCity.date}{" "}
                 </h5>
