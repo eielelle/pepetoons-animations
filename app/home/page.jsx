@@ -139,7 +139,10 @@ export default function Homepage() {
                   src={`/thumbs/episode-${index + 1}.png`}
                   alt={"episode"}
                 >
-                  <PlayCircle size={52} />
+                  <PlayCircle
+                    className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 pointer-events-none"
+                    size={52}
+                  />
                 </EpisodeSlide>
               ))}
             </div>
