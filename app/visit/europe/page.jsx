@@ -1,5 +1,5 @@
 "use client";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import EuropeActivities from "./data";
 import EuropeGrid from "./EuropeGrid";
 import { ArrowLeft } from "react-feather";
@@ -38,6 +38,23 @@ export default function Europe() {
     }
   };
 
+  // Add useEffect for ESC key handler
+  useEffect(() => {
+    const handleEscKey = (event) => {
+      if (event.key === "Escape" && selectedCity) {
+        closeModal();
+      }
+    };
+
+    // Add event listener when component mounts
+    document.addEventListener("keydown", handleEscKey);
+
+    // Clean up event listener when component unmounts
+    return () => {
+      document.removeEventListener("keydown", handleEscKey);
+    };
+  }, [selectedCity]);
+
   //Close Modal
   const closeModal = () => {
     if (modalRef.current) {
@@ -51,7 +68,7 @@ export default function Europe() {
       {/* Start of eorupe module */}
       <div className="h-screen overflow-auto scrollbar-thin scrollbar-thumb-red-500 scrollbar-track-gray-200 ">
         <Link href="/visit">
-          <button className="btn btn-xl btn-primary btn-circle absolute top-5 left-5 z-50 transform transition duration-75 hover:scale-110 hover:cursor-pointer">
+          <button className="btn btn-xl btn-primary btn-circle absolute top-10 left-5 m-auto z-50 transform transition duration-75 hover:scale-110 hover:cursor-pointer">
             <ArrowLeft />
           </button>
         </Link>
@@ -68,17 +85,15 @@ export default function Europe() {
             <div className="modal-box w-11/12 h-auto max-w-5xl text-center">
               <div className="modal-header sticky top-0 right-0 bottom-0 z-10 flex justify-end items-end m-auto">
                 <button
-                  className="btn btn-md btn-circle absolute top-1 btn-primary items-center outline-offset-0 transform transition duration-75 hover:scale-110 hover:cursor-pointer"
+                  className="btn btn-md btn-circle absolute top-2 btn-primary items-center outline-offset-0 transform transition duration-75 hover:scale-110 hover:cursor-pointer"
                   onClick={closeModal}
                 >
                   ✕
                 </button>
               </div>
 
-              <div className="modal-body flex flex-col gap-4 overflow-auto p-5">
-                {/* <span className="absolute">{selectedCity.flag} </span> */}
-
-                <h5 className="text-2xl font-extrabold">
+              <div className="modal-body flex flex-col gap-4 overflow-auto p-3">
+                <h5 className="text-2xl font-extrabold max-[800px]:mx-20">
                   {selectedCity.city}, {selectedCity.country}{" "}
                   {selectedCity.date}{" "}
                 </h5>

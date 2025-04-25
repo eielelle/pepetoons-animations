@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import React from "react";
 import asiaCountry from "./data";
 import AsiaGrid from "./AsiaGrid";
@@ -18,6 +18,23 @@ export default function Asia() {
       modalRef.current.showModal();
     }
   };
+
+    // Add useEffect for ESC key handler
+      useEffect(() => {
+        const handleEscKey = (event) => {
+          if (event.key === "Escape" && selectedCity) {
+            closeModal();
+          }
+        };
+  
+        // Add event listener when component mounts
+        document.addEventListener("keydown", handleEscKey);
+  
+        // Clean up event listener when component unmounts
+        return () => {
+          document.removeEventListener("keydown", handleEscKey);
+        };
+      }, [selectedCity]);
 
   //Close Modal
   const closeModal = () => {
@@ -45,28 +62,29 @@ export default function Asia() {
       {/* End of Asia */}
 
       {/* Reusable Modals */}
-      <dialog ref={modalRef} className="modal">
-        <div className="modal-box w-11/12 max-w-5xl">
-          <form method="dialog">
-            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
-              ✕
-            </button>
-          </form>
-          {selectedCity && (
-            <>
+      {selectedCity && (
+        <div className="modal modal-open">
+          <div className="modal-box w-11/12 h-auto max-w-5xl text-center overflow-auto">
+            <div className="modal-header sticky top-0 right-0 bottom-0 z-10 flex justify-end items-end m-auto">
+              <button
+                className="btn btn-md btn-circle absolute top-1 btn-primary items-center outline-offset-0 transform transition duration-75 hover:scale-110 hover:cursor-pointer"
+                onClick={closeModal}
+              >
+                ✕
+              </button>
+            </div>
+
+            <div className="modal-body  p-3 overflow-auto">
               <h3 className="font-bold text-lg">{selectedCity.country}</h3>
-              <p className="py-4 text-justify">{selectedCity.paragraph1}</p>
+              <p className="py-4 text-justify mt-3">
+                {selectedCity.paragraph1}
+              </p>
               <p className="py-2 text-justify">{selectedCity.paragraph2}</p>
               <p className="py-2 text-justify">{selectedCity.paragraph3}</p>
-            </>
-          )}
-          <div className="modal-action">
-            <form method="dialog">
-              <button className="btn">Close</button>
-            </form>
+            </div>
           </div>
         </div>
-      </dialog>
+      )}
     </>
   );
 }

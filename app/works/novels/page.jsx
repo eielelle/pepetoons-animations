@@ -163,33 +163,31 @@ export default function NovelsContent() {
 
         {selectedItem && (
           <div className="modal modal-open">
-            <div className="modal-box w-11/12 h-3/4 max-w-5xl">
-              <div className="modal-header sticky top-0 right-0 z-10 flex justify-end items-end p-4">
+            <div className="modal-box w-11/12 h-auto max-w-5xl text-center overflow-auto">
+              <div className="modal-header sticky top-0 right-0 bottom-0 z-10 flex justify-end items-end m-auto">
                 <button
-                  className="btn btn-md btn-circle btn-primary items-center outline-offset-0 transform transition duration-75 hover:scale-110 hover:cursor-pointer"
+                  className="btn btn-md btn-circle absolute top-4 btn-primary items-center outline-offset-0 transform transition duration-75 hover:scale-110 hover:cursor-pointer"
                   onClick={closeModal}
                 >
                   ✕
                 </button>
               </div>
-              <div className="modal-body">
-                <p className="text-xl text-center font-bold">
+
+              <div className="modal-body text-center mt-3 p-3">
+                <p className="text-xl font-bold max-[700px]:mx-20">
                   {selectedItem.name}
                 </p>
-                <p className="font-light text-center">{selectedItem.years}</p>
+                <p className="font-light">{selectedItem.years}</p>
                 <br />
-                <p className="text-center whitespace-pre-line">
-                  {selectedItem.content}
-                  <br />
-                  <a
-                    className="btn bg-white link text-black hover:text-blue-700 mt-3 no-underline transform transition duration-75 hover:scale-110 hover:cursor-pointer"
-                    href={selectedItem.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    See more content
-                  </a>
-                </p>
+                <p className="whitespace-pre-line">{selectedItem.content}</p>
+                <a
+                  className="btn bg-white link text-black hover:text-blue-700 mt-3 no-underline transform transition duration-75 hover:scale-110 hover:cursor-pointer"
+                  href={selectedItem.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  See more content
+                </a>
               </div>
             </div>
           </div>
