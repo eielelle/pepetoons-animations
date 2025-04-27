@@ -26,10 +26,10 @@ export const data = [
     {
         pos: [-7.5, 1.88, 0.81],
         lookAt: [-6.5, 1.86, 0.79],
-        material: "Pencil Sketch",
-        remarks: "A quiet glimpse into Rizal's thoughtful and artistic soul.",
-        title: "A sketch of himself",
-        description: "Dr. José Rizal, the Philippine national hero, created a self-portrait sketch in late 1886, which he sent to his close friend, Ferdinand Blumentritt. This pencil drawing, often referred to as Rizal's 'selfie,'' was a personal gesture preceding their first meeting in May 1887. The sketch captures Rizal's likeness with meticulous detail, showcasing his artistic talent and the depth of his friendship with Blumentritt. This self-portrait is among the cherished Rizaliana items preserved by Blumentritt's heirs and later acquired by the National Library of the Philippines.",
+        material: "Batikuling wood",
+        remarks: "Commissioned by his Jesuit professor, Fr. José Leonardo, S.J.",
+        title: "Statue of the Sacred Heart",
+        description: "This small wooden sculpture of the Sacred Heart of Jesus was carved by José Rizal between 1875 and 1877 while he was a student at the Ateneo Municipal de Manila. Depicting Jesus with his heart exposed, encircled by a crown of thorns and radiating rays, the piece reflects Rizal's early artistic talent and deep religious devotion.",
     },
     {
         pos: [0.1, 2.23, 0.05],
