@@ -1,4 +1,0 @@
-app/museum/main.gltf filter=lfs diff=lfs merge=lfs -text
-public/main.gltf filter=lfs diff=lfs merge=lfs -text
-*.gltf filter=lfs diff=lfs merge=lfs -text
-*.glb filter=lfs diff=lfs merge=lfs -text
