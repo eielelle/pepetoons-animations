@@ -137,7 +137,6 @@ export default function Mtest() {
              
           />
           <CameraDebugger />
-          <Stats />
           <ambientLight intensity={0.5} />
           <directionalLight position={[5, 5, 10]} intensity={1} />
           <Model />
