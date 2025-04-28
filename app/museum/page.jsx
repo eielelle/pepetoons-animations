@@ -2,7 +2,7 @@
 import { useEffect, useCallback, useState, useRef } from "react";
 import * as THREE from "three";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { OrbitControls, Stats } from "@react-three/drei";
+import { OrbitControls} from "@react-three/drei";
 import { Model } from "./Museum";
 import WelcomeScreen from "./components/WelcomeScreen";
 import Item from "./components/Item";
