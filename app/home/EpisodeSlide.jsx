@@ -14,9 +14,10 @@ export default function EpisodeSlide({ href, src, alt, children }) {
         width={400}
         height={400}
       />
-      <div className="bg-black opacity-70 group-hover:opacity-30 absolute top-0 left-0 w-full h-full flex justify-center items-center pointer-events-none p-4">
-      </div>
-        <h2 className="text-4xl text-center font-bold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">{children}</h2>
+      <div className="opacity-70 group-hover:bg-black group-hover:opacity-30 absolute top-0 left-0 w-full h-full flex justify-center items-center p-4"></div>
+      <h2 className="text-4xl text-center font-bold absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        {children}
+      </h2>
     </Link>
   );
 }

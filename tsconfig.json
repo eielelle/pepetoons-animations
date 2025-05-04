@@ -27,8 +27,7 @@
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "app/museum/Explore.jsx"  ],
+    "**/*.tsx"],
   "exclude": [
     "node_modules"
   ]

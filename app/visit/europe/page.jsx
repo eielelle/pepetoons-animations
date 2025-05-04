@@ -1,9 +1,10 @@
 "use client";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import EuropeActivities from "./data";
 import EuropeGrid from "./EuropeGrid";
 import { ArrowLeft } from "react-feather";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Europe() {
   const [selectedCity, setSelectedCity] = useState(null);
@@ -37,6 +38,23 @@ export default function Europe() {
     }
   };
 
+  // Add useEffect for ESC key handler
+  useEffect(() => {
+    const handleEscKey = (event) => {
+      if (event.key === "Escape" && selectedCity) {
+        closeModal();
+      }
+    };
+
+    // Add event listener when component mounts
+    document.addEventListener("keydown", handleEscKey);
+
+    // Clean up event listener when component unmounts
+    return () => {
+      document.removeEventListener("keydown", handleEscKey);
+    };
+  }, [selectedCity]);
+
   //Close Modal
   const closeModal = () => {
     if (modalRef.current) {
@@ -50,7 +68,7 @@ export default function Europe() {
       {/* Start of eorupe module */}
       <div className="h-screen overflow-auto scrollbar-thin scrollbar-thumb-red-500 scrollbar-track-gray-200 ">
         <Link href="/visit">
-          <button className="btn btn-xl btn-primary btn-circle absolute top-5 left-5 z-50 transform transition duration-75 hover:scale-110 hover:cursor-pointer">
+          <button className="btn btn-xl btn-primary btn-circle absolute top-10 left-5 m-auto z-50 transform transition duration-75 hover:scale-110 hover:cursor-pointer">
             <ArrowLeft />
           </button>
         </Link>
@@ -62,16 +80,20 @@ export default function Europe() {
         {/* //End of eorupe module */}
 
         {/* Reusable Modals */}
-        <dialog ref={modalRef} className="modal">
-          <div className="modal-box w-11/12 max-w-5xl text-center p-7 flex flex-col gap-4 overflow-auto">
-            <form method="dialog">
-              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
-                ✕
-              </button>
-            </form>
-            {selectedCity && (
-              <>
-                <h5 className="text-2xl font-extrabold">
+        {selectedCity && (
+          <div className="modal modal-open">
+            <div className="modal-box w-11/12 h-auto max-w-5xl text-center">
+              <div className="modal-header sticky top-0 right-0 bottom-0 z-10 flex justify-end items-end m-auto">
+                <button
+                  className="btn btn-md btn-circle absolute top-2 btn-primary items-center outline-offset-0 transform transition duration-75 hover:scale-110 hover:cursor-pointer"
+                  onClick={closeModal}
+                >
+                  ✕
+                </button>
+              </div>
+
+              <div className="modal-body flex flex-col gap-4 overflow-auto p-3">
+                <h5 className="text-2xl font-extrabold max-[800px]:mx-20">
                   {selectedCity.city}, {selectedCity.country}{" "}
                   {selectedCity.date}{" "}
                 </h5>
@@ -87,15 +109,10 @@ export default function Europe() {
                   {selectedCity.activity3}
                 </h3>
                 <p className="text-lg">{selectedCity.description3}</p>
-              </>
-            )}
-            <div className="modal-action">
-              <form method="dialog">
-                <button className="btn">Close</button>
-              </form>
+              </div>
             </div>
           </div>
-        </dialog>
+        )}
       </div>
     </>
   );
