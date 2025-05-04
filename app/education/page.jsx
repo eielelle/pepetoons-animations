@@ -34,7 +34,7 @@ export default function Education() {
 
           <div className="px-4 border-x-4 border-white col-span-3 md:col-span-2 lg:col-span-1">
             <h2 className="text-blue-400 text-xl font-bold mb-4">
-              Who was Rizals first teacher?
+              Who was Rizal's first teacher?
             </h2>
             <p>
             José Rizal's first teacher was his mother, who taught him to read,
