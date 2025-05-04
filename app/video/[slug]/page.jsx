@@ -19,6 +19,8 @@ export default function Page({ params }) {
           <iframe
             src={data[slug].link}
             className="w-full aspect-video rounded-2xl border"
+            allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+            allowFullScreen
           ></iframe>
           <h1 className="my-4 text-4xl font-bold">{data[slug].title}</h1>
           <h2 className="font-semibold">Description</h2>
