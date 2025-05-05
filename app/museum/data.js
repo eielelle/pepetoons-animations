@@ -8,8 +8,8 @@ export const data = [
         description: "Dr. José Rizal's Bust of Mirabeau is a terra cotta sculpture created during his stay in Barcelona. This work was intended as a gift for his friend and supporter, Valentin Ventura. The bust portrays Honoré Gabriel Riqueti, Count of Mirabeau (1749–1791), a prominent figure of the French Revolution known for his eloquence and advocacy for constitutional monarchy. Rizal admired Mirabeau, considering him a hero among the revolutionaries.",
     },
     {
-        pos: [-1.11, 1.97, -7.99],
-        lookAt: [-0.98, 1.73, -7.03],
+        pos: [-1.07, 1.73, -8.56],
+        lookAt: [-0.96, 1.72, -7.56],
         material: "Pencil Sketch",
         remarks: "A heartfelt tribute to their enduring friendship.",
         title: "Rizal's pencil sketch of Blumentritt",
@@ -24,8 +24,8 @@ export const data = [
         description: "Dr. José Rizal, the Philippine national hero, created a self-portrait sketch in late 1886, which he sent to his close friend, Ferdinand Blumentritt. This pencil drawing, often referred to as Rizal's 'selfie,'' was a personal gesture preceding their first meeting in May 1887. The sketch captures Rizal's likeness with meticulous detail, showcasing his artistic talent and the depth of his friendship with Blumentritt. This self-portrait is among the cherished Rizaliana items preserved by Blumentritt's heirs and later acquired by the National Library of the Philippines.",
     },
     {
-        pos: [-7.5, 1.88, 0.81],
-        lookAt: [-6.5, 1.86, 0.79],
+        pos: [-7.99, 1.9, 0.95],
+        lookAt: [-7, 1.84, 0.83],
         material: "Batikuling wood",
         remarks: "Commissioned by his Jesuit professor, Fr. José Leonardo, S.J.",
         title: "Statue of the Sacred Heart",
@@ -40,8 +40,8 @@ export const data = [
         description: "Dr. José Rizal, An elegant allegory crafted on a pair of porcelain bases, symbolizing the joy and renewal of New Year celebrations. Rich in detail and artistic symbolism, the pieces capture festive elements and traditional motifs that reflect hope, prosperity, and new beginnings.",
     },
     {
-        pos: [-0.39, 1.98, -1.88],
-        lookAt: [-0.5, 1.93, -2.87],
+        pos: [-0.42, 1.95, -1.91],
+        lookAt: [-0.45, 1.92, -2.9],
         material: "Oil on Canvas",
         remarks: "Shells painted by Rizal in Dapitan and given as a gift to Doña Leonor Valenzuela and later passed into the hands of Doña Margarita Valenzuela",
         title: "A painting on a pair of mother-of-pearl",
@@ -56,8 +56,8 @@ export const data = [
         description: "Dr. José Rizal, A graceful painting of Saturnina Rizal delicately rendered on a pair of lustrous mother-of-pearl pieces, blending historical portraiture with the elegance of natural materials.",
     },
     {
-        pos: [-2.57, 1.83, 0.11],
-        lookAt: [-3.56, 1.84, 0.28],
+        pos: [-1.72, 1.85, -0],
+        lookAt: [-2.71, 1.84, 0.15],
         material: "Oil on Canvas",
         remarks: "Made in Dapitan, 1894",
         title: "Dapitan Church Curtains",
