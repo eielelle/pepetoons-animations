@@ -129,7 +129,7 @@ export default function About() {
                   Dive deep into Rizal's major works like Noli Me Tangere and El
                   Filibusterismo, and explore their relevance in today's world.
                   We provide analyses, insights, and context behind these iconic
-                  works that continue to inspire enerations.
+                  works that continue to inspire generations.
                 </p>
               </div>
               <div>
@@ -297,16 +297,16 @@ export default function About() {
               </div>
             </div>
 
-            <div className="w-full lg:w-1/2 mx-auto pb-28 my-12">
+            <div className="w-full max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pb-28 my-12">
               <div className="p-[2px] flex justify-center items center bg-gradient-to-r from-sky-400 via-blue-500 via-violet-600 to-red-500 rounded-lg">
                 <div className="text-center bg-black rounded-lg p-12">
                   <h1 className="text-6xl mb-6 font-bold bg-gradient-to-r from-sky-400 to-blue-600 bg-clip-text text-transparent">
                     Our Mission
                   </h1>
                   <p>
-                  PepeToons aims to make Dr. José Rizal’s life and legacy engaging and accessible for everyone. 
-                  The website serves as a platform to educate and inspire people about his impact on Philippine history, 
-                  inviting visitors of all backgrounds to learn and celebrate his contributions.
+                    PepeToons helps people of all ages discover and enjoy the
+                    life and legacy of Dr. José Rizal through a fun and
+                    easy-to-use educational website.
                   </p>
                 </div>
               </div>

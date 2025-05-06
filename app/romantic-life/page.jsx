@@ -55,7 +55,7 @@ export default function RomanticLifePage() {
 
   return (
     <HeaderLayout>
-      <main className="h-screen w-screen relative">
+      <main className="h-screen w-screen relative mt-12">
         <Image
           className="w-full h-full object-contain blur-md"
           src={data[currentIdx].img}
@@ -124,7 +124,6 @@ export default function RomanticLifePage() {
           </div>
         </div>
       </main>
-
     </HeaderLayout>
   );
 }

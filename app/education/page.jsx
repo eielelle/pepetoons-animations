@@ -12,7 +12,7 @@ export default function Education() {
   return (
     <HeaderLayout>
       <main className="relative bg-[#111]">
-        <header className="p-5 pt-22 bg-black border-b-2 border-primary z-20">
+        <header className="p-5 pt-22 bg-black border-b-2 border-primary z-20 mt-5">
           <h1 className="text-4xl font-black">Education</h1>
         </header>
 
@@ -37,7 +37,7 @@ export default function Education() {
               Who was Rizal's first teacher?
             </h2>
             <p>
-            José Rizal's first teacher was his mother, who taught him to read,
+              José Rizal's first teacher was his mother, who taught him to read,
               pray, and write poetry. He later learned Spanish and Latin from
               private tutors before attending a school in Biñan. At 11, he
               enrolled in the Ateneo Municipal de Manila.
@@ -47,11 +47,11 @@ export default function Education() {
               Private Tutors of José Rizal
             </h2>
             <p>
-              José Rizal's early education was guided by private tutors, including
-              Maestro Celestino and Maestro Lucas, who taught him basic subjects,
-              and Leon Monroy, a Spanish tutor who helped him master the language,
-              crucial for his intellectual and literary work. These tutors laid
-              the foundation for his academic success.
+              José Rizal's early education was guided by private tutors,
+              including Maestro Celestino and Maestro Lucas, who taught him
+              basic subjects, and Leon Monroy, a Spanish tutor who helped him
+              master the language, crucial for his intellectual and literary
+              work. These tutors laid the foundation for his academic success.
             </p>
           </div>
 
@@ -72,15 +72,19 @@ export default function Education() {
             </h2>
             <h3 className="text-lg font-bold mb-4">1877: A New Beginning</h3>
             <p>
-              In June 1877, José Rizal enrolled in the Ateneo Municipal de Manila,
-              initially studying Law to fulfill his family's wishes, before
-              switching to Philosophy and Letters due to his passion for
+              In June 1877, José Rizal enrolled in the Ateneo Municipal de
+              Manila, initially studying Law to fulfill his family's wishes,
+              before switching to Philosophy and Letters due to his passion for
               literature and history.
             </p>
           </div>
 
           <div className="flex justify-center items-center px-4 border-x-4 border-white col-span-3 md:col-span-1">
-            <Image className="w-full h-full object-cover" src={ateneoImg} alt="ateneo" />
+            <Image
+              className="w-full h-full object-cover"
+              src={ateneoImg}
+              alt="ateneo"
+            />
           </div>
 
           <div className="md:col-span-3 lg:col-span-1 col-span-3">
@@ -95,8 +99,8 @@ export default function Education() {
                 training.
               </li>
               <li className="list-row">
-                Rizal was one of the few "internos" (boarding students), granting
-                him better access to resources.
+                Rizal was one of the few "internos" (boarding students),
+                granting him better access to resources.
               </li>
               <li className="list-row">
                 His professors recognized his intelligence and diligence,
@@ -115,14 +119,18 @@ export default function Education() {
               1877 - 1882 : Medical Studies at University of Sto. Tomas
             </h3>
             <p>
-              José Rizal first studied philosophy and letters at the University of
-              Santo Tomas (UST) then moved to the Faculty of Medicine and Surgery
-              to study medicine in 1877
+              José Rizal first studied philosophy and letters at the University
+              of Santo Tomas (UST) then moved to the Faculty of Medicine and
+              Surgery to study medicine in 1877
             </p>
           </div>
 
           <div className="flex justify-center items-center px-4 border-x-4 border-white col-span-3 md:col-span-1">
-            <Image className="w-full h-full object-cover" src={ustImg} alt="ust" />
+            <Image
+              className="w-full h-full object-cover"
+              src={ustImg}
+              alt="ust"
+            />
           </div>
 
           <div className="text-justify col-span-3 md:col-span-2 lg:col-span-1">
@@ -136,8 +144,8 @@ export default function Education() {
             </p>
             <br />
             <p>
-              the reason why rizal pursue medicine because To help his mother who
-              was blinded by cataracts
+              the reason why rizal pursue medicine because To help his mother
+              who was blinded by cataracts
             </p>
             <br />
             <p>
@@ -154,14 +162,18 @@ export default function Education() {
             </h2>
             <h3 className="text-lg font-bold mb-4">A Secret Departure</h3>
             <p>
-              José Rizal secretly traveled to Spain under the alias Jose Mercado,
-              hiding his departure from Spanish authorities, friars, and even his
-              parents, especially his disapproving mother.
+              José Rizal secretly traveled to Spain under the alias Jose
+              Mercado, hiding his departure from Spanish authorities, friars,
+              and even his parents, especially his disapproving mother.
             </p>
           </div>
 
           <div className="flex justify-center items-center px-4 border-x-4 border-white col-span-3 md:col-span-2 lg:col-span-1">
-            <Image className="w-full h-full object-cover" src={madridImg} alt="madrid" />
+            <Image
+              className="w-full h-full object-cover"
+              src={madridImg}
+              alt="madrid"
+            />
           </div>
 
           <div className="col-span-3 md:col-span-1">
@@ -240,8 +252,8 @@ export default function Education() {
                   </svg>
                 </div>
                 <div className="timeline-end timeline-box text-black bg-blue-400">
-                  Completed Doctor of Medicine coursework but lacked a thesis and
-                  fees for a diploma.
+                  Completed Doctor of Medicine coursework but lacked a thesis
+                  and fees for a diploma.
                 </div>
                 <hr className="bg-white" />
               </li>
@@ -266,7 +278,8 @@ export default function Education() {
                   </svg>
                 </div>
                 <div className="timeline-end timeline-box text-black bg-blue-400">
-                  Graduated excellent with a Licentiate in Philosophy and Letters.
+                  Graduated excellent with a Licentiate in Philosophy and
+                  Letters.
                 </div>
               </li>
             </ul>
@@ -282,8 +295,9 @@ export default function Education() {
             <p>
               At the age of 24, Rizal went to Paris to enhance his knowledge in
               ophthalmology. He trained under Dr. Louis de Weckert, a renowned
-              ophthalmologist. During this time, he also built strong friendships
-              with individuals who influenced his career and advocacy.
+              ophthalmologist. During this time, he also built strong
+              friendships with individuals who influenced his career and
+              advocacy.
             </p>
 
             <br />
@@ -297,8 +311,16 @@ export default function Education() {
           </div>
 
           <div className="flex flex-col justify-center items-center px-4 border-x-4 border-white col-span-3 md:col-span-2 lg:col-span-1">
-            <Image className="w-full h-full object-cover" src={doctorImg} alt="doctor" />
-            <Image className="w-full h-full object-cover" src={parisImg} alt="paris" />
+            <Image
+              className="w-full h-full object-cover"
+              src={doctorImg}
+              alt="doctor"
+            />
+            <Image
+              className="w-full h-full object-cover"
+              src={parisImg}
+              alt="paris"
+            />
           </div>
 
           <div className="col-span-3 md:col-span-1">
@@ -335,8 +357,8 @@ export default function Education() {
                 Madrid.
               </li>
               <li className="list-row">
-                In 1887, he completed his eye specialization at the University of
-                Heidelberg.
+                In 1887, he completed his eye specialization at the University
+                of Heidelberg.
               </li>
               <li className="list-row">
                 That same year, he published his first novel, "Noli Me Tangere,"
@@ -345,7 +367,6 @@ export default function Education() {
             </ul>
           </div>
         </section>
-
       </main>
     </HeaderLayout>
   );
