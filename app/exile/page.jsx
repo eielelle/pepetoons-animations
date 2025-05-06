@@ -3,7 +3,6 @@
 import dynamic from "next/dynamic";
 import Image from "next/image";
 
-
 const MapLeaflet = dynamic(() => import("./Map"), { ssr: false });
 
 import "leaflet/dist/leaflet.css";
@@ -54,7 +53,7 @@ export default function Exile() {
   return (
     <HeaderLayout>
       <main
-        className="bg-cover min-h-screen relative py-24"
+        className="bg-cover min-h-screen relative py-24 mt-10"
         style={{ backgroundImage: `url('${travelsImg.src}')` }}
       >
         <div
