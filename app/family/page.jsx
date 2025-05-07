@@ -48,7 +48,7 @@ export default function Family() {
             </p>
             <div className="flex flex-col md:flex-row justify-center items-center gap-10 mb-12 popup">
               {/* Teodora */}
-              <div className="bg-black p-2 w-[500px] flex flex-col items-center">
+              <div className="bg-transparent p-2 w-[500px] flex flex-col items-center">
                 <div className="bg-white w-[200px] h-[200px] p-2 flex items-center justify-center">
                   <Image
                     src={Teodora}
@@ -72,7 +72,7 @@ export default function Family() {
               </div>
 
               {/* Francisco */}
-              <div className="bg-black p-2 w-[500px] flex flex-col items-center">
+              <div className="bg-transparent p-2 w-[500px] flex flex-col items-center">
                 <div className="bg-white w-[200px] h-[200px] p-2 flex items-center justify-center">
                   <Image
                     src={Francisco}
