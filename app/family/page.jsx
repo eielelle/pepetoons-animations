@@ -46,16 +46,16 @@ export default function Family() {
               playing a crucial role in shaping his intellect, values, and
               patriotism.
             </p>
-            <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-12 popup">
+            <div className="flex flex-col md:flex-row justify-center items-center gap-10 mb-12 popup">
               {/* Teodora */}
-              <div className="bg-black p-2 inline-block">
-                <div className="bg-white p-2">
+              <div className="bg-black p-2 w-[500px] flex flex-col items-center">
+                <div className="bg-white w-[200px] h-[200px] p-2 flex items-center justify-center">
                   <Image
                     src={Teodora}
                     alt="Teodora Alonso Realonda"
                     width={200}
                     height={300}
-                    className="object-contain"
+                    className="object-contain items-center justify-center"
                   />
                 </div>
                 <div className="mt-4 text-center px-2">
@@ -72,22 +72,22 @@ export default function Family() {
               </div>
 
               {/* Francisco */}
-              <div className="bg-black p-2 inline-block">
-                <div className="bg-white p-2">
+              <div className="bg-black p-2 w-[500px] flex flex-col items-center">
+                <div className="bg-white w-[200px] h-[200px] p-2 flex items-center justify-center">
                   <Image
                     src={Francisco}
                     alt="Don Francisco Mercado Rizal"
                     width={200}
                     height={300}
-                    className="object-contain"
+                    className="object-contain "
                   />
                 </div>
-                <div className="mt-4 text-center px-2">
+                <div className="mt-4 text-center">
                   <h2 className="text-2xl font-bold">
                     Don Francisco Mercado Rizal
                   </h2>
                   <p className="italic text-sm">1818–1898</p>
-                  <p className="mt-2 text-sm max-w-xs mx-auto">
+                  <p className="mt-2 text-sm max-w-xs">
                     Don Francisco was a hardworking farmer from Biñan, Laguna.
                     Known for his honesty and discipline, he encouraged his
                     children to pursue education.
