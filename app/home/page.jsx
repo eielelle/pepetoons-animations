@@ -132,7 +132,7 @@ export default function Homepage() {
 
           <div className="w-full overflow-x-scroll mt-4">
             <div className="carousel carousel-center gap-4">
-              {[...Array(14)].map((_, index) => (
+              {[...Array(22)].map((_, index) => (
                 <EpisodeSlide
                   key={index}
                   href={`video/${index}`}
