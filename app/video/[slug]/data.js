@@ -3,73 +3,73 @@ export const data = [
     title: "Episode 1: Ang Pagsilang ng Bayani",
     description:
       "Sa episode na ito, Ang kapanganakan ni Dr. José Rizal ay isang natatanging araw. Mula sa kanyang simpleng pinagmulan sa Calamba Laguna ipinapakita ni Pepe ang kanyang mga unang taon: ang kanyang pamilya mga unang karanasan at ang mga bagay na humubog sa kanyang pagkatao. Tingnan kung paano nagsimulang magliwanag ang isip ng batang Rizal na sa kalaunan ay magiging inspirasyon ng rebolusyon at simbolo ng pagmamahal sa bayan.",
-    link: "https://player.cloudinary.com/embed/?cloud_name=dkkgia3jj&public_id=Ep1_Ang_Pagsilang_sa_Bayani_cfwytv&profile=dev",
+    link: "https://player.cloudinary.com/embed/?cloud_name=dkkgia3jj&public_id=Ep1_Ang_Pagsilang_sa_Bayani_ilfgg9&profile=dev",
   },
   {
     title: "Episode 2: Maagang Edukasyon",
     description:
       "Halina't tuklasin ang kabataan ni José Rizal, ang Pambansang Bayani ng Pilipinas! Sa video na ito, susundan natin ang kanyang mga unang taon mula sa kanyang masayang kabataan sa Calamba, Laguna, hanggang sa kanyang pag-aaral sa Maynila at sa ibang bansa. Malalaman natin kung paanong ang kanyang pamilya, mga guro, at mga karanasan ang humubog sa kanyang talino at paninindigan. Alamin kung paano nagsimula ang paglalakbay ng isang batang Rizal patungo sa pagiging bayani ng ating bansa. Tara, samahan n'yo kami sa makabuluhang paglalakbay na ito!",
-    link: "https://player.cloudinary.com/embed/?cloud_name=dkkgia3jj&public_id=u8mxg0rgs2j5niqtgux6&profile=cld-default",
+    link: "https://player.cloudinary.com/embed/?cloud_name=dkkgia3jj&public_id=Ep2_Maagang_Edukasyon_gspblz&profile=dev",
   },
   {
     title: "Episode 3: Ang Pag-aaral sa Maynila",
     description:
       "Sa episode na ito, samahan niyo kami sa pagtuklas ng kuwento sa likod ng talino ni Dr. José Rizal. Alamin natin kung paano nagsimula ang kanyang pag-aaral sa Biñan, ang kanyang pagsisikap sa Ateneo, Paano nga ba nahubog ang isang henyo? At ano ang papel ng edukasyon sa pagiging bayani ni Rizal? Tuklasin kung paano hinubog ng kanyang karanasan sa pag-aaral ang kanyang kaisipan, paninindigan, at pagkamakabayan. Alamin kung paanong ang isang batang may matinding pagkauhaw sa kaalaman ay naging isa sa pinakamatalinong Pilipino sa kasaysayan.",
-    link: "https://player.cloudinary.com/embed/?cloud_name=dkkgia3jj&public_id=Ep3_Ang_Pag-aaral_sa_Maynila_ralkom&profile=dev",
+    link: "https://player.cloudinary.com/embed/?cloud_name=dkkgia3jj&public_id=Ep3_Ang_Pag-aaral_sa_Maynila_x03mi6&profile=dev",
   },
   {
     title: "Episode 4: Ang Pagbibinata",
     description:
       "Ang makulay na kuwento ng paglaki ni José Rizal bilang isang pambansang bayani ng Pilipinas ay tinatawag na Ang Pagbibinata ni José Rizal. Ipinapakita nito ang kanyang mga unang taon bilang isang bata—ang kanyang pagmamalasakit sa kanyang pamilya at ang kanyang pagsisikap na matuto. Sa bawat hakbang ang kanyang mga tagumpay at mga pagsubok ay nagbibigay-daan sa kanya na magpasya kung ano ang nais niyang tahaking landas.Ang animasyong ito ay nagbibigay ng inspirasyon at ipinapakita ang determinasyong naging pundasyon ng kanyang dakilang misyon sa hinaharap—mula sa mga simpleng laro ng kabataan hanggang sa mahahalagang aral para sa mga kabataan ngayon.",
-    link: "https://player.cloudinary.com/embed/?cloud_name=dkkgia3jj&public_id=Ep4_Ang_Pagbibinata_ffsrth&profile=dev",
+    link: "https://player.cloudinary.com/embed/?cloud_name=dkkgia3jj&public_id=Ep4_Ang_Pagbibinata_bavwew&profile=dev",
   },
   {
     title: "Episode 5: Mga Anino sa Paaralan",
     description:
       "Isang kuwento ng tagumpay pagsubok at pagmamahal sa bayan ni Dr. José Rizal sa loob ng mga pader ng Ateneo at Santo Tomas University. Sa animasyong ito isasalaysay ang karanasan ni Rizal bilang isang mag-aaral na hindi lamang nakatuon sa pag-aaral kundi pati na rin sa pagtatanggol ng dignidad at karapatan ng kanyang kapwa Pilipino. Ang kanyang paglalakbay sa Ateneo kung saan siya ay kinilala para sa kanyang talino ngunit binatikos din dahil sa kanyang interes sa Pilipinas ay ipinakita. Masisilayan niya ang mga anino ng diskriminasyon na bumalot sa kanyang karanasan sa edukasyon mula sa pagsusulat ng kanyang mga unang akda tulad ng Junto al Pasig at A la Juventud Filipina hanggang sa pagkapanalo sa El Consejo de los Dioses na nauwi sa panunuya dahil siya ay isang Indio. . Sa kabila ng mga hadlang tulad ng mababang marka sa medisina at kawalang-katarungan sa mga unibersidad nanatili si Rizal sa kanyang katatagan. Nakipaglaban siya sa sistema ng pribilehiyo na nagpapayaman lamang sa ilang indibidwal at ipinagtanggol ang kanyang mga kapwa mag-aaral laban sa pang-aabuso ng mga guro. Ang kanyang pagiging makabayan ay higit na pinalakas ng kanyang mga karanasan sa Santo Tomas kung saan siya ay nahaharap sa pagkasira kawalan ng katarungan at pag-usig dahil sa kanyang pagsisikap.",
-    link: "https://player.cloudinary.com/embed/?cloud_name=dkkgia3jj&public_id=Ep5_Mga_Anino_sa_Paaralan_z6mhmm&profile=dev",
+    link: "https://player.cloudinary.com/embed/?cloud_name=dkkgia3jj&public_id=Ep5_Mga_Anino_sa_Paaralan_dvkqpf&profile=dev",
   },
   {
     title: "Episode 6: Ang Pagtakas sa Tahanan",
     description:
       "Ang paglisan ni José Rizal sa kanyang tahanan ay isang makabagbag-damdaming kuwento tungkol sa kanyang pag-alis upang tuparin ang mas malalaki niyang pangarap. Ipinakita ng kuwentong ito ang kanyang katapangan at determinasyon sa pagharap sa mga hamon ng buhay sa kabila ng lungkot na dulot ng paghihiwalay sa kanyang pamilya. Ang animasyon ay nagpapakita din ng pagmamahal ni Rizal sa kanyang pamilya at ang kanyang pangako na bumalik bilang isang mas mahusay na tao. ",
-    link: "https://player.cloudinary.com/embed/?cloud_name=dkkgia3jj&public_id=Ep6_Ang_Pagtakas_sa_Tahanan_jmeymt&profile=dev",
+    link: "https://player.cloudinary.com/embed/?cloud_name=dkkgia3jj&public_id=Ep6_Ang_Pagtakas_sa_Tahanan_pawscf&profile=dev",
   },
   {
     title: "Episode 7: Ang Paglalayag Paalis ng Bansa",
     description:
       "Sa episode na ito, ipinapakita ang kahanga-hangang kuwento ng paglalakbay ni José Rizal sa ibang bansa upang matuto nang higit pa at matupad ang kanyang mga pangarap. Ang animasyong ito ay tumutuon sa mga bagay na nalaman ni Rizal sa kanyang paglalakbay at kung paano ito nakaimpluwensya sa kanyang mga pananaw at mga layunin sa buhay.",
-    link: "https://player.cloudinary.com/embed/?cloud_name=dkkgia3jj&public_id=Ep7_Ang_Paglalakbay_akcdnh&profile=dev",
+    link: "https://player.cloudinary.com/embed/?cloud_name=dkkgia3jj&public_id=Ep7_Ang_Paglalakbay_zph7vk&profile=dev",
   },
   {
     title: "Episode 8: Madrid",
     description:
       "Ang buhay ni José Rizal sa Madrid, ang kabisera ng Espanya, ay tampok sa episode na ito. Ipinapakita ng animasyon ang kanyang masigasig na pag-aaral sa Universidad Central de Madrid, ang kanyang pakikilahok sa mga talakayan ng mga Pilipinong repormista, at ang pagsisimula ng kanyang pagsulat ng mga akdang magpapabago sa kasaysayan. Bilang karagdagan, ipinapakita rin dito ang mga paghihirap na naranasan ni Rizal sa Madrid, kabilang ang pag-aangkop sa isang bagong kultura at ang kanyang mga pagsisikap na maisulong ang pagbabago sa Pilipinas.",
-    link: "https://player.cloudinary.com/embed/?cloud_name=dkkgia3jj&public_id=Ep8_Madrid_u2f44p&profile=dev",
+    link: "https://player.cloudinary.com/embed/?cloud_name=dkkgia3jj&public_id=Ep8_Madrid_up3xlz&profile=dev",
   },
   {
     title: "Episode 9: Doktor at Manlalakbay",
     description:
-      "Sa episode na ito, ipinapakita ang isang nakakaantig na kuwento na tumatalakay sa dalawang mahalagang bahagi ng buhay ni José Rizal: ang kanyang karera bilang isang manggagamot, at ang kanyang walang katapusang layunin na maglakbay upang matuto at maglingkod. Sa animasyong ito, makikita kung paano ginamit ni Rizal ang kanyang kaalaman sa medisina upang tumulong sa mga nangangailangan habang naglalakbay sa iba’t ibang bahagi ng mundo upang matuto mula sa iba’t ibang ideya at kultura. Isang kuwento ng dedikasyon, serbisyo, at paglalakbay patungo sa isang mataas na layunin ",
-    link: "https://player.cloudinary.com/embed/?cloud_name=dkkgia3jj&public_id=Ep9_Doktor_at_Manlalakbay_jzndoz&profile=dev",
+      "Sa episode na ito, ipinapakita ang isang nakakaantig na kuwento na tumatalakay sa dalawang mahalagang bahagi ng buhay ni José Rizal: ang kanyang karera bilang isang manggagamot, at ang kanyang walang katapusang layunin na maglakbay upang matuto at maglingkod. Sa animasyong ito, makikita kung paano ginamit ni Rizal ang kanyang kaalaman sa medisina upang tumulong sa mga nangangailangan habang naglalakbay sa iba't ibang bahagi ng mundo upang matuto mula sa iba't ibang ideya at kultura. Isang kuwento ng dedikasyon, serbisyo, at paglalakbay patungo sa isang mataas na layunin ",
+    link: "https://player.cloudinary.com/embed/?cloud_name=dkkgia3jj&public_id=Ep9_Doktor_at_Manlalakbay_abbin9&profile=dev",
   },
   {
     title: "Episode 10: Ang Unang Nobela",
     description:
       "Ang Unang Nobela ni Rizal ay tungkol sa kung paano nagsimula si José Rizal bilang isang makata at manunulat na may layuning ipakita ang mga problema sa lipunan sa panahon niya. Ang animasyong ito ay nagsasalaysay ng mga pangyayaring nag-udyok sa kanya na magsulat ng Noli Me Tangere, kabilang ang kanyang mga inspirasyon, ang kanyang mga hamon sa proseso, at ang kanyang matapang na desisyong ipakita ang kawalang-katarungan at maling gawa sa kolonyal na Pilipinas sa buong mundo. Ipinapakita rin kung paano binago ng nobelang ito ang landas ng kasaysayan at naging simbolo ng pagkilos tungo sa kalayaan.",
-    link: "",
+    link: "https://player.cloudinary.com/embed/?cloud_name=dkkgia3jj&public_id=Ep10_Ang_Unang_Nobela_uom4bx&profile=dev",
   },
   {
     title: "Episode 11: Ang Pagbabalik ng Isang Bayani",
     description:
       "Ang makapangyarihang kuwento ng pagbabalik ni Jose Rizal sa Pilipinas pagkatapos ng mahabang paglalakbay at paninirahan sa ibang bansa ay ipinapakita sa episode na ito. Sa animasyong ito makikita mo ang kanyang muling pagharap sa mga hamon ng kolonyal na pamahalaan ang kanyang pagtulong sa kanyang mga kababayan at ang kanyang patuloy na pagsisikap na i-promote ang pagbabago at kalayaan. Ang kwento ay puno ng inspirasyon tapang at pagmamahal sa bayan na nagbigay daan sa isang makabagong rebolusyon na nagbago sa kasaysayan ng Pilipinas.",
-    link: "",
+    link: "https://player.cloudinary.com/embed/?cloud_name=dkkgia3jj&public_id=Ep11_Ang_Pagbabalik_ypfqor&profile=dev",
   },
   {
     title: "Episode 12: Ang Panagalawang Paglayo ni Rizal",
     description:
       "Sa episode na ito ang kahanga-hangang kuwento ng muling pagtakas ni Jose Rizal mula sa mga mapanganib na pangyayari na nagbabanta sa kanyang mga layunin ay ipinapakita. Ang animasyong ito ay magpapakita ng lakas ng loob at matalas na talino ni Rizal habang iniiwasan niya ang mga hadlang na inilatag ng kolonyal na pamahalaan upang pigilan siya mula sa kanyang mga layunin. Bilang karagdagan ipinapakita nito ang kanyang matinding determinasyon na magpatuloy sa paglaban para sa karapatan at kalayaan ng mga Pilipino kahit na nangangailangan ito ng matinding sakripisyo at panganib sa kanyang buhay.",
-    link: "",
+    link: "https://player.cloudinary.com/embed/?cloud_name=dkkgia3jj&public_id=Ep12_Ang_Muling_Pagtakas_ppzimx&profile=dev",
   },
   {
     title: "Episode 13: Indios Bravos",
