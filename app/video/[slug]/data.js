@@ -96,7 +96,7 @@ export const data = [
     link: "",
   },
   {
-    title: "Episode 17: The Trap",
+    title: "Episode 17: Ang Patibong",
     description:
       "Ang videong ito ay isang dramatikong pagsasalaysay ng mga pangyayari noong pagbabalik ni Dr. Jose Rizal sa Pilipinas noong Hunyo 26, 1892 matapos ang kanyang pananatili sa Hong Kong. Sa halip na mainit na pagtanggap, isang bitag ang inabutan niya—isang planong pag-aresto na matagal nang isinagawa ng mga awtoridad ng Espanya.Sa kabila ng hawak niyang safe-conduct pass, si Rizal ay dinampot at inusig sa mga kasong pagtataksil at iligal na asosasyon, batay lamang sa mga polyetong natagpuan sa bagahe ng kanyang kapatid. Sa kabila ng kanyang mariing pagtanggi, hindi siya pinakinggan.Matapos ang ilang araw ng interogasyon, si Rizal ay ikinulong sa Fort Santiago at kalaunan ay ipinatapon sa Dapitan, isang liblib na bayan sa Mindanao. Habang si Rizal ay inalisan ng kalayaan, ang kanyang mga ideya at paninindigan ay nagsilbing inspirasyon sa mga kabataang Pilipino na nagtatag ng Katipunan—ang lihim na samahang naglayong makamit ang kasarinlan mula sa mga Espanyol.",
     link: "",
@@ -108,27 +108,33 @@ export const data = [
     link: "",
   },
   {
-    title: "Episode 19: The Sweet Foreigner",
+    title: "Episode 19: Ang Kaakit-akit na Dayuhan",
     description:
       "Ang videong ito ay tumatalakay sa isang mahalagang bahagi ng buhay ni Dr. Jose Rizal sa kanyang pagkakatapon sa Dapitan, isang tahimik na lugar na naging saksi sa kanyang mga pangarap, pag-ibig, at mga pagsubok. Sa kabila ng kanyang kalagayan bilang isang bilanggo, ipinagpatuloy ni Rizal ang kanyang misyon ng pagpapabuti sa komunidad sa pamamagitan ng edukasyon, medisina, at agham. Ipinapakita rin ng video ang kanyang mga personal na pakikibaka, tulad ng pagkawala ng kanyang minamahal na si Leonor Rivera at ang kanyang masalimuot na relasyon kay Josephine Bracken, isang banyagang dumating upang magpagamot kay Rizal.Makikita rin sa video ang mga mahahalagang kaganapan sa buhay ni Rizal sa Dapitan, tulad ng mga misteryosong bisita at mga pagsubok na nagbabadya sa kanyang kaligtasan. Sa kabila ng lahat ng ito, patuloy siyang naghangad ng pagkakaisa at kalayaan para sa Pilipinas, hindi lamang sa pamamagitan ng kanyang mga proyekto kundi pati na rin sa mga liham at tula na isinulat niya.",
     link: "",
   },
   {
-    title: "Episode 20: No Escape",
+    title: "Episode 20: Walang Takas",
     description:
       "Ang video na ito ay naglalarawan ng mga huling taon ni Dr. Jose Rizal sa kanyang pagkakatapon sa Dapitan, kung saan ipinakita ang kanyang mga pagdududa, pag-aalinlangan, at mga sakripisyo bago ang kanyang paglisan mula sa bayan. Sa kabila ng mga alok na makatakas at lumisan mula sa kanyang kalagayan, pinili ni Rizal na manatili sa kanyang mga prinsipyo at hindi magtago. Ang kanyang desisyon na maglakbay patungong Cuba ay nagbigay sa kanya ng pagkakataong makatawid sa bagong kabanata ng kanyang buhay.Makikita sa video ang mga emosyonal na sandali kasama ang kanyang pamilya at mga kaibigan, pati na rin ang mga mahihirap na desisyon na kinaharap niya sa kanyang huling mga araw sa Dapitan. Mula sa mga tahimik na hapunan kasama ang kanyang pamilya hanggang sa kanyang huling pag-alis sa bayan, ipinakita ng video kung paano tinanggap ni Rizal ang kanyang kapalaran at ang mga sakripisyo na nauukol sa kanyang misyon para sa bayan.",
     link: "",
   },
   {
-    title: "Episode 21: Court Martial",
+    title: "Episode 21: Paglilitis Militar",
     description:
       "Sa yugtong ito ng buhay ni Dr. José Rizal, sumilip tayo sa isa sa mga pinakamadilim at pinakamatapang na kabanata ng kanyang pakikibaka — ang kanyang pagkakaaresto, paglilitis, at pagharap sa hatol ng kamatayan. Habang patungo sana sa Espanya, si Rizal ay inaresto at ibinalik sa Pilipinas upang litisin sa kasong sedisyon at rebelyon. Sa kabila ng maraming pagkakataong makatakas, pinili niyang manatili at harapin ang paratang — dala ang paninindigang wala siyang kasalanan at tapat ang kanyang layunin para sa bayan. Dito rin masisilayan ang sakripisyo ng kanyang kapatid na si Paciano, ang paghihirap ng kanyang pamilya, at ang kanyang tahimik ngunit matibay na paninindigan sa harap ng lumulupig na kapangyarihan. Sa kabila ng lahat, isinulat ni Rizal ang kanyang 'Manifesto sa mga Pilipino', mariing tinanggihan ang marahas na rebolusyon, ngunit piniling mamuhay at mamatay para sa dangal at katotohanan. Isang makapangyarihang yugto ng kasaysayan — ang paglilitis ng isang dakilang bayani na sa halip na yumuko sa takot, ay mas piniling ipaglaban ang katwiran, kahit kapalit ay sariling buhay.",
     link: "",
   },
   {
-    title: "Episode 22: Death Transconfiguration",
+    title: "Episode 22: Kamatayan at Pagbabagong-anyo",
     description:
       "Sa huling gabi ng kanyang buhay, muling humarap si Dr. José Rizal sa pinakamalalim na tanong tungkol sa kanyang paninindigan at pananampalataya. Ang episode na ito ay sumasalamin sa emosyonal, moral, at espiritwal na bagyong kanyang hinarap bago ang pagbitay—isang yugto na patuloy na pinagtatalunan ng kasaysayan. Sa kabila ng mahigpit na bantay, may mga nagsasabing nagbalik-loob si Rizal sa simbahan, nagkumpisal, at ikinasal kay Josephine Bracken. Ngunit tinututulan ito ng ilan, kabilang ang kanyang kapatid na si Paciano, na nanindigang hindi niya tinalikuran ang mga prinsipyo ng kanyang pakikibaka. Makikita rin sa episode ang kanyang huling sandali sa kulungan: ang pagsusulat ng Mi Último Adiós, ang kanyang mga liham para sa pamilya at mga kaibigan, at ang payapang pagtanggap sa kamatayan. Sa umagang iyon ng Disyembre 30, 1896, si Rizal ay naglakad patungong Bagumbayan—hindi bilang takas, kundi bilang isang bayani na tahimik ngunit buong tapang na hinarap ang kanyang kapalaran. “Bagyo at Pagsubok” ay isang masinsinang pagtanaw sa puso't isip ng ating pambansang bayani sa huling sandali ng kanyang buhay—isang paalala na ang tunay na kabayanihan ay hindi lamang nasusukat sa sigaw ng rebolusyon, kundi sa katahimikan ng paninindigan.",
+    link: "",
+  },
+  {
+    title: "Episode 23: The Family Carries On",
+    description:
+      "description here",
     link: "",
   },
 ];
