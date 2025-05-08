@@ -1,5 +1,3 @@
-import Teodora from "../../assets/Resources/teodora.png";
-import Francisco from "../../assets/Resources/francisco.png";
 import Saturina from "../../assets/Resources/saturnina.png";
 import Paciano from "../../assets/Resources/paciano.png";
 import Narcisa from "../../assets/Resources/narcisa.png";
@@ -13,20 +11,6 @@ import Trinidad from "../../assets/Resources/trinidad.png";
 import Soledad from "../../assets/Resources/soledad.png";
 
 export const familyData = [
-  {
-    name: "Teodora Alonso Realonda",
-    year: "1827-1911",
-    description:
-      "Teodora was a well-educated woman from a prominent family in Manila. She was known for her intelligence, strong will, and exceptional influence on her children. Her guidance and nurturing played a crucial role in shaping José Rizal's character and values.",
-    img: Teodora,
-  },
-  {
-    name: "Don Francisco Mercado Rizal",
-    year: "1818-1898",
-    description:
-      "Don Francisco was a hardworking farmer from Biñan, Laguna. He was known for his honesty, diligence, and dedication to providing for his family. He guided his children with discipline and encouraged their pursuit of education.",
-    img: Francisco,
-  },
   {
     name: "Saturnina Rizal Hidalgo",
     year: "1850-1913",
