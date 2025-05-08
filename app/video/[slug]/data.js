@@ -134,7 +134,7 @@ export const data = [
   {
     title: "Episode 23: The Family Carries On",
     description:
-      "description here",
+      "Ang episode na ito ay naglalarawan sa buhay ng pamilya Rizal. Kasunod ng pagbitay kay Jose Rizal, ipinagpatuloy ng kanyang pamilya ang kanilang buhay, ngunit may kalungkutan at malalim na pakiramdam ng kanyang pamana.  Ang ina ni Rizal, si Doña Teodora, ay nanatiling matatag hanggang sa kanyang sariling kamatayan, habang ang kanyang kapatid na si Narcisa, ay nakipaglaban sa mga epekto ng kanyang kamatayan.  Si Josephine Bracken, ang kanyang minamahal, ay nagpakasal muli at ipinagpatuloy ang kanyang buhay bilang Josephine Abad de Bracken.  Ang pangmatagalang impluwensya ng buhay at kamatayan ni Rizal ay ipinakita sa patuloy na pagtatangka ng kanyang pamilya na mapanatili ang kanyang alaala at pamana, lalo na kasunod ng paghukay sa kanyang mga labi.",
     link: "",
   },
 ];
