@@ -1,7 +1,10 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import HeaderLayout from "../layouts/HeaderLayout";
+import { useState, useEffect } from "react";
 import TeamPhoto from "../../assets/Resources/TeamPhoto.jpg";
+import TeamImage from "../../assets/Resources/TeamImage.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMedal,
@@ -44,6 +47,17 @@ const members = [
 ];
 
 export default function Team() {
+  const images = [TeamPhoto, TeamImage];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000); // Change image every 3 seconds
+
+    return () => clearInterval(interval); // Clean up
+  }, []);
+
   return (
     <HeaderLayout>
       <div className="relative min-h-screen w-full flex flex-col items-center justify-center bg-black mt-25">
@@ -58,14 +72,13 @@ export default function Team() {
           </p>
 
           {/* Group Image */}
-          <div className="relative w-full flex justify-center">
-            <div className="rounded-xl overflow-hidden shadow-lg">
+          <div className="relative w-full flex justify-center items-center">
+            <div className="relative w-[800px] h-[500px] overflow-hidden rounded-xl shadow-lg">
               <Image
-                src={TeamPhoto}
-                alt="Team Photo"
-                width={800}
-                height={500}
-                className="rounded-lg"
+                src={images[currentIndex]}
+                alt={`Team Photo ${currentIndex + 1}`}
+                fill
+                className="object-cover rounded-lg transition-opacity duration-1000 ease-in-out"
               />
             </div>
           </div>
