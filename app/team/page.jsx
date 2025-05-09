@@ -5,6 +5,9 @@ import HeaderLayout from "../layouts/HeaderLayout";
 import { useState, useEffect } from "react";
 import TeamPhoto from "../../assets/Resources/TeamPhoto.jpg";
 import TeamImage from "../../assets/Resources/TeamImage.jpg";
+import Image1 from "../../assets/Resources/image_1.jpg";
+import Image2 from "../../assets/Resources/image_2.jpg";
+import Image3 from "../../assets/Resources/image_3.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMedal,
@@ -47,7 +50,7 @@ const members = [
 ];
 
 export default function Team() {
-  const images = [TeamPhoto, TeamImage];
+  const images = [TeamPhoto, TeamImage, Image1, Image2, Image3];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -66,7 +69,7 @@ export default function Team() {
             <span className="text-white">Pepe</span>
             <span className="text-white">Toons</span> Team
           </h1>
-          <p className="text-xl text-gray-600 mb-8">
+          <p className="text-xl text-gray-500 mb-8">
             Meet the team and learn more about the origin story behind{" "}
             <span className="font-semibold text-white">PepeToons</span>
           </p>
@@ -131,12 +134,12 @@ export default function Team() {
               <h2 className="text-2xl font-bold mb-3 text-white">
                 What our community says about us!
               </h2>
-              <p className="text-base italic text-gray-700">
+              <p className="text-base italic text-gray-500">
                 "Exploring Rizal’s life through this platform has deepened my
                 understanding of our history and inspired me to make a
                 difference in my community."
               </p>
-              <p className="font-bold mt-3 text-black">
+              <p className="font-bold mt-3 text-white">
                 PBGen Edwin A Quilates
               </p>
               <p className="text-sm text-gray-500">Director, ITMS</p>
@@ -160,7 +163,7 @@ export default function Team() {
                 <h2 className="text-xl font-semibold mb-2 text-whute">
                   What our community says
                 </h2>
-                <p className="text-base italic text-gray-700">
+                <p className="text-base italic text-gray-500">
                   "Exploring Rizal’s life through this platform has deepened my
                   understanding of our history and inspired me to make a
                   difference in my community."
@@ -188,7 +191,7 @@ export default function Team() {
                 <h2 className="text-xl font-semibold mb-2 text-white">
                   What our community says
                 </h2>
-                <p className="text-base italic text-gray-700">
+                <p className="text-base italic text-gray-500">
                   "Exploring Rizal’s life through this platform has deepened my
                   understanding of our history and inspired me to make a
                   difference in my community."
