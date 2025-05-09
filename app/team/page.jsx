@@ -51,15 +51,18 @@ const members = [
 
 export default function Team() {
   const images = [TeamPhoto, TeamImage, Image1, Image2, Image3];
+  const [paused, setPaused] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000); // Change image every 3 seconds
+      if (!paused) {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+      }
+    }, 3000);
 
-    return () => clearInterval(interval); // Clean up
-  }, []);
+    return () => clearInterval(interval);
+  }, [paused]);
 
   return (
     <HeaderLayout>
@@ -75,8 +78,12 @@ export default function Team() {
           </p>
 
           {/* Group Image */}
-          <div className="relative w-full flex justify-center items-center">
-            <div className="relative w-[800px] h-[500px] overflow-hidden rounded-xl shadow-lg">
+          <div className="relative w-full flex justify-center">
+            <div
+              className="relative w-[800px] h-[500px] overflow-hidden rounded-xl shadow-lg"
+              onMouseEnter={() => setPaused(true)}
+              onMouseLeave={() => setPaused(false)}
+            >
               <Image
                 src={images[currentIndex]}
                 alt={`Team Photo ${currentIndex + 1}`}
