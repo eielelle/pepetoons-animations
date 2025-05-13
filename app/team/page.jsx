@@ -25,7 +25,7 @@ import jamesonImg from "../../assets/Resources/Jameson.png";
 import jamesmarImg from "../../assets/Resources/Jamesmar.png";
 import eleazarImg from "../../assets/Resources/Eleazar.png";
 import shelloImg from "../../assets/Resources/Shello.png";
-import axelImg from "../../assets/Resources/Axel.png";
+import axelImg from "../../assets/Resources/axelpogi.jpg";
 import jerickImg from "../../assets/Resources/Jerick.png";
 import alghieImg from "../../assets/Resources/Alghie.png";
 import vincentImg from "../../assets/Resources/cent.png";
