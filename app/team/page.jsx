@@ -4,10 +4,15 @@ import Image from "next/image";
 import HeaderLayout from "../layouts/HeaderLayout";
 import { useState, useEffect } from "react";
 import TeamPhoto from "../../assets/Resources/TeamPhoto.jpg";
-import TeamImage from "../../assets/Resources/TeamImage.jpg";
+import TeamImage from "../../assets/Resources/with-director.jpg";
 import Image1 from "../../assets/Resources/image_1.jpg";
 import Image2 from "../../assets/Resources/image_2.jpg";
 import Image3 from "../../assets/Resources/image_3.jpg";
+import img1 from "../../assets/Resources/present.jpg";
+import img2 from "../../assets/Resources/2.jpg";
+import img3 from "../../assets/Resources/3.jpg";
+import img4 from "../../assets/Resources/4.jpg";
+import img5 from "../../assets/Resources/5.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMedal,
@@ -50,7 +55,7 @@ const members = [
 ];
 
 export default function Team() {
-  const images = [TeamPhoto, TeamImage, Image1, Image2, Image3];
+  const images = [TeamPhoto, TeamImage, Image1, Image2, Image3, img1, img2, img3, img4, img5];
   const [paused, setPaused] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
