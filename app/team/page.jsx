@@ -55,7 +55,18 @@ const members = [
 ];
 
 export default function Team() {
-  const images = [TeamPhoto, TeamImage, Image1, Image2, Image3, img1, img2, img3, img4, img5];
+  const images = [
+    TeamPhoto,
+    TeamImage,
+    Image1,
+    Image2,
+    Image3,
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
+  ];
   const [paused, setPaused] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -147,9 +158,9 @@ export default function Team() {
                 What our community says about us!
               </h2>
               <p className="text-base italic text-gray-500">
-                "Exploring Rizal’s life through this platform has deepened my
-                understanding of our history and inspired me to make a
-                difference in my community."
+                "Encouraging the youth to explore history through technology
+                ensures that the courage and wisdom of our heroes continue to
+                inspire future generations."
               </p>
               <p className="font-bold mt-3 text-white">
                 PBGen Edwin A Quilates
@@ -176,9 +187,8 @@ export default function Team() {
                   What our community says
                 </h2>
                 <p className="text-base italic text-gray-500">
-                  "Exploring Rizal’s life through this platform has deepened my
-                  understanding of our history and inspired me to make a
-                  difference in my community."
+                  "With the help of technology, historical knowledge becomes
+                  more vivid, interactive, and relevant to today’s learners."
                 </p>
                 <p className="font-bold mt-2 text-white">
                   PCpt Bensar Ali A Karim
@@ -204,9 +214,8 @@ export default function Team() {
                   What our community says
                 </h2>
                 <p className="text-base italic text-gray-500">
-                  "Exploring Rizal’s life through this platform has deepened my
-                  understanding of our history and inspired me to make a
-                  difference in my community."
+                  "By studying history, we gain the insight to honor our
+                  heritage and the foresight to shape a better tomorrow."
                 </p>
                 <p className="font-bold mt-2 text-white">Pat Jayson C Peñon</p>
                 <p className="text-sm text-gray-500">
