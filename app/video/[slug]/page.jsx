@@ -19,7 +19,7 @@ export default function Page({ params }) {
     <HeaderLayout>
       <main className="mt-20 p-4 container mx-auto min-h-screen grid grid-cols-1 xl:grid-cols-3 gap-6">
         <section className="col-span-2">
-          <div className="w-full aspect-video rounded-2xl border">
+          <div className="w-full aspect-video rounded-2xl border overflow-hidden">
             <ReactPlayer width="100%" height="100%" url={data[slug].link} />
           </div>
           <h1 className="my-4 text-4xl font-bold">{data[slug].title}</h1>
