@@ -3,6 +3,7 @@ import { use } from "react";
 import { data } from "./data";
 import HeaderLayout from "../../../app/layouts/HeaderLayout";
 import Link from "next/link";
+import ReactPlayer from 'react-player'
 
 // By default, the CldImage component applies auto-format and auto-quality to all delivery URLs for optimized delivery.
 export default function Page({ params }) {
