@@ -1,27 +1,42 @@
 "use client";
-import { use } from "react";
+
+import { use, useState, useEffect } from "react";
 import { data } from "./data";
 import HeaderLayout from "../../../app/layouts/HeaderLayout";
 import Link from "next/link";
+import Image from "next/image";
+import dynamic from "next/dynamic";
 
 // By default, the CldImage component applies auto-format and auto-quality to all delivery URLs for optimized delivery.
 export default function Page({ params }) {
   const { slug } = use(params);
+  const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
+  const [hasError, setHasError] = useState(false);
 
   function constraintIndex(num) {
     return num < data.length;
   }
 
+  useEffect(() => {
+    setHasError(data[slug].link == "")
+  }, [])
+
   return (
     <HeaderLayout>
       <main className="mt-20 p-4 container mx-auto min-h-screen grid grid-cols-1 xl:grid-cols-3 gap-6">
         <section className="col-span-2">
-          <iframe
-            src={data[slug].link}
-            className="w-full aspect-video rounded-2xl border"
-            allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
-            allowFullScreen
-          ></iframe>
+          <div className="w-full aspect-video rounded-2xl border overflow-hidden">
+            {hasError ? (
+              <Image width="2000" height="2000" className="w-full h-full" src="/thumbs/error.png" alt="error" />
+            ) : (
+              <ReactPlayer
+                width="100%"
+                height="100%"
+                url={data[slug].link}
+                onError={() => setHasError(true)}
+              />
+            )}
+          </div>
           <h1 className="my-4 text-4xl font-bold">{data[slug].title}</h1>
           <h2 className="font-semibold">Description</h2>
           <p>{data[slug].description}</p>
